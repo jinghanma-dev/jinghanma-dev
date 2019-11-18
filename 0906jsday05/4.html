@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+	</body>
+	<script type="text/javascript">
+		var str = "mrrrttt2222223345345353111";
+		maxr(str);
+		function maxr(str) {
+			var count = 1;
+			var kstr = str[0];
+			var maxCount = 0;
+			var maxStr = "";
+			for (var i = 1; i < str.length; i++) {
+				if (str[i] == kstr) {
+					count++;
+				} else {
+					kstr = str[i];
+					count = 1;
+				}
+				if (maxCount < count) {
+					maxCount = count;
+					maxStr = kstr;
+				}
+				if (maxCount === count) {
+					var maxStr2 = str[i];
+				}
+				
+			}
+			console.log(maxCount, maxStr,maxStr2);
+			for (var i = 0; i < maxCount; i++) {
+				document.write(maxStr)
+			}
+			document.write("<br />")
+			for (var i = 0; i < maxCount; i++) {
+				document.write(maxStr2)
+			}
+
+		}
+	</script>
+
+</html>

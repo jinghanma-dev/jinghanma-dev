@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+	</body>
+	<script type="text/javascript">
+		var j = 0;
+		var x = prompt("请输入一个数");
+		if(x == 1) {
+			alert(x + "不是质数，也不是合数");
+		} else {
+			for(var i = 1; i <= x; i++) {
+				if(x % i == 0) {
+					j++;
+				}
+			}
+			if(j == 2) {
+				alert(x + "是质数");
+			} else {
+				alert(x + "不是质数");
+			}
+		}
+	</script>
+
+</html>

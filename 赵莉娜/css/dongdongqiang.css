@@ -1,0 +1,420 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*网站顶部*/
+.top {
+	width: 1200px;
+	height: 80px;
+	/*background-color: cornflowerblue;*/
+	margin: 0 auto;
+}
+
+.logo {
+	width: 320px;
+	height: 60px;
+	/*background-color: lightgoldenrodyellow;*/
+	margin-top: 10px;
+	float: left;
+}
+
+.logo_txt1 {
+	display: block;
+	width: 130px;
+	/*background-color: darkseagreen;*/
+	font-size: 40px;
+	color: red;
+	line-height: 60px;
+	float: left;
+}
+
+.logo_txt2 {
+	width: 160px;
+	height: 40px;
+	/*background-color:darkseagreen ;*/
+	border-left: 1px solid darkgray;
+	float: left;
+	line-height: 40px;
+	font-size: 18px;
+	color: gray;
+	text-indent: 10px;
+	margin-top: 10px;
+}
+
+.search {
+	width: 320px;
+	height: 40px;
+	background-image: url(../img/sousuo_red.png);
+	background-position-y: 4px;
+	padding-left: 37px;
+	background-repeat: no-repeat;
+	border: 1px solid red;
+	margin-left: 100px;
+	margin-top: 20px;
+	float: left;
+	color: #999999;
+	outline: none;
+}
+
+.search_btn {
+	width: 80px;
+	height: 40px;
+	background-color: red;
+	margin-top: 20px;
+	float: left;
+	font-size: 18px;
+	color: white;
+	outline: none;
+	border: none;
+}
+
+.top_r {
+	width: 224px;
+	height: 60px;
+	background-image: url(../img/headgrup.png);
+	background-size: 224px 60px;
+	/*background-color: darkseagreen;*/
+	background-repeat: no-repeat;
+	float: right;
+	margin-top: 10px;
+}
+/*网站导航*/
+nav {
+	height: 50px;
+	background-color: #f84e4e;
+}
+
+ul {
+	list-style: none;
+}
+
+.daohang {
+	width: 90px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.daohang:nth-of-type(5){
+	background-color: #e32f2f;
+}
+
+.daohang a {
+	color: white;
+	text-decoration: none;
+}
+/*banner*/
+.banner{
+	width: 100%;
+	height: 222px;
+	background-image:url(../img/dongdongqiang_banner.jpg);
+	background-repeat: no-repeat;
+	background-size: 1920px 222px;
+	background-position: center;
+}
+/*时间轴*/
+.time_left,.time_right{
+	width:50px;
+	line-height: 60px;
+	background-color: gray;
+	float: left;
+	text-align: center;
+	color: white;
+	font-size: 26px;
+}
+.time_middle{
+	width: 1060px;
+	height: 60px;
+	background-color: rgba(0,0,0,.8);
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.time_middle_content{
+	width:1272px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	transition:all .3s;
+}
+
+.shijian{
+	width: 212px;
+	height: 60px;
+	/*background-color: red;*/
+	float: left;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+.shijian_text1,.shijian_text2{
+	font-size: 14px;
+	line-height: 20px;
+	margin-top: 10px;
+}
+.shijian_text2{
+	margin: -10px;
+}
+.shijian_back{
+	width: 212px;
+	height: 60px;
+	background-color: red;
+	position: absolute;
+	left: 424px;
+}
+
+/*网站内容部分*/
+.content {
+	width: 1200px;
+	overflow: hidden;
+	margin: 0 auto;
+	/*background-color: cadetblue;*/
+}
+
+.content_item {
+	width: 560px;
+	height: 254px;
+	/*background-color: whitesmoke;*/
+	float: left;
+	margin: 20px;
+	border: 2px solid red;
+	transition: all .5s;
+}
+
+.content_item:hover {
+	transform: scale(1.02);
+	box-shadow: 0px 0px 8px gray;
+}
+.content_left{
+	width: 260px;
+	height: 250px;
+	float: left;
+}
+.content_item img {
+	width: 100%;
+	height: 100%;
+}
+.content_right{
+	width:296px;
+	height: 250px;
+	background-color: white;
+	float: left;
+}
+.content_right a{
+	text-decoration: none;
+}
+.item_description{
+	width: 100%;
+	height: 20px;
+	/*background-color: red;*/
+	font-size: 14px;
+	margin-top: 10px;
+	color: red;
+	padding: 0 5px;
+}
+.title {
+	width: 296px;
+	padding: 0 5px;
+	/*background-color: darkseagreen;*/
+	font-size: 16px;
+	color: #333333;
+	margin-top: 40px;
+}
+
+.title:hover {
+	color:blue;
+}
+.qhj {
+	width: 100%;
+/*	background-color: green;*/
+	float: left;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+.qhj_txt2 {
+	/*background-color: red;*/
+	color:red;
+	margin-top: 10px;
+	float: left;
+}
+
+
+.qhj_txt3 {
+	color: red;
+	font-size: 28px;
+	float: left;
+}
+.xsl_text1 {
+	color: #999999;
+	text-decoration: line-through;
+	float: left;
+	margin: 10px 10px;
+}
+.xsl_text2 {
+	color: #9D9D9D;
+	float: right;
+	margin: 10px 20px;
+}
+.youhui {
+	width:100%;
+	height: 60px;
+	/*background-color: green;*/
+	float:left;
+	margin-top: 20px;
+}
+
+.youhui a {
+	text-decoration: none;
+}
+
+.youhui_text1 {
+	width: 180px;
+	line-height: 20px;
+	text-align: center;
+	border: 1px solid red;
+	color: red;
+	float: left;
+	padding: 10px;
+	font-size: 18px;
+}
+.youhui_text2 {
+	width: 100px;
+	float: left;
+	background-color: red;
+	text-align: center;
+	padding: 10px;
+	line-height:22px ;
+	text-decoration: none;
+	color:white;
+	font-size: 20px;
+}
+
+/*分页*/
+
+#page {
+	margin: 20px auto;
+	color: #666;
+	display: block;
+	text-align: center;
+}
+
+#page li {
+	display: inline-block;
+	min-width: 30px;
+	height: 28px;
+	cursor: pointer;
+	color: #666;
+	font-size: 13px;
+	line-height: 28px;
+	background-color: white;
+	border: 1px solid lightgray;
+	text-align: center;
+	margin: 0 4px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.xl-nextPage,
+.xl-prevPage {
+	width: 60px;
+	color: #0073A9;
+	height: 28px;
+}
+
+#page li.xl-disabled {
+	opacity: .5;
+	cursor: no-drop;
+}
+
+#page li.xl-disabled:hover {
+	background-color: #f9f9f9 !important;
+	border: 1px solid #dce0e0 !important;
+	color: #666 !important;
+}
+
+#page li.xl-active {
+	background-color: lightblue;
+	border-color: lightblue;
+	color: #FFF
+}
+
+#page li:hover {
+	background-color: lightblue !important;
+	border-color: lightblue;
+	color: #FFF
+}
+
+#page li.xl-jumpText {
+	background-color: rgba(0, 0, 0, 0);
+	border-color: rgba(0, 0, 0, 0);
+	opacity: 1;
+}
+
+#page li.xl-jumpText:hover {
+	background-color: rgba(0, 0, 0, 0) !important;
+	border-color: rgba(0, 0, 0, 0) !important;
+}
+
+#page li.xl-jumpButton {
+	padding: 0 5px;
+}
+
+#xlJumpNum {
+	width: 35px;
+	margin: 0 3px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none !important;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+
+/*网页底部*/
+.footer {
+	width: 1200px;
+	height: 100px;
+	/*background-color: red;*/
+	margin: 0 auto;
+}
+
+.footer_text1 {
+	width: 100%;
+	line-height: 22px;
+	text-align: center;
+	font-size: 14px;
+	color: darkgray;
+}
+
+.footer_text1 a {
+	color: darkgray;
+	text-decoration: none;
+}
+
+.footer_text1 span{
+	margin-left: 10px;
+}
+
+.footer_text1 span:hover {
+	color: white;
+}
+/*回到顶部*/
+.back_top{
+	width: 55px;
+	height: 49px;
+	background-image: url(../img/back.png);
+	background-repeat: no-repeat;
+	position: fixed;
+	right: 30px;
+	bottom: 50px;
+	z-index: 1;
+	display: none;
+}
+

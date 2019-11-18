@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		
+		function rightchange(str,n){
+			var start = str.length-n;
+			var str1 = str.substr(start,n);
+			var str2 = str.substring(0,start);
+			var newStr = str1+str2;
+			return newStr;
+		}
+		
+		
+		console.log(rightchange("123456",3))
+	</script>
+</html>

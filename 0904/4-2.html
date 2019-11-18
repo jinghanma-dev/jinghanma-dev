@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+	</body>
+	<script type="text/javascript">
+		function j(a) {
+			var s = 1;
+			for(var i = 1; i <= a; i++) {
+				s *= i;
+			}
+			return s;
+		}
+
+		function tol(b) {
+			var sum = 0;
+			var g = b % 10;
+			var s = parseInt(b / 10 % 10);
+			var b = parseInt(b / 100 % 10);
+			var q =
+				if(j(g) + j(s) + j(b) == b) {
+					console.log(b);
+				}
+
+		}
+		for(var i = 100; i <= 999; i++) {
+			tol(i);
+		}
+	</script>
+
+</html>

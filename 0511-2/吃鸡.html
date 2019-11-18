@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.header{
+				width: 1000px;
+				height: 40px;
+				/*background-color: burlywood;*/
+				margin: 0 auto;
+			}
+			.tu{
+				width: 230px;
+				height: 40px; 
+				/*background-color: blue;
+				background-image: url(img/game-logo.png);
+				*/
+			}
+			.tu img{
+				width: 205px;
+				height: 40px;
+				margin: 0 auto;
+				background-repeat: no-repeat;
+				
+			}
+			.tu1{
+				width: 230px;
+				height: 40px;
+				border-left: 1px solid darkgray;
+				transform: translate(216px,-41px);
+			}
+			.ping{
+				width: 120px;
+				height: 40px;
+				/*background-color: brown;*/
+				background-image: url(img/2.png);
+				background-repeat: no-repeat;
+				background-position: 2px 10px;
+				transform: translate(800px,-80px);
+				
+			}
+			.zi{
+				width: 75px;
+				height: 15px;
+				font-size: 12px;
+				transform: translate(30px,11px);
+			}
+			.youxi{
+				width: 120px;
+				height: 40px;
+				/*background-color: cyan;*/
+				text-align: center;
+				line-height: 40px;
+				font-size: 12px;
+				transform: translate(900px,-120px);
+			}
+			.banner{
+				width: 100%;
+				height: 360px;
+				/*background-color: #A9A9A9;*/
+				margin: 0 auto;
+				background-image: url(img/t1.jpg);
+				background-repeat: no-repeat;
+				position: relative;
+				
+				
+			}
+			.tt{
+				width: 100%;
+				height:200px;
+				margin: 0 auto;
+				background-image: url(img/t2.png);
+				background-repeat: no-repeat;
+				position: absolute;
+				
+				
+			}
+			.banner .tt .nav{
+				width:1200px;
+				height:100px;
+				/*border:1px solid red;*/
+				margin:10px auto;
+				color: white;
+				text-align: center;
+			}
+			.banner .tt ul li img{
+				float: left;
+				margin-left: 20px;
+				list-style: none;
+				/*padding-left:10px;*/
+				list-style: none;
+				transform: translate(2px,-12px);
+				
+			}
+			.banner .tt ul .lifirst{
+				float: left;
+				margin-left: 20px;
+				list-style: none;
+				padding-left:10px;
+				list-style: none;
+				
+			}
+			.banner .tt ul .li{
+				float: left;
+				margin-left: 20px;
+				list-style: none;
+				margin:25px 20px;
+				
+			}
+			
+			.spanone{
+				font-size: 25px;
+				color: #FFB400;
+				margin-left: -38px;
+			
+			}
+			.spanyi{
+				font-size: 13px;
+				float: left;
+				color: white;
+				transform: translate(-35px,10px);
+			}
+			.span2{
+				font-size: 14px;
+				color: #33342D;
+				font-weight: bold;
+				
+			}
+			.yy{
+				margin: 0 auto;
+				/*background-color: rosybrown;*/
+				transform: translateY(200px);
+			}
+			.yy img{
+				transform: translate(200px,-30px);
+			}
+			.weizhi{
+				font-size: 17px;
+				color: #B8B8B8;
+				transform: translate(200px,-17px);
+				
+			}
+			.content{
+				width: 1200px;
+				height: 50px;
+				/*background-color: bisque;*/
+				border-bottom: 2px solid #B8B8B8;
+				margin: 0 auto;
+		
+				
+			}
+			.nr{
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				list-style: none;
+				font-size: 20px;
+				float: left;
+				padding-left: 100px;
+				font-weight: bold;
+				
+			}
+			.nr1{
+				width: 50px;
+				height: 50px;
+				color: #FFB007;
+				border-bottom: 2px solid #FFB007;
+				padding-left: 15px;
+			}
+			
+			.nav2{
+				list-style: none;
+				width: 100px;
+				height: 25px;
+				color: white;
+				font-size: 13px;
+				background-color:black;
+				text-align: center;
+				line-height: 25px;
+				/*border-top: 1px solid yellow;*/
+				display: none;
+				padding-top: 5px;
+			}
+			.li:hover{
+				color:#F7AD1E;
+			}
+			.nav2:hover{
+				color: #BF6F00;
+			}
+			.li:hover .nav2{
+				display: block;
+			}
+			.wuqi{
+				width:1200px;
+				overflow: hidden;
+				/*background-color: antiquewhite;*/
+				margin:0 auto ;
+			}
+			.r{
+				width: 100px;
+				height: 40px;
+				/*background-color: blueviolet;*/
+				border-left: 3px solid #F7AD1E;
+				padding-top: 15px;
+				margin-top: 15px;			
+			}
+			.remen{
+				width: 120px;
+				height: 40px;
+				/*background-color: cadetblue;*/
+				/*border-left: 2px solid #FFB007;*/
+				font-size: 30px;
+				font-weight: bold;
+				line-height: 40px;
+				margin-left: 20px;
+			}
+			.wutu{
+				width: 1200px;
+				height: 200px;
+				/*background-color: darkkhaki;*/
+			}
+			.wu1{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/w1.png);
+			    background-size: 100% 100%;
+			    margin-top: 20px;
+			}
+			.box-top{
+				width:98px;
+				height:24px;
+				background-image: url(img/icon_flag.png);
+				background-repeat: no-repeat;
+			}
+			.box-bottom{
+				width: 260px;
+				height:40px;
+				background-color: gray;
+				margin-top:134px;
+			}
+			.box-bottom-p{
+				width:260px;
+				height:40px;
+				line-height: 40px;
+			}
+			.box-bottom-s1{
+				margin-left: 15px;
+			}
+			.box-bottom-s2{
+				margin-left: 115px;
+			}
+			.box-bottom-s3{
+				margin-left: 5px;
+			}
+			.wu2{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/w2.png);
+			    background-size: 100% 100%;
+			    transform: translate(300px,-207px);
+			}
+			.wu3{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/w3.png);
+			    background-size: 100% 100%;
+			    transform: translate(600px,-415px);
+			}
+			.wu4{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/w6.jpg);
+			    background-size: 260px 198px;
+			    background-repeat: no-repeat;
+			    transform: translate(900px,-623px);  
+			}
+			.box-bottom-p-1{
+				width: 260px;
+				height: 40px;
+				transform: translate(195px,10px);
+				
+			}
+				.box-bottom-1{
+				transform: translate(0px,24px);	
+				width: 260px;
+				height:40px;
+				background-color: gray;
+				margin-top:134px;
+			}
+			.title{
+				width: 1200PX;
+				height: 150PX;
+				/*background-color:gray;*/
+				margin: 0 auto; 
+			}
+			.section{
+				list-style: none;
+				
+			}
+			.nn{
+				width: 125px;
+				overflow: hidden;
+				background-color:gray;
+				list-style: none;
+				font-size: 20px;
+				line-height: 45px;
+				text-align: center;
+				float: left;
+				margin-top: 20px;
+				margin-left: 20px;
+				font-weight: bold;
+			}
+			.nn:hover{
+				background-color: #FFB007;
+			}
+			.nn-1{
+				width: 125px;
+				overflow: hidden;
+				/*background-color: darkolivegreen;*/
+				list-style: none;
+				font-size: 20px;
+				line-height: 45px;
+				text-align: center;
+				float: left;
+				margin-top: 20px;
+				margin-left: 20px;
+				background-color: #FFB007;
+				font-weight: bold;
+			}
+			.tuji{
+				width: 150px;
+				height: 40px;
+			/*	background-color: blueviolet;*/
+				border-left: 3px solid #F7AD1E;
+				padding-top: 15px;
+				margin-top: 15px;
+				transform: translate(5px,-15px);			
+			}
+			.shouxuan{
+				width: 120px;
+				height: 40px;
+				/*background-color: cadetblue;*/
+				/*border-left: 2px solid #FFB007;*/
+				font-size: 30px;
+				font-weight: bold;
+				line-height: 40px;
+				margin-left: 20px;
+				
+			}
+			.zhu{
+				width: 120px;
+				height: 30px;
+				margin: 0 auto;
+				/*background-color: chartreuse;*/
+				 font-size: 18px;
+				 color: #808080;
+				 line-height: 30px;
+				 text-align: center;
+				 border-left: 1px solid #808080;
+				 transform: translate(155px,-32px);
+			}
+			.zhuxuan{
+				width: 1400px;
+				height: 730px;
+				margin: 0 auto;
+				/*background-color: coral;*/
+			}
+			.xuan1{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/w2.png);
+			    background-size: 100% 100%;
+			    margin-top: -10px;
+			}
+			.box-bottom-2{
+				transform: translate(0px,24px);	
+				width: 260px;
+				height:40px;
+				background-color: gray;
+				margin-top:134px;
+			}
+			.xuan2{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/M16A4.png);
+			    background-size: 100% 100%;
+			    margin-top: -10px;
+			    transform: translate(300px,-198px);
+			}
+			.xuan3{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/M416.png);
+			    background-size: 100% 100%;
+			    margin-top: -10px;
+			    transform: translate(600px,-396px);
+			}
+			.xuan4{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/w3.png);
+			    background-size: 100% 100%;
+			    margin-top: -10px;
+			    transform: translate(900px,-594px);  
+			}
+			.xuan5{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/Groza.png);
+			    background-size: 100% 100%;
+			    margin-top: -10px;
+			    transform: translate(0px,-550px);
+			}
+			.xuan6{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/AUG.png);
+			    background-size: 100% 100%;
+			    margin-top: -10px;
+			    transform: translate(301px,-748px);
+			}
+			.xuan7{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/QBZ.png);
+			    background-size: 100% 100%;
+			    margin-top: -10px;
+			    transform: translate(601px,-946px);
+			}
+			.xuan8{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/M762.png);
+			    background-size: 100% 100%;
+			    margin-top: -10px;
+			    transform: translate(901px,-1144px);
+			}
+			.xuan9{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/MK47.png);
+			    background-size: 100% 100%;
+			    margin-top: -10px;
+			    transform: translate(0px,-1100px);
+			}
+			.xuan10{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/G36C.png);
+			    background-size: 100% 100%;
+			    margin-top: -10px;
+			     transform: translate(301px,-1298px);
+			}
+			.sheshou{
+				width: 150px;
+				height: 40px;
+				/*background-color: blueviolet;*/
+				border-left: 3px solid #F7AD1E;
+				padding-top: 15px;
+				margin-top: 15px;		
+			}
+			.sheji{
+				width: 120px;
+				height: 40px;
+				/*background-color: cadetblue;*/
+				font-size: 30px;
+				font-weight: bold;
+				line-height: 40px;
+				margin-left: 20px;
+				
+			}
+			.yuanzhan{
+				width: 120px;
+				height: 30px;
+				/*background-color: chartreuse;*/
+				 font-size: 18px;
+				 color: #808080;
+				 line-height: 30px;
+				 text-align: center;
+				 border-left: 1px solid #808080;
+				 transform: translate(155px,-32px);
+			}
+			.wangzhe{
+				margin: 0 auto;
+				width: 1200px;
+				height: 455px;
+				/*background-color: cornflowerblue;*/
+			}
+			.wang1{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/VSS.png);
+			    background-size: 100% 100%;
+			}
+			.wang2{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/SKS.png);
+			    background-size: 100% 100%;
+			    transform: translate(298PX,-208PX);
+			}
+			.wang3{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/MK14.png);
+			    background-size: 100% 100%;
+			    transform: translate(598PX,-416PX);
+			}
+			.wang4{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/Mini14.png);
+			    background-size: 100% 100%;
+			    transform: translate(898PX,-624PX);
+			}
+			.wang5{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/SLR.png);
+			    background-size: 100% 100%;
+			    transform: translate(0PX,-594PX);
+			}
+			.wang6{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/QBU.png);
+			    background-size: 100% 100%;
+			    transform: translate(298PX,-801PX);
+			}
+			.juji{
+				width: 150px;
+				height: 40px;
+				/*background-color: blueviolet;*/
+				border-left: 3px solid #F7AD1E;
+				padding-top: 15px;
+				margin-top: 15px;		
+			}
+			.jj{
+				width: 120px;
+				height: 40px;
+				/*background-color: cadetblue;*/
+				font-size: 30px;
+				font-weight: bold;
+				line-height: 40px;
+				margin-left: 20px;
+				
+			}
+			.yz{
+				width: 120px;
+				height: 30px;
+				/*background-color: chartreuse;*/
+				 font-size: 18px;
+				 color: #808080;
+				 line-height: 30px;
+				 text-align: center;
+				 border-left: 1px solid #808080;
+				 transform: translate(155px,-32px);
+			}
+			.jujiqiang{
+				width: 1200px;
+				height: 130px;
+				margin: 0 auto;
+				/*background-color: darkolivegreen;*/
+				padding-top: 100px;
+			}
+			.ju1{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/AWM.png);
+			    background-size: 100% 100%;
+			    transform: translate(0px,-100px);
+			}
+			.ju2{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/w1.png);
+			    background-size: 100% 100%;
+			    transform: translate(300px,-308px);
+			}
+			.ju3{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/M24.png);
+			    background-size: 100% 100%;
+			    transform: translate(600px,-516px);
+			}
+			.ju4{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/Win94.png);
+			    background-size: 100% 100%;
+			    transform: translate(900px,-724px);
+			}
+			.chongfeng{
+				width: 150px;
+				height: 40px;
+				/*background-color: blueviolet;*/
+				border-left: 3px solid #F7AD1E;
+				padding-top: 0px;
+				margin-top: 270px;		
+			}
+			.cf{
+				width: 120px;
+				height: 40px;
+				/*background-color: cadetblue;*/
+				font-size: 30px;
+				font-weight: bold;
+				line-height: 40px;
+				margin-left: 20px;
+				margin-top: 20px;
+				
+			}
+			.jinzhan{
+				width: 120px;
+				height: 30px;
+				/*background-color: chartreuse;*/
+				 font-size: 18px;
+				 color: #808080;
+				 line-height: 30px;
+				 text-align: center;
+				 border-left: 1px solid #808080;
+				 transform: translate(155px,-32px);
+			}
+			.cc{
+				width: 1200px;
+				height: 30px;
+				margin: 0 auto;
+				/*background-color: darkolivegreen;*/
+				padding-top: 200px;
+			}
+			.c1{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/UZI.png);
+			    background-size: 100% 100%;
+			    transform: translate(0px,-200px);
+			}
+			.c2{
+				width: 260px;
+				height: 198px;
+				font-size: 13px;
+				border: 5px solid grey;
+			    background-image:url(img/TMX.png);
+			    background-size: 100% 100%;
+			    transform: translate(298px,-408px);
+			}
+			.c3{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/UMP9.png);
+			    background-size: 100% 100%;
+			    transform: translate(598px,-616px);
+			}
+			.c4{
+				width: 260px;
+				height: 198px;
+				border: 5px solid grey;
+			    background-image:url(img/Vector.png);
+			    background-size: 100% 100%;
+			    transform: translate(898px,-824px);
+			}
+			.dakuang{
+				width: 100%;
+				height:2822px;
+				margin: 0 auto;
+				background-color: #EAEAEA;
+				/*border: 1px solid red;*/
+			}
+			.footer{
+				width:100%;
+				height:714px;
+				margin: 0 auto;
+				background-color: bisque;
+				background-image: url(img/dibucar.png);
+				background-repeat: no-repeat;
+				margin-top: -32px;
+				float: left;
+				transform: translate(0px,-13 px);
+			}
+			.footertu{
+				width: 100%;
+				height: 155px;
+				margin: 0 auto;
+				background-color: black;
+				transform: translate(0px,714px);
+				
+			}
+			
+			.dibutu{
+				width: 170px;
+				height: 40px;
+				margin: 0 auto;
+				background-image: url(img/foot-dark.png);
+				
+				transform: translate(-485px,590px);
+			}
+			.dbtu{
+				width: 155px;
+				height: 40px;
+				background-image: url(img/footer-logo-gz.png);
+				background-repeat: no-repeat;
+				transform: translate(400px,545px);
+			}
+			.footerwz{
+				width: 680px;
+				height: 150px;
+				margin: 0 auto;
+				font-size: 13px;
+				color: white;
+				transform: translate(290px,495px);
+			}
+			.yidong{
+				width:1200px;
+				height:2000px;
+				/*border:1px solid red;*/
+				margin: 0 auto;
+			}
+			.youyi{
+				width: 100%;
+				height: 350px;
+				margin: 0 auto;
+				transform: translate(0px,200px);
+			}
+			
+	</style>
+	</head>
+	<body>
+		
+		<div class="header">
+			<div class="tu">
+				<img src="img/game-logo.png"/>
+			</div>
+			<div class="tu tu1">
+				<img src="img/1.jpg"/>
+			</div>
+			<div class="ping">
+				<div class="zi">成长守护平台</div>
+			</div>
+			<div class="youxi">
+				腾讯游戏排行榜
+			</div>
+		</div>
+	    <div class="dakuang">
+	      
+		     <div class="banner">
+			
+			 <div class="tt">
+				<ul class="nav">
+					<li class="li"><img src="img/top-tag.png" /> </li>
+					<li class="li first">
+						<span class="span1 spanone">绝地求生:刺激战场</span>
+						<br>
+						<span class="span3 spanyi">正版战斗特训手游</span>
+					</li>
+					<li class="li lisecond">
+						<span class="span1 spantwo">官网首页</span>
+						<br>
+						<span class="span2 ">HOME</span>
+					</li>
+					<li class="li lithrid">
+						<span class="span1 ">游戏资料</span>
+						<br>
+						<span class="span2 span3">GAME INFO</span>
+						<ul>
+							<li class="nav2">新手引导</li>
+							<li class="nav2">武器配件</li>
+							<li class="nav2">版本更新</li>
+						</ul>
+
+					</li>
+					<li class="li lifour">
+						<span class="span1">内容中心</span>
+						<br>
+						<span class="span2 ">RAIDERS</span>
+						<ul>
+							<li class="nav2">新闻资讯</li>
+							<li class="nav2">攻略中心</li>
+							<li class="nav2">视频中心</li>
+							<li class="nav2">同人专区</li>
+						</ul>
+					</li>
+					<li class="li lifive">
+						<span class="span1 ">赛事中心</span>
+						<br>
+						<span class="span2 ">MATCH</span>
+						<ul>
+							<li class="nav2">赛事首页</li>
+							<li class="nav2">TGA</li>
+							<li class="nav2">城市赛</li>
+							<li class="nav2">校园赛</li>
+						</ul>
+					</li>
+					<li class="li lisix">
+						<span class="span1 ">直播中心</span>
+						<br>
+						<span class="span2 ">LIVE</span>
+					</li>
+					<li class="li liseven">
+						<span class="span1">赛季咨训</span>
+						<br>
+						<span class="span2 ">SEASON</span>
+						<ul>
+							<li class="nav2">NEW S6赛季</li>
+							<li class="nav2">S5赛季荣誉墙</li>
+							<li class="nav2">S4赛季荣誉墙</li>
+							<li class="nav2">S3赛季荣誉墙</li>
+							<li class="nav2">S2赛季荣誉墙</li>
+							<li class="nav2">S1赛季荣誉墙</li>
+						</ul>
+					</li>
+					<li class="li lieight">
+						<span class="span1 ">社区论坛</span>
+						<br>
+						<span class="span2 ">COMMUNITY</span>
+						<ul>
+							<li class="nav2">手Q部落</li>
+							<li class="nav2">微信公众号</li>
+							<li class="nav2">微信圈子</li>
+							<li class="nav2">官方微博</li>
+						</ul>
+						
+					</li>
+				</ul>
+			</div>
+		<div class="youyi">
+			<div class="yy">
+				<img src="img/info-tit.png"/>
+				<p class="weizhi">您的位置：首页  游戏资料</p>
+			</div>
+		</div>
+        </div>
+
+		<div class="content">
+			<ul>
+				<li class="nr nr1">武器</li>
+				<li class="nr">配件</li>
+				<li class="nr">物资</li>
+				<li class="nr">载具</li>
+				<li class="nr">地图</li>
+			</ul>
+		</div>
+		<div class="wuqi">
+			<div class="r">
+				<div class="remen">热门武器</div>
+			</div>
+			<div class="wutu">
+				<div class="wu1">
+                    <div class="box-top">
+                    	经典狙击
+                    </div>
+                    <div class="box-bottom">
+                    	<p class="box-bottom-p">
+                    		<span title="Kar98k" class="box-bottom-s1">Kar98k</span>
+                    		<span title="Kar98k" class="box-bottom-s2">详情</span>
+                    		<img title="Kar98k" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	</p>
+                    </div>
+				</div>
+				<div class="wu2">
+                    <div class="box-top">
+                    	高手最爱
+                    </div>
+                    <div class="box-bottom">
+                    	<p class="box-bottom-p">
+                    		<span title="AKM" class="box-bottom-s1">AKM</span>
+                    		<span title="AKM" class="box-bottom-s2">详情</span>
+                    		<img title="AKM" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	</p>
+                    </div>
+				</div>
+				<div class="wu3">
+                    <div class="box-top">
+                    	靠谱步枪
+                    </div>
+                    <div class="box-bottom">
+                    	<p class="box-bottom-p">
+                    		<span title="SCAR-L" class="box-bottom-s1">SCAR-L</span>
+                    		<span title="SCAR-L" class="box-bottom-s2">详情</span>
+                    		<img title="SCAR-L" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	</p>
+                    </div>
+				</div>
+				<div class="wu4">
+                    <div class="box-bottom-1">
+                    	<p class="box-bottom-p-1">
+                    		<span class="box-bottom-s2-1">详情</span>
+                    		<img class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	</p>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<div class="title">
+			<ul class="section">
+				<li class="nn-1">突击步枪</li>
+				<li class="nn">射手步枪</li>
+				<li class="nn">狙击枪</li>
+				<li class="nn">冲锋枪</li>
+				<li class="nn">霰弹枪</li>
+				<li class="nn">机枪</li>
+				<li class="nn">手枪</li>
+				<li class="nn">近战武器</li>
+				<li class="nn">其它</li>
+			</ul>
+		</div>
+		<div class="yidong">
+		 <div class="tuji">
+				<div class="shouxuan">突击步枪</div>
+				<div class="zhu">首选主武器</div>
+				<div class="zhuxuan">
+				 <div class="xuan1">
+				   <div class="box-bottom-2">
+                    	<p class="box-bottom-p">
+                    		<span title="AKM" class="box-bottom-s1">AKM</span>
+                    		<span title="AKM" class="box-bottom-s2">详情</span>
+                    		<img title="AKM" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	</p>
+                   </div>
+                 </div>
+                 <div class="xuan2">
+                 	<div class="box-bottom-2">
+                    	<p class="box-bottom-p">
+                    		<span title="M16A4" class="box-bottom-s1">M16A4</span>
+                    		<span title="M16A4" class="box-bottom-s2">详情</span>
+                    		<img title="M16A4" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	</p>
+                   </div>
+                 </div>
+                 <div class="xuan3">
+                 	<div class="box-bottom-2">
+                    	<p class="box-bottom-p">
+                    		<span title="M416" class="box-bottom-s1">M416</span>
+                    		<span title="M416" class="box-bottom-s2">详情</span>
+                    		<img title="M416" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	</p>
+                    </div>
+                 </div>
+                 <div class="xuan4">
+                 	<div class="box-bottom-2">
+                    	<p class="box-bottom-p">
+                    		<span title="SCAR-L" class="box-bottom-s1">SCAR-L</span>
+                    		<span title="SCAR-L" class="box-bottom-s2">详情</span>
+                    		<img title="SCAR-L" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	</p>
+                    </div>
+                 </div>
+                 <div class="xuan5">
+                 	<div class="box-bottom-2">
+                    	<p class="box-bottom-p">
+                    		<span title="GROZA" class="box-bottom-s1">GROZA</span>
+                    		<span title="GROZA" class="box-bottom-s2">详情</span>
+                    		<img title="GROZA" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	</p>
+                    </div>
+                 </div>
+                 <div class="xuan6">
+                 	<div class="box-bottom-2">
+                    	<p class="box-bottom-p">
+                    		<span title="AUG" class="box-bottom-s1">AUG</span>
+                    		<span title="AUG" class="box-bottom-s2">详情</span>
+                    		<img title="AUG" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	</p>
+                    </div>
+                 </div>
+                 <div class="xuan7">
+                 	<div class="box-bottom-2">
+                    	<p class="box-bottom-p">
+                    		<span title="QBZ" class="box-bottom-s1">QBZ</span>
+                    		<span title="QBZ" class="box-bottom-s2">详情</span>
+                    		<img title="QBZ" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	</p>
+                    </div>
+                 </div>
+                 <div class="xuan8">
+                 	<div class="box-bottom-2">
+                    	<p class="box-bottom-p">
+                    		<span title="M762" class="box-bottom-s1">M762</span>
+                    		<span title="M762" class="box-bottom-s2">详情</span>
+                    		<img title="M762" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	</p>
+                    </div>
+                 </div>
+                 <div class="xuan9">
+                 	<div class="box-bottom-2">
+                    	<p class="box-bottom-p">
+                    		<span title="MK47" class="box-bottom-s1">MK47</span>
+                    		<span title="MK47" class="box-bottom-s2">详情</span>
+                    		<img title="MK47" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	</p>
+                    </div>
+                 </div>
+                 <div class="xuan10">
+                 	<div class="box-bottom-2">
+                    	<p class="box-bottom-p">
+                    		<span title="G36C" class="box-bottom-s1">G36C</span>
+                    		<span title="G36C" class="box-bottom-s2">详情</span>
+                    		<img title="G36C" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	</p>
+                    </div>
+                 </div>
+                </div>
+                <div class="sheshou">
+                	<div class="sheji">射手步枪</div>
+                	<div class="yuanzhan">远战王者</div>
+                	<div class="wangzhe">
+				         <div class="wang1">
+				            <div class="box-bottom-2">
+                    	       <p class="box-bottom-p">
+                    		      <span title="VSS" class="box-bottom-s1">VSS</span>
+                    		      <span title="VSS" class="box-bottom-s2">详情</span>
+                    		      <img title="VSS" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	       </p>
+                            </div>
+                          </div>
+                          <div class="wang2">
+				            <div class="box-bottom-2">
+                    	       <p class="box-bottom-p">
+                    		      <span title="SKS" class="box-bottom-s1">SKS</span>
+                    		      <span title="SKS" class="box-bottom-s2">详情</span>
+                    		      <img title="SKS" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	       </p>
+                            </div>
+                          </div>
+                          <div class="wang3">
+				            <div class="box-bottom-2">
+                    	       <p class="box-bottom-p">
+                    		      <span title="MK14" class="box-bottom-s1">MK14</span>
+                    		      <span title="MK14" class="box-bottom-s2">详情</span>
+                    		      <img title="MK14" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	       </p>
+                            </div>
+                          </div>
+                          <div class="wang4">
+				            <div class="box-bottom-2">
+                    	       <p class="box-bottom-p">
+                    		      <span title="Mini" class="box-bottom-s1">Mini</span>
+                    		      <span title="Mini" class="box-bottom-s2">详情</span>
+                    		      <img title="Mini" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	       </p>
+                            </div>
+                          </div>
+                          <div class="wang5">
+				            <div class="box-bottom-2">
+                    	       <p class="box-bottom-p">
+                    		      <span title="SLR" class="box-bottom-s1">SLR</span>
+                    		      <span title="SLR" class="box-bottom-s2">详情</span>
+                    		      <img title="SLR" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	       </p>
+                            </div>
+                          </div>
+                           <div class="wang6">
+				            <div class="box-bottom-2">
+                    	       <p class="box-bottom-p">
+                    		      <span title="QBU" class="box-bottom-s1">QBU</span>
+                    		      <span title="QBU" class="box-bottom-s2">详情</span>
+                    		      <img title="QBU" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	       </p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="juji">
+                    	<div class="jj">狙击枪</div>
+                	    <div class="yz">远战王者</div>
+                	    <div class="jujiqiang">
+                	    	<div class="ju1">
+				              <div class="box-bottom-2">
+                    	       <p class="box-bottom-p">
+                    		      <span title="AWM" class="box-bottom-s1">AWM</span>
+                    		      <span title="AWM" class="box-bottom-s2">详情</span>
+                    		      <img title="AWM" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	       </p>
+                              </div>
+                            </div>
+                            <div class="ju2">
+				              <div class="box-bottom-2">
+                    	       <p class="box-bottom-p">
+                    		      <span title="Kar98K" class="box-bottom-s1">Kar98K</span>
+                    		      <span title="Kar98K" class="box-bottom-s2">详情</span>
+                    		      <img title="Kar98K" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	       </p>
+                              </div>
+                            </div>
+                            <div class="ju3">
+				              <div class="box-bottom-2">
+                    	       <p class="box-bottom-p">
+                    		      <span title="M24" class="box-bottom-s1">M24</span>
+                    		      <span title="M24" class="box-bottom-s2">详情</span>
+                    		      <img title="M24" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	       </p>
+                              </div>
+                            </div>
+                            <div class="ju4">
+				              <div class="box-bottom-2">
+                    	       <p class="box-bottom-p">
+                    		      <span title="Win94" class="box-bottom-s1">Win94</span>
+                    		      <span title="Win94" class="box-bottom-s2">详情</span>
+                    		      <img title="Win94" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	       </p>
+                              </div>
+                            </div>
+                	    </div>
+                    </div>
+                    <div class="chongfeng">
+                    	<div class="cf">冲锋枪</div>
+                	    <div class="jinzhan">射速专精</div>
+                	    <div class="cc">
+                	    	<div class="c1">
+				              <div class="box-bottom-2">
+                    	       <p class="box-bottom-p">
+                    		      <span title="UZI" class="box-bottom-s1">UZI</span>
+                    		      <span title="UZI" class="box-bottom-s2">详情</span>
+                    		      <img title="UZI" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	       </p>
+                              </div>
+                            </div>
+                            <div class="c2">
+				              <div class="box-bottom-2">
+                    	       <p class="box-bottom-p">
+                    		      <span title="汤姆逊冲锋枪" class="box-bottom-s1">汤姆逊冲锋枪</span>
+                    		      <span title="汤姆逊冲锋枪" class="box-bottom-s2">详情</span>
+                    		      <img title="汤姆逊冲锋枪" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	       </p>
+                              </div>
+                            </div>
+                            <div class="c3">
+				              <div class="box-bottom-2">
+                    	       <p class="box-bottom-p">
+                    		      <span title="UMP9" class="box-bottom-s1">UMP9</span>
+                    		      <span title="UMP9" class="box-bottom-s2">详情</span>
+                    		      <img title="UMP9" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	       </p>
+                              </div>
+                            </div>
+                            <div class="c4">
+				              <div class="box-bottom-2">
+                    	       <p class="box-bottom-p">
+                    		      <span title="Vector" class="box-bottom-s1">Vector</span>
+                    		      <span title="Vector" class="box-bottom-s2">详情</span>
+                    		      <img title="Vector" class="box-bottom-s3" src="img/icon_arrow.png"/>
+                    	       </p>
+                              </div>
+                            </div>
+                            
+                    </div>
+                    
+            </div>
+            </div>
+            </div>
+          </div>
+        <div class="footer">       
+            <div class="footertu"></div>
+            <div class="dibutu"></div>
+            <div class="dbtu"></div>
+            <div class="footerwz">
+            	<p>腾讯互动娱乐|服务条款|腾讯游戏隐私保护指引|腾讯游戏招聘|腾讯游戏客服|游戏地图|商务合作|腾讯网|网站导航</p>
+            	<p>腾讯公司版权所有</p>
+            	<p>COPYRIGHT © 1998 - 2019 TENCENT. ALL RIGHTS RESERVED.</p>
+            	<p>抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+            	<p>本网络游戏适合16+岁的用户使用；为了您的健康，请合理控制游戏时间。</p>
+            	<p>粤网文[2017]6138-1456号|（总）网出证（粤）字第057号</p>
+            </div>
+         </div> 
+           
+	</body>
+</html>

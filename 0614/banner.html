@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.banner{
+				width: 1000px;
+				height: 500px;
+				border: 1px solid red;
+				margin: 0 auto;
+				margin-top: 30px;
+				position: relative;				 				  
+			}
+			#tu{
+				width: 1000px;
+				height: 500px;
+				
+			}
+			#btn{
+				width: 100px;
+				height: 40px;
+				background-color: cadetblue;
+				margin-left: 100px;
+				position: absolute;
+				
+				
+			}
+			#bt{
+				width: 100px;
+				height: 40px;
+				background-color: cadetblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="banner">
+			<img id="tu" src="img/u=zthrtfg153.jpg" />
+		</div>
+		<button id="btn"> > </button>
+		<button id="btn"> < </button>
+	</body>
+	<script type="text/javascript">
+		
+		var tu=document.getElementById("tu");
+		var x=0;
+		var imgs=["img/u=zthrtfg153.jpg","img/u=erhagtbh123561.jpg" ,"img/u=496329431,2253232812&fm=27&gp=0.jpg","img/u=1680886753,3531678860&fm=26&gp=0.jpg","img/u=1793760722,2142482464&fm=26&gp=0.jpg","img/u=3827272599,4144405931&fm=26&gp=0.jpg" ]
+		function qiehuan( ){
+			x=x+1;
+			if(x>5){
+				x=0;
+			}
+			tu.src=imgs[x]; 
+		}
+		setInterval(qiehuan,3000);
+			 
+		
+	</script>
+</html>

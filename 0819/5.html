@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 300px;
+				height: 200px;
+				background-color: red;
+			}
+			/*后代选择器*/
+			/*.box p a{
+				color: green;
+				font-size: 100px;
+			}*/
+			/*.sa{
+				color: green;
+				font-size: 100px;	
+			}*/
+			.box .sa{
+				color: green;
+				font-size: 100px;	
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<p>
+				<a class="sa" href="#">哈哈</a>
+			</p>
+		</div>
+		<a class="sa" href="#">哈哈</a>
+		<a href="#">哈哈</a>
+	</body>
+</html>

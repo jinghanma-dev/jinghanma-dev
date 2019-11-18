@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 1200px;
+				height: 70px;
+				margin: 0 auto;								
+			}
+			.box1{
+				width: 200px;
+				height: 70px;
+				text-align: center;
+				line-height: 70px;
+				list-style: none;
+				background-color: burlywood;
+				float: left;
+				
+				border-right: 1px solid brown;
+			}
+			.box1:hover{
+				background-color: red;
+			}
+			.box2:hover{
+				background-color: red;
+			}
+			.box3:hover{
+				background-color: red;
+			}
+			.box4:hover{
+				background-color: red;
+			}
+			.box5:hover{
+				background-color: red;
+			}
+			.box2{
+				width: 200px;
+				height: 70px;
+				text-align: center;
+				line-height: 70px;
+				list-style: none;
+				background-color: burlywood;
+				float: left;
+				border-right: 1px solid brown;
+			}
+			.box3{
+				width: 200px;
+				height: 70px;
+				text-align: center;
+				line-height: 70px;
+				list-style: none;
+				background-color: burlywood;
+				float: left;
+				border-right: 1px solid brown;
+			}
+			.box4{
+				width: 200px;
+				height: 70px;
+				text-align: center;
+				line-height: 70px;
+				list-style: none;
+				background-color: burlywood;
+				float: left;
+				border-right: 1px solid brown;
+			}
+			.box5{
+				width: 200px;
+				height: 70px;
+				text-align: center;
+				line-height: 70px;
+				list-style: none;
+				background-color: burlywood;
+				float: left;
+				border-right: 1px solid brown;
+			}
+			.tu{
+				width: 1000px;
+				height: 500px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.tu1{
+				width: 1000px;
+				height: 500px;
+				margin: 0 auto;
+				background-image: url(img/timg1.jpg);
+				/*background-color: green;*/
+				background-repeat: no-repeat;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			.tu2{
+				width: 1000px;
+				height: 500px;
+				margin: 0 auto;
+				background-image: url(img/timg1.jpg);
+				background-size: 1000px,500px;
+				/*background-color:blueviolet;*/
+				position: absolute;
+				left:0;
+				top: 0;
+			}
+			.tu3{
+				width: 1000px;
+				height: 500px;
+				margin: 0 auto;
+				background-image: url(img/timg1.jpg);
+				background-size: 1000px,500px;
+				/*background-color: red;*/
+				position: absolute;
+				display: none;
+				left: 0;
+				top: 0;
+			}
+			.tu4{
+				width: 1000px;
+				height: 500px;
+				margin: 0 auto;
+				background-image: url(img/timg1.jpg);
+				/*background-color: darkcyan;*/
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			.tu5{
+				width: 1000px;
+				height: 500px;
+				margin: 0 auto;
+				background-image: url(img/timg1.jpg);
+				/*background-color: yellow;*/
+				position: absolute;
+				background-size: 1000px,500px;
+				left: 0;
+				top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li class="box1">1221212</li>
+				<li class="box2">1221212</li>
+				<li class="box3">1221212</li>
+				<li class="box4">1221212</li>
+				<li class="box5">1221212</li>
+			</ul>
+		</div>
+		<div class="tu">
+		<div class="tu1"></div>
+		<div class="tu2"></div>
+		<div class="tu3"></div>
+		<div class="tu4"></div>
+		<div class="tu5"></div>
+		</div>
+		<script type="text/javascript">
+			var box1 = document.querySelector(".box1");
+			var tu1 = document.querySelector(".tu1");
+			var box2 = document.querySelector(".box2");
+			var tu2 = document.querySelector(".tu2");
+			var box3 = document.querySelector(".box3");
+			var tu3 = document.querySelector(".tu3");
+			var box4 = document.querySelector(".box4");
+			var tu4 = document.querySelector(".tu4"); 
+			var box5 = document.querySelector(".box5");
+			var tu5 = document.querySelector(".tu5"); 
+			box1.onmouseover = function( ){
+				tu1.style.display="block";
+				tu2.style.display="none";
+				tu3.style.display="none";
+				tu4.style.display="none";
+				tu5.style.display="none";
+			}
+			box2.onmouseover= function( ){
+				tu1.style.display="none";
+				tu2.style.display="block";
+				tu3.style.display="none";
+				tu4.style.display="none";
+				tu5.style.display="none";
+			}
+			box3.onmouseover = function( ){
+				tu1.style.display="none";
+				tu2.style.display="none";
+				tu3.style.display="block";
+				tu4.style.display="none";
+				tu5.style.display="none";
+			}
+			box4.onmouseover = function( ){
+				tu1.style.display="none";
+				tu2.style.display="none";
+				tu3.style.display="none";
+				tu4.style.display="block";
+				tu5.style.display="none";
+			}
+			box5.onmouseover = function( ){
+				tu1.style.display="none";
+				tu2.style.display="none";
+				tu3.style.display="none";
+				tu4.style.display="none";
+				tu5.style.display="block";
+			}
+		</script>
+	</body>
+</html>

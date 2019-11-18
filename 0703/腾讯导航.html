@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.daohang {
+				width: 800px;
+				height: 80px;
+				margin: 0 auto;
+				list-style: none;
+				margin-top: -80px;
+				margin-left: 355px;
+			}
+			
+			.daohang li {
+				background-image: url(img/nav-on.2.png);
+				height: 80px;
+				float: left;
+			}
+			
+			.daohang1 {
+				width: 92px;
+			}
+			
+			.daohang2 {
+				width: 112px;
+				background-position-x: -91px;
+			}
+			
+			.daohang3 {
+				width: 132px;
+				background-position-x: -205px;
+			}
+			
+			.daohang4 {
+				width: 108px;
+				background-position-x: -338px;
+			}
+			
+			.daohang5 {
+				width: 113px;
+				background-position-x: -446px;
+			}
+			
+			.daohang6 {
+				width: 112px;
+				background-position-x: -559px;
+			}
+			
+			.daohang7 {
+				width: 110px;
+				background-position-x: -671px;
+			}
+			
+			.daohang li:hover {
+				background-image: url(img/nav-on.png);
+			}
+			
+			.daohang .daohang1 {
+				background-image: url(img/nav-on.png);
+			}
+			
+			.caidan {
+				width: 1300px;
+				height: 80px;
+				/*background-color: rosybrown;*/
+				margin: 0 auto;
+			}
+			
+			.toptu {
+				width: 310px;
+				height: 80px;
+				background-image: url(img/logo.png);
+			}
+			
+			.sou {
+				width: 142px;
+				height: 80px;
+				background-repeat: no-repeat;
+				/*border: 1px solid red;*/
+				float: right;
+				margin-top: -75px;
+			}
+			
+			.submit {
+				width: 45px;
+				height: 30px;
+				font-size: 14px;
+				margin-left: 8px;
+				margin-top: 38px;
+				float: left;
+			}
+			
+			.soutu {
+				width: 50px;
+				height: 40px;
+				background-image: url(img/search.png);
+				background-repeat: no-repeat;
+				/*line-height: 50px;*/
+				font-size: 18px;
+				margin-top: 10px;
+				background-position-y: 10px;
+				/*background-color: green;*/
+				border-right: 1px solid darkgrey;
+			}
+			
+			.liantu {
+				width: 40px;
+				height: 40px;
+				background-image: url(img/qq.png);
+				background-size: 40px 40px;
+				float: left;
+				margin-left: 66px;
+				margin-top: 4px;
+			}
+			
+			.soukuang {
+				width: 300px;
+				height: 60px;
+				border-top: 1px solid #FD7701;
+				background-color: whitesmoke;
+				float: left;
+				margin-left: -158px;
+				margin-top: 30px;
+				display: none;
+			}
+			
+			.yanjianng {
+				font-size: 16px;
+				color: darkgrey;
+				line-height: 30px;
+				float: left;
+				margin-left: 20px;
+				margin-top: 14px;
+				/*display: none;*/
+			}
+			
+			.ss {
+				width: 55px;
+				height: 34px;
+				font-size: 20px;
+				text-align: center;
+				float: left;
+				margin-left: -1px;
+				margin-top: 14px;
+				background-color: #FD7701;
+				color: white;
+				line-height: 34px;
+				/*display: none;*/
+			}
+			
+			.soutu:hover .soukuang {
+				display: block;
+			}
+			
+			.yinyin {
+				width: 100%;
+				height: 1px;
+				background-color: #333;
+				box-shadow: 0px 5px 13px 5px black;
+				margin: 0 auto;
+			}
+			.bannershow{
+				width:1440px;
+				height:360px;
+				margin:0 auto;
+			}
+			
+			.banner {
+				width: 1440px;
+				overflow: hidden;
+			}
+			
+			.content {
+				width: 2880px;
+				transition: all 0.5s;
+				margin: 0 auto;
+			}
+			
+			img {
+				width: 1440px;
+				height: 360px;
+				float: left;
+				
+			}
+			
+			.circle {
+				width: 100px;
+				height: 30px;
+				/*border:  1px solid red;*/
+				float: left;
+				margin-left: 1140px;
+				margin-top: -45px;
+			}
+			
+			.c1 {
+				width: 30px;
+				height: 30px;
+				/*background-color: brown;*/
+				float: left;
+				margin-left: 12px;
+				background-image: url(img/banner-on.png);
+				background-position-x: 7px;
+				background-position-y: 7px;
+				background-repeat: no-repeat;
+			}
+			
+			.c2 {
+				width: 30px;
+				height: 30px;
+				/*background-color: brown;*/
+				float: left;
+				margin-left: 12px;
+				background-image: url(img/banner-counter.png);
+				background-position-x: -46px;
+				background-position-y: 7px;
+				background-repeat: no-repeat;
+			}
+			
+			.laba {
+				width: 1440px;
+				height: 30px;
+				margin: 0 auto;
+				padding-left: 230px;
+				/*border: 1px solid blueviolet;*/
+			}
+			
+			.labatu {
+				width: 50px;
+				height: 30px;
+				/*border: 1px solid blueviolet;*/
+				background-image: url(img/icon-speaker.png);
+				background-repeat: no-repeat;
+				background-position-x: 20px;
+				background-position-y: 5px;
+				float: left;
+			}
+			
+			.labazi {
+				font-size: 15px;
+				line-height: 30px;
+				float: left;
+			}
+			
+			.dakuang {
+				width: 100%;
+				/*height: 2040px;*/
+				overflow: hidden;
+				background-color: #D6DAE2;
+				margin: 0 auto;
+				float: left;
+				position: relative;
+				padding-top: 20px;
+			}
+			
+			.lr {
+				width: 1200px;
+				/*height: 2300px;*/
+				overflow: hidden;
+				margin: 0 auto;
+				/*border: 1px solid green;*/
+			}
+			
+			.remen {
+				width: 780px;
+				height: 355px;
+				/*border: 1px solid red;*/
+				margin: 0 auto;
+				float: left;
+				background-color: rgb(242, 241, 239);
+			}
+			
+			.gtitle {
+				width: 780px;
+				height: 60px;
+				/*background-color: red;*/
+				line-height: 60px;
+				background-image: url(img/icon-lesson.png);
+				background-repeat: no-repeat;
+				background-position-x: 20px;
+				background-position-y: center;
+				text-indent: 50px;
+				font-size: 20px;
+				background-color: rgb(242, 241, 239);
+			}
+			
+			.more {
+				float: right;
+				font-size: 12px;
+				text-decoration: none;
+				color: gray;
+			}
+			
+			.navre {
+				width: 770px;
+				height: 270px;
+				/*background-color: cornflowerblue;*/
+				margin: 0 auto;
+				float: left;
+			}
+			
+			.navre1 {
+				width: 226px;
+				height: 270px;
+				background-color: white;
+				float: left;
+				margin-left: 24px;
+			}
+			
+			.nrtu1 {
+				width: 226px;
+				height: 158px;
+				background-image: url(img/r1.png);
+				border-bottom: 3px solid #1FC0EF;
+				background-size: 100% 100%;
+				float: left;
+			}
+			
+			.nrzi1 {
+				width: 226px;
+				height: 110px;
+				/*background-color: #FD7701;*/
+				float: left;
+			}
+			
+			.retitle1 {
+				padding-top: 15px;
+				padding-left: 10px;
+			}
+			
+			.rrmm1 {
+				font-size: 15px;
+				text-decoration: none;
+				color: black;
+			}
+			
+			.retext1 {
+				font-size: 15px;
+				padding-left: 10px;
+				color: gray;
+			}
+			
+			.nrtu2 {
+				width: 226px;
+				height: 158px;
+				background-image: url(img/r2.png);
+				border-bottom: 3px solid #F6A544;
+				background-size: 100% 100%;
+				float: left;
+			}
+			
+			.nrtu3 {
+				width: 226px;
+				height: 158px;
+				background-image: url(img/r3.png);
+				border-bottom: 3px solid #8CBE00;
+				background-size: 100% 100%;
+				float: left;
+			}
+			
+			.ganhuofenxiang {
+				width: 780px;
+				height: 500px;
+				background-color: rgb(242, 241, 239);
+				/*border: 1px solid red;*/
+				float: left;
+			}
+			
+			.gtitle1 {
+				width: 780px;
+				height: 60px;
+				/*background-color: red;*/
+				line-height: 60px;
+				background-image: url(img/icon-share.png);
+				background-repeat: no-repeat;
+				background-position-x: 20px;
+				background-position-y: center;
+				text-indent: 50px;
+				font-size: 20px;
+				background-color: rgb(242, 241, 239);
+			}
+			
+			.share {
+				width: 100%;
+				height: 120px;
+				background-color: white;
+				background-image: url(img/icon-at.png);
+				background-repeat: no-repeat;
+				background-position-x: 683px;
+				background-position-y: -5px;
+			}
+			
+			.share .tu {
+				width: 126px;
+				height: 86px;
+				float: left;
+				margin: 17px 20px;
+			}
+			
+			.share .tu img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.share .wenben {
+				width: 500px;
+				height: 100px;
+				float: left;
+				margin-left: 10px;
+				margin-top: 10px;
+				/*	background-color: aquamarine ;*/
+			}
+			
+			.wenben .title {
+				font-size: 18px;
+			}
+			
+			.wenben .time {
+				font-size: 12px;
+				color: burlywood;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				line-height: 15px;
+				/*background-color: blueviolet;*/
+				background-image: url(img/icons.png);
+				background-repeat: no-repeat;
+				text-indent: 15px;
+				background-position-y: -5px;
+			}
+			
+			.wenben .mx {
+				font-size: 14px;
+			}
+			
+			.share2 {
+				margin-top: 20px;
+				margin-bottom: 20px;
+				background-image: url(img/icon-video.png);
+			}
+			
+			.share3 {
+				background-image: url(img/icon-laptop.png);
+			}
+			
+			.nrtu4 {
+				width: 226px;
+				height: 158px;
+				background-image: url(img/04.png);
+				border-bottom: 3px solid #1FC0EF;
+				background-size: 100% 100%;
+				float: left;
+			}
+			
+			.nrtu5 {
+				width: 226px;
+				height: 158px;
+				background-image: url(img/05.jpg);
+				border-bottom: 3px solid #F6A544;
+				background-size: 100% 100%;
+				float: left;
+			}
+			
+			.nrtu6 {
+				width: 226px;
+				height: 158px;
+				background-image: url(img/06.png);
+				border-bottom: 3px solid #8CBE00;
+				background-size: 100% 100%;
+				float: left;
+			}
+			
+			.jingpinkecheng {
+				width: 780px;
+				height: 790px;
+				/*border: 1px solid red;*/
+				margin: 0 auto;
+				float: left;
+				background-color: rgb(242, 241, 239);
+			}
+			
+			.jing {
+				width: 350px;
+				height: 358px;
+				/*border: 1px solid blueviolet;*/
+				float: left;
+				margin: 0 auto;
+				margin-left: 25px;
+				margin-top: 5px;
+				background-color: white;
+			}
+			
+			.xt1 {
+				width: 319px;
+				height: 24px;
+				background-image: url(img/bout-title-bg.png);
+				/*background-size: 100% 100%;*/
+				background-position-x: 0px;
+				background-position-y: 0px;
+				/*background-color: royalblue;*/
+				background-repeat: no-repeat;
+				float: left;
+			}
+			
+			.jzi {
+				float: left;
+				margin-left: 40px;
+			}
+			
+			.more1 {
+				float: right;
+				font-size: 12px;
+				text-decoration: none;
+				color: gray;
+				margin-top: 10px;
+			}
+			
+			.jtu1 {
+				width: 350px;
+				height: 236px;
+				/*border: 1 px solid green;*/
+				background-image: url(img/j1.png);
+				float: left;
+				margin-top: 20px;
+				background-size: 100% 100%;
+			}
+			
+			.jtitle {
+				font-size: 14px;
+				color: black;
+				text-decoration: none;
+				float: left;
+				margin-left: 10px;
+				margin-top: 8px;
+			}
+			
+			.jtext {
+				font-size: 15px;
+				color: gray;
+				text-decoration: none;
+				float: left;
+				margin-left: 10px;
+				margin-top: 8px;
+			}
+			
+			.jtu2 {
+				width: 350px;
+				height: 236px;
+				border: 1 px solid green;
+				background-image: url(img/j2.jpg);
+				float: left;
+				margin-top: 20px;
+				background-size: 100% 100%;
+			}
+			
+			.jtu3 {
+				width: 350px;
+				height: 236px;
+				border: 1 px solid green;
+				background-image: url(img/j3.jpg);
+				float: left;
+				margin-top: 20px;
+				background-size: 100% 100%;
+			}
+			
+			.jtu4 {
+				width: 350px;
+				height: 236px;
+				border: 1 px solid green;
+				background-image: url(img/j4.png);
+				float: left;
+				margin-top: 20px;
+				background-size: 100% 100%;
+			}
+			
+			.xt2 {
+				width: 319px;
+				height: 24px;
+				background-image: url(img/bout-title-bg.png);
+				/*background-size: 100% 100%;*/
+				background-position-x: 0px;
+				background-position-y: -24px;
+				/*background-color: royalblue;*/
+				background-repeat: no-repeat;
+				float: left;
+			}
+			
+			.xt3 {
+				width: 319px;
+				height: 24px;
+				background-image: url(img/bout-title-bg.png);
+				/*background-size: 100% 100%;*/
+				background-position-x: 0px;
+				background-position-y: -48px;
+				/*background-color: royalblue;*/
+				background-repeat: no-repeat;
+				float: left;
+			}
+			
+			.xt4 {
+				width: 319px;
+				height: 24px;
+				background-image: url(img/bout-title-bg.png);
+				/*background-size: 100% 100%;*/
+				background-position-x: 0px;
+				background-position-y: -72px;
+				/*background-color: royalblue;*/
+				background-repeat: no-repeat;
+				float: left;
+			}
+			
+			.left {
+				/*float: left;*/
+				width: 780px;
+				height: 2015px;
+				/*border: 1px solid blue;*/
+				/*background-color: red;*/
+			}
+			
+			.right {
+				width: 236px;
+				height: 1970px;
+				/*overflow: hidden;*/
+				float: right;
+				background-color: white;
+				margin-top: -2015px;
+				padding: 15px;
+				margin-right: 135px;
+			}
+			
+			.topyou {
+				width: 235px;
+				height: 40px;
+				/*background-color: green;*/
+				padding-top: 10px;
+			}
+			
+			.tytu {
+				background-image: url(img/icon-rank.png);
+				background-repeat: no-repeat;
+				float: left;
+				width: 35px;
+				height: 40px;
+			}
+			
+			.yts {
+				background-image: url(img/rank-tab-gray-bg.png);
+				background-repeat: no-repeat;
+				width: 235px;
+				height: 40px;
+				margin: 0 auto;
+				/*background-color: blueviolet;*/
+			}
+			
+			.zuixinke {
+				float: left;
+			}
+			
+			.yts li {
+				list-style: none;
+				float: left;
+				font-size: 14px;
+			}
+			
+			.zuirepaihang {
+				width: 112px;
+				height: 32px;
+				border: 1px solid gray;
+				text-align: center;
+				line-height: 32px;
+				border-bottom: none;
+				margin-left: 1px;
+				cursor: pointer;
+				color: #000000;
+			}
+			
+			.xinkeshangxian {
+				cursor: pointer;
+				width: 109px;
+				height: 32px;
+				border-bottom: 1px solid gray;
+				text-align: center;
+				line-height: 32px;
+				color: gray;
+			}
+			
+			.rightnav1 {
+				width: 226px;
+				height: 160px;
+				background-color: royalblue;
+				margin-top: 20px;
+				background-image: url(img/xl1.jpg);
+				background-size: 100% 100%;
+				overflow: hidden;
+			}
+			
+			.ynavxia {
+				width: 226px;
+				height: 26px;
+				background-color: #061E1A;
+				float: left;
+				margin-top: 134px;
+			}
+			
+			.nums {
+				width: 20px;
+				height: 26px;
+				background-color: red;
+				color: white;
+				font-size: 14px;
+				line-height: 28px;
+				text-align: center;
+			}
+			
+			.ynavzi {
+				font-size: 14px;
+				float: left;
+				margin-left: 30px;
+				margin-top: -22px;
+				color: white;
+				text-overflow: ellipsis;
+				white-space:nowrap;
+				overflow: hidden;
+				width: 180px;
+				height: 20px;
+			}
+			
+			.rightnav2 {
+				width: 226px;
+				height: 160px;
+				background-color: royalblue;
+				margin-top: 20px;
+				background-image: url(img/xl2.jpg);
+				background-size: 100% 100%;
+			}
+			
+			.rightnav3 {
+				width: 226px;
+				height: 160px;
+				background-color: royalblue;
+				margin-top: 20px;
+				background-image: url(img/xl3.png);
+				background-size: 100% 100%;
+			}
+			
+			.rightnav4 {
+				width: 226px;
+				height: 160px;
+				background-color: royalblue;
+				margin-top: 20px;
+				background-image: url(img/xl4.jpg);
+				background-size: 100% 100%;
+			}
+			
+			.rightnav5 {
+				width: 226px;
+				height: 160px;
+				margin-top: 20px;
+				background-image: url(img/xl5.jpg);
+				background-size: 100% 100%;
+			}
+			
+			.nums2 {
+				background-color: #EC5A2E;
+			}
+			
+			.nums3 {
+				background-color: #F6A544;
+			}
+			
+			.nums4 {
+				background-color: #EC5A2E;
+			}
+			
+			.nums5 {
+				background-color: #F6A544;
+			}
+			
+			.yx1 {
+				width: 20px;
+				height: 21px;
+				background-image: url(img/icon-rank-item.png);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				color: white;
+				float: left;
+				text-align: center;
+				line-height: 21px;
+				
+			}
+			
+			.yx {
+				width: 222px;
+				height: 21px;
+				/*border: 1px solid darkgoldenrod;*/
+				font-size: 14px;
+				float: left;
+				padding: 5px 0;
+				text-overflow: ellipsis;
+				white-space:nowrap;
+				overflow: hidden;
+			}
+			
+			.right .side {
+				width: 235px;
+				height: 380px;
+				border-top: 1px gray solid;
+				margin: 0 auto;
+				float: left;
+			}
+			
+			.yxkk {
+				width: 235px;
+				height: 160px;
+				margin: 0 auto;
+			}
+			
+			.sidetu {
+				width: 225px;
+				height: 160px;
+				margin: 0 auto;
+				background-image: url(img/daxue_intro.png);
+				margin-top: 20px;
+			}
+			
+			.sidexiaotu {
+				width: 26px;
+				height: 26px;
+				background-image: url(img/icon-mark.png);
+				background-repeat: no-repeat;
+				float: left;
+				margin-top: -10px;
+				margin-left: 100px;
+			}
+			
+			.sidetitle {
+				width: 225px;
+				height: 40px;
+				font-size: 20px;
+				line-height: 40px;
+			}
+			
+			.sidetext {
+				width: 225px;
+				height: 125px;
+				font-size: 15px;
+			}
+			
+			.sidecontent {
+				width: 225px;
+				height: 100px;
+				border-top: 1px solid gray;
+			}
+			
+			.sc1 {
+				width: 225px;
+				height: 30px;
+				float: left;
+				margin-left: 35px;
+				margin-top: -27px;
+				font-size: 20px;
+			}
+			
+			.sctu {
+				width: 25px;
+				height: 25px;
+				background-image: url(img/icon-phone.png);
+				background-repeat: no-repeat;
+				background-size: 25px 25px;
+				float: left;
+				margin-top: 10px;
+			}
+			
+			.sc2 {
+				width: 225px;
+				height: 25px;
+				font-size: 15px;
+				float: left;
+				margin-top: 15px;
+			}
+			
+			.sc3 {
+				width: 225px;
+				height: 25px;
+				font-size: 15px;
+				float: left;
+				margin-top: 5px;
+			}
+			
+			.rzui {
+				width: 200px;
+				height: 110px;
+				background-color: #D4D4D4;
+				margin: 0 auto;
+				margin-top: 50px;
+			}
+			
+			.ruitext {
+				width: 200px;
+				height: 50px;
+				margin: 0 auto;
+				font-size: 30px;
+				text-align: center;
+				font-weight: 600;
+			}
+			
+			.rzuitu {
+				width: 160px;
+				height: 40px;
+				margin: 0 auto;
+				background-image: url(img/exam-btn.png);
+			}
+			
+			.cadai {
+				width: 100%;
+				height: 3px;
+				background-color: cadetblue;
+				float: left;
+			}
+			
+			.cadai1 {
+				width: 25%;
+				background-color: #1FC0EF;
+			}
+			
+			.cadai2 {
+				width: 25%;
+				background-color: #F6A544;
+			}
+			
+			.cadai3 {
+				width: 25%;
+				background-color: #8CBE00;
+			}
+			
+			.cadai4 {
+				width: 25%;
+				background-color: #FF6C00;
+			}
+			
+			.kaifanngpingtai {
+				font-size: 10px;
+				width: 1000px;
+				background-color: white;
+				margin: 0 auto;
+				height: 315px;
+			}
+			
+			.kaifanngpingtai img {
+				width: 75px;
+				height: 30px;
+				padding: 13px;
+				margin: 16px;
+				line-height: 10px;
+				cursor: pointer;
+			}
+			
+			.hezuohuoban {
+				font-size: 15px;
+			}
+			
+			.xiabian {
+				width: 100%;
+				height: 100px;
+				background-color: darkgray;
+				text-align: center;
+				padding-top: 40px;
+				padding-bottom: 20px;
+				font-size: 14px;
+				float: left;
+				margin: 0 auto;
+				/*margin-top: 10px;*/
+			}
+			
+			.kaifang {
+				width: 1000px;
+				height: 20px;
+				line-height: 20px;
+				float: left;
+				margin-top: 20px;
+				font-size: 14px;
+			}
+			
+			.kaifang1 {
+				width: 1000px;
+				height: 20px;
+				line-height: 20px;
+				float: left;
+				margin-top: 0px;
+				font-size: 14px;
+				margin-left: 5px;
+			}
+			
+			.footerlian {
+				width: 1000px;
+				height: 50px;
+				margin: 0 auto;
+				/*border: 1px solid red;*/
+				float: left;
+				margin-top: 15px;
+			}
+			
+			.footerlian a {
+				text-decoration: none;
+				color: black;
+				font-size: 14px;
+				margin-left: 36px;
+				margin-top: 10px;
+				width: 790px;
+				height: 50px;
+			}
+			
+			.footer {
+				width: 100%;
+				height: 315px;
+				margin: 0 auto;
+				background-color: white;
+			}
+			
+			.erweima {
+				width: 120px;
+				height: 165px;
+				background-color: white;
+				float: right;
+				margin-top: -2015px;
+				margin-right: 0px;
+			}
+			
+			.matext1 {
+				width: 120px;
+				height: 25px;
+				font-size: 14px;
+				float: left;
+				margin-bottom: -8px;
+			}
+			
+			.matext2 {
+				width: 120px;
+				height: 25px;
+				font-size: 14px;
+				float: left;
+				margin-top: 15px;
+			}
+			
+			.matu {
+				width: 120px;
+				height: 130px;
+				background-image: url(img/qr.jpg);
+				background-size: 100% 100%;
+				float: left;
+				margin-bottom: -17px;
+			}
+			
+			.xbtext {
+				margin-top: 10px;
+			}
+			.rightcon1{
+				width: 226px;
+				height: 1055px;
+				/*border: 1px solid red;*/
+			}
+			.rightcon2{
+				width: 226px;
+				height: 1055px;
+				/*border: 1px solid red;*/
+				display: none;
+			}
+			.rightnav6 {
+				width: 226px;
+				height: 160px;
+				margin-top: 20px;
+				background-image: url(img/xk1.jpg);
+				background-size: 100% 100%;
+			}
+			.rightnav7 {
+				width: 226px;
+				height: 160px;
+				margin-top: 20px;
+				background-image: url(img/xk2.png);
+				background-size: 100% 100%;
+			}
+			.rightnav8 {
+				width: 226px;
+				height: 160px;
+				margin-top: 20px;
+				background-image: url(img/xk3.png);
+				background-size: 100% 100%;
+			}
+			.rightnav9{
+				width: 226px;
+				height: 160px;
+				margin-top: 20px;
+				background-image: url(img/xk4.png);
+				background-size: 100% 100%;
+			}
+			.rightnav10 {
+				width: 226px;
+				height: 160px;
+				margin-top: 20px;
+				background-image: url(img/xk5.png);
+				background-size: 100% 100%;
+			}
+			.zuirepaihang1{
+				color: #000000 ;
+			}
+			.xinkeshangxian1{
+				color: #919191 ;
+			}
+			.xinkeshangxian2{
+				color: #000000 ;
+			}
+			.zuirepaihang2{
+				color: #919191 ;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="caidan">
+			<div class="toptu"></div>
+			<ul class="daohang">
+				<li class="daohang1"></li>
+				<a href="https://daxue.qq.com/" title="微信学院">
+					<li class="daohang2"></li>
+				</a>
+				<li class="daohang3"></li>
+				<li class="daohang4"></li>
+				<li class="daohang5"></li>
+				<a href="https://lol.qq.com" title="游戏学院">
+					<li class="daohang6"></li>
+				</a>
+				<li class="daohang7"></li>
+			</ul>
+			<div class="sou">
+				<div class="liantu">
+					<a href="##">
+						<p class="submit"> 登录</p>
+					</a>
+				</div>
+				<div class="soutu">
+					<div class="soukuang">
+						<input class="yanjianng" type="text" placeholder="马化腾演讲" />
+						<div class="ss">搜索</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="yinyin"></div>
+		<div class="bannershow">
+		<div class="banner">
+			<div class="content">
+				<img src="img/1.png" />
+				<img src="img/2.jpg" />
+			</div>
+			<div class="circle">
+				<div class="c1"></div>
+				<div class="c2"></div>
+			</div>
+		</div>
+		</div>
+		<div class="laba">
+			<div class="labatu"></div>
+			<p class="labazi">直播预告：直播还没开始哦，看看我们的推荐吧！</p>
+		</div>
+		<div class="dakuang">
+			<div class="lr">
+				<div class="left">
+					<div class="remen">
+						<div class="gtitle">
+							热门课程
+							<a class="more" href="#">more</a>
+						</div>
+						<div class="navre">
+							<div class="navre1">
+								<div class="nrtu1"></div>
+								<div class="nrzi1">
+									<p class="retitle1">
+										<a href="##" class="rrmm1">买不到女朋友喜欢的礼物？看...</a>
+									</p>
+									<p class="retext1">大数据如何助力零售升级？京东大数据有哪些应用？</p>
+								</div>
+							</div>
+							<div class="navre2">
+								<div class="navre1">
+									<div class="nrtu2"></div>
+									<div class="nrzi1">
+										<p class="retitle1">
+											<a href="##" class="rrmm1">超级IP工厂—阅文如何扛鼎...</a>
+										</p>
+										<p class="retext1">阅文集团打造IP的实战案例和对IP市场的洞察分享</p>
+									</div>
+								</div>
+							</div>
+							<div class="navre3">
+								<div class="navre1">
+									<div class="nrtu3"></div>
+									<div class="nrzi1">
+										<p class="retitle1">
+											<a href="##" class="rrmm1">腾大直播间 | 解码腾讯产业时...</a>
+										</p>
+										<p class="retext1">大数据如何助力零售升级？京东大数据有哪些应用？</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ganhuofenxiang">
+						<div class="gtitle1">
+							干货分享
+							<a class="more" href="#">more</a>
+						</div>
+						<div class="share share1">
+							<div class="tu">
+								<img src="img/0531-1.png" />
+							</div>
+							<div class="wenben">
+								<p class="title">996下互联网人生存图鉴</p>
+								<p class="time">2019-04-24 10:48</p>
+								<p class="mx">梦想666，现实996</p>
+							</div>
+						</div>
+						<div class="share share2">
+							<div class="tu">
+								<img src="img/share2.png" />
+							</div>
+							<div class="wenben">
+								<p class="title">知乎高赞回答：这项能力让你在互联网寒冬蓄能成长</p>
+								<p class="time">2019-04-24 10:56</p>
+								<p class="mx">没时间学习、阅读不成体系、碎片化学习效率不高……在当代社会，如何终身有效学习，已经成为职场人士特别是互联网从业者的最大痛点。</p>
+							</div>
+						</div>
+						<div class="share share3">
+							<div class="tu">
+								<img src="img/share3.png" />
+							</div>
+							<div class="wenben">
+								<p class="title">贩卖焦虑成为一门生意，可我不打算买单了</p>
+								<p class="time">2019-04-24 11:06</p>
+								<p class="mx">欢迎光临小腾老师的“解忧杂货店”</p>
+							</div>
+						</div>
+					</div>
+					<div class="remen">
+						<div class="gtitle">
+							专题课程
+							<a class="more" href="#">more</a>
+						</div>
+						<div class="navre">
+							<div class="navre1">
+								<div class="nrtu4"></div>
+								<div class="nrzi1">
+									<p class="retitle1">
+										<a href="##" class="rrmm1">临厂发挥</a>
+									</p>
+									<p class="retext1">腾讯大学2019全新自制《临厂发挥》，走进七个互联网大厂，分享最热门实战经...</p>
+								</div>
+							</div>
+							<div class="navre2">
+								<div class="navre1">
+									<div class="nrtu5"></div>
+									<div class="nrzi1">
+										<p class="retitle1">
+											<a href="##" class="rrmm1">2018先见未来大会</a>
+										</p>
+										<p class="retext1">我们在感受着科技带来的便利，同时也陷入到科技的迷思当中：未来将会变成怎...</p>
+									</div>
+								</div>
+							</div>
+							<div class="navre3">
+								<div class="navre1">
+									<div class="nrtu6"></div>
+									<div class="nrzi1">
+										<p class="retitle1">
+											<a href="##" class="rrmm1">《论道》</a>
+										</p>
+										<p class="retext1">《论道》是腾讯游戏学院打造的明星栏目，旨在分享游戏行业成功项目经验，为...</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="jingpinkecheng">
+						<div class="gtitle">
+							精品课程
+							<a class="more" href="#">more</a>
+						</div>
+						<div class="jing">
+							<div class="xt1">
+								<h4 class="jzi">产品-营销</h4>
+							</div>
+							<a class="more1" href="#">more</a>
+							<div class="jtu1"></div>
+							<a href="##" class="jtitle">腾大直播间 | 解码腾讯产业时代的产品经理思维</a>
+							<p class="jtext">听腾讯副总裁解码互联网下半场的产品经理思维。</p>
+						</div>
+						<div class="jing">
+							<div class="xt2">
+								<h4 class="jzi">设计-用研</h4>
+							</div>
+							<a class="more1" href="#">more</a>
+							<div class="jtu2"></div>
+							<a href="##" class="jtitle">腾讯美术负责人吴宝：深度解读国内技术美术岗位现状</a>
+							<p class="jtext">12年资深TA专家解读行业趋势和项目实践案例。</p>
+						</div>
+						<div class="jing">
+							<div class="xt3">
+								<h4 class="jzi">技术-运维</h4>
+							</div>
+							<a class="more1" href="#">more</a>
+							<div class="jtu3"></div>
+							<a href="##" class="jtitle">智能机器人与隐形冠军：探讨机器人系统、视觉与学习</a>
+							<p class="jtext">著名机器人专家陈义明教授做客腾讯，分享目前机器人技术落地的研究成果与面临挑战。</p>
+						</div>
+						<div class="jing">
+							<div class="xt4">
+								<h4 class="jzi">行业-创业</h4>
+							</div>
+							<a class="more1" href="#">more</a>
+							<div class="jtu4"></div>
+							<a href="##" class="jtitle">临厂发挥 | 快手VS抖音，越竞争越增长</a>
+							<p class="jtext">为什么说快手和抖音不是对手？</p>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="topyou">
+						<div class="tytu"></div>
+						<h3 class="tyzi">排行榜</h3>
+					</div>
+					<div class="yts">
+						<ul class="zuixinke">
+							<li class="zuirepaihang">最热排行</li>
+							<li class="xinkeshangxian">新课上线</li>
+						</ul>
+					</div>
+					<div class="rightcon1">
+					 <div class="rightnav1">
+						<div class="ynavxia">
+							<p class="nums">1</p>
+							<a href="#" class="zhangxl">
+								<p class="ynavzi">张小龙：微信四大价值观</p>
+							</a>
+						</div>
+					</div>
+					<div class="rightnav2">
+						<div class="ynavxia">
+							<p class="nums nums2">2</p>
+							<a href="#" class="zhangxl">
+								<p class="ynavzi">张小龙：小程序正式发布，开启移动应用新时代</p>
+							</a>
+						</div>
+					</div>
+					<div class="rightnav3">
+						<div class="ynavxia">
+							<p class="nums nums3">3</p>
+							<a href="#" class="zhangxl">
+								<p class="ynavzi">马化腾：腾讯将专注于做互联网的连接器</p>
+							</a>
+						</div>
+					</div>
+					<div class="rightnav4">
+						<div class="ynavxia">
+							<p class="nums nums4">4</p>
+							<a href="#" class="zhangxl">
+								<p class="ynavzi">IT领袖巅峰对话：未来下一个风口在哪里？</p>
+							</a>
+						</div>
+					</div>
+					<div class="rightnav5">
+						<div class="ynavxia">
+							<p class="nums nums5">5</p>
+							<a href="#" class="zhangxl">
+								<p class="ynavzi">马化腾：通向互联网未来的七个路标</p>
+							</a>
+						</div>
+					</div>
+					
+					<div class="yxkk">
+						<p class="yx">
+							<span class="yx1">6</span> 马化腾：“互联网+”时代，腾讯只做连接器和内容
+						</p>
+						<p class="yx">
+							<span class="yx1">7</span> 腾讯8分钟产品课|第一集：用户
+						</p>
+						<p class="yx">
+							<span class="yx1">8</span> 何凌南：谣言在想什么
+						</p>
+						<p class="yx">
+							<span class="yx1">9</span> 腾大直播间|红海中寻生路，化被动为主动的产品思考
+						</p>
+						<p class="yx">
+							<span class="yx1">10</span> 张小龙：4小时演讲，全面总结微信8年
+						</p>
+					</div>
+					</div>
+					     <div class="rightcon2">
+					 <div class="rightnav6">
+						<div class="ynavxia">
+							<p class="nums">1</p>
+							<a href="#" class="zhangxl">
+								<p class="ynavzi">腾讯光子美术负责人吴宝：深度解读国内技术美术岗位现状</p>
+							</a>
+						</div>
+					</div>
+					<div class="rightnav7">
+						<div class="ynavxia">
+							<p class="nums nums2">2</p>
+							<a href="#" class="zhangxl">
+								<p class="ynavzi">买不到女朋友喜欢的礼物？看京东大数据如何拯救直男！</p>
+							</a>
+						</div>
+					</div>
+					<div class="rightnav8">
+						<div class="ynavxia">
+							<p class="nums nums3">3</p>
+							<a href="#" class="zhangxl">
+								<p class="ynavzi">超级IP工厂—阅文如何扛鼎国产IP生</p>
+							</a>
+						</div>
+					</div>
+					<div class="rightnav9">
+						<div class="ynavxia">
+							<p class="nums nums4">4</p>
+							<a href="#" class="zhangxl">
+								<p class="ynavzi">「得到」分享生产内容的独家心法</p>
+							</a>
+						</div>
+					</div>
+					<div class="rightnav10">
+						<div class="ynavxia">
+							<p class="nums nums5">5</p>
+							<a href="#" class="zhangxl">
+								<p class="ynavzi">3年收获1.8亿用户，如何做到「内容为王」？</p>
+							</a>
+						</div>
+					</div>
+					
+					<div class="yxkk">
+						<p class="yx">
+							<span class="yx1">6</span> 智能机器人与隐形冠军：探讨机器人系统、视觉与学习
+						</p>
+						<p class="yx">
+							<span class="yx1">7</span> 李鹏飞：《乱世王者》如何做好SLG长线运营
+						</p>
+						<p class="yx">
+							<span class="yx1">8</span> 运营越来越难？看丁香医生如何逆势涨粉
+						</p>
+						<p class="yx">
+							<span class="yx1">9</span> 腾大直播间 | 解码腾讯产业时代的产品经理思维
+						</p>
+						<p class="yx">
+							<span class="yx1">10</span> CIGA Design品牌创始人张建民：平面、空间、产品
+						</p>
+					</div>
+					</div>
+					<div class="side">
+						<div class="sidetu">
+							<div class="sidexiaotu"></div>
+						</div>
+						<p class="sidetitle">腾讯大学</p>
+						<p class="sidetext">
+							腾讯大学作为腾讯特色的学习交流平台，服务于腾讯合作伙伴及用户，面向互联网产业链，传播腾讯经验，分享行业知识及优秀实践，助力合作伙伴成长，推动开放共赢的互联网生态圈的建立。
+						</p>
+						<div class="sidecontent">
+							<div class="sctu"></div>
+							<p class="sc1">
+								联系我们
+							</p>
+							<p class="sc2">合作：university@tencent.com</p>
+							<p class="sc3">QQ：2813343187</p>
+						</div>
+						<div class="rzui">
+							<div class="ruitext">在线考试</div>
+							<div class="rzuitu"></div>
+						</div>
+						
+					</div>
+				</div>
+			    <div class="erweima">
+					<p class="matext1">手机看直播学干货</p>
+					<div class="matu"></div>
+					<p class="matext2">关注腾讯大学公号</p>
+			    </div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="cadai">
+				<div class="cadai cadai1"></div>
+				<div class="cadai cadai2"></div>
+				<div class="cadai cadai3"></div>
+				<div class="cadai cadai4"></div>
+
+			</div>
+			<div class="kaifanngpingtai">
+
+				<h3 class="kaifang">
+			开放平台
+			</h3>
+				<img src="img/ke.png">
+				<img src="img/kj.png">
+				<img src="img/yxxy.png">
+				<img src="img/txy.png">
+				<img src="img/qqyx.png">
+				<img src="img/mail.png">
+				<img src="img/txdsj.png">
+				<img src="img/kfpt.png">
+				<img src="img/sjgg.png">
+				<img src="img/bug.png">
+				<img src="img/wete.png">
+				<img src="img/xiaoe.png">
+				<img src="img/meia.png">
+				<div class="hezuohuoban">
+					<h3 class="kaifang1">
+			合作伙伴
+		  </h3>
+					<div class="footerlian">
+						<a href="#">腾讯云云+社区</a>
+						<a href="#">TechWeb</a>
+						<a href="#">腾讯Alloyteam</a>
+						<a href="#">CSDN</a>
+						<a href="#">36Kr</a>
+						<a href="#">APP游戏部落</a>
+						<a href="#">天极网</a>
+						<a href="#">凤凰网科技频道</a>
+						<a href="#">易观网</a>
+						<a href="#">馒头商学院</a>
+						<a href="#">雷锋网</a>
+						<a href="#">飞象网</a>
+						<a href="#">数码港</a>
+						<a href="#">艾瑞网</a>
+						<a href="#">落伍者</a>
+						<a href="#">QQ浏览器</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="xiabian">
+			<p class="xbtext">
+				服务协议| 隐私政策| 版权保护投诉指引
+			</p>
+			<p class="xbtext">
+				Copyright © 1998 - 2019 Tencent. All Rights Reserved.
+			</p>
+			<p class="xbtext">
+				腾讯公司 版权所有
+			</p>
+		</div>
+		</div>
+
+	</body>
+	<script src="js/jquery-1.11.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		var c1 = document.getElementsByClassName("c1")[0];
+		var c2 = document.getElementsByClassName("c2")[0];
+		var content = document.getElementsByClassName("content")[0];
+
+		c2.onmouseenter = function() {
+			content.style.marginLeft = "-1440px";
+			c2.style.backgroundImage = "url(img/banner-on.png)"
+			c1.style.backgroundImage = "url(img/banner-counter.png)"
+		}
+		c1.onmouseenter = function() {
+			content.style.marginLeft = "0px";
+			c1.style.backgroundImage = "url(img/banner-on.png)"
+			c2.style.backgroundImage = "url(img/banner-counter.png)"
+		}
+		
+		$(".xinkeshangxian").click(function(){
+			$(".rightcon2").show();
+			$(".rightcon1").hide();
+			$(".zuirepaihang").addClass("zuirepaihang2");
+			$(".zuirepaihang").removeClass("zuirepaihang1");
+			$(".xinkeshangxian").addClass("xinkeshangxian2");
+			$(".xinkeshangxian").removeClass("xinkeshangxian1");
+			$(".xinkeshangxian").attr("style","border:1px solid gray;border-bottom: none");
+			$(".zuirepaihang").attr("style","border:none;border-bottom: 1px solid gray");
+		})
+		$(".zuirepaihang").click(function(){
+			$(".rightcon1").show();
+			$(".rightcon2").hide();
+			$(".zuirepaihang").addClass("zuirepaihang1");
+			$(".zuirepaihang").removeClass("zuirepaihang2");
+			$(".xinkeshangxian").addClass("xinkeshangxian1");
+			$(".xinkeshangxian").removeClass("xinkeshangxian2");
+			$(".zuirepaihang").attr("style","border:1px solid gray;border-bottom: none");
+			$(".xinkeshangxian").attr("style","border:none;border-bottom: 1px solid gray");
+		})
+		
+	</script>
+
+</html>

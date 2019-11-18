@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		
+	</head>
+	<body>
+		<div id="box">
+			<ul v-for="item in datalist">
+				<li>{{item}}</li>
+			</ul>
+			<!--当循环报错解决办法-->
+			<ul v-for="(item,x) in datalist">
+				<li>{{item}}</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			let vm = new Vue({
+				el:"#box",
+				data:{
+					datalist:["离离原上草","一岁一枯荣","野火烧不尽","春风吹又生"]
+				}
+			})
+		</script>
+	</body>
+</html>

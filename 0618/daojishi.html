@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 500px;
+				height: 350px;
+				background-color: burlywood;
+				margin: 50px auto;
+			}
+			 .title{
+			 	width: 100%;
+			 	height: 100px;
+			 	background-color: brown;
+			 	font-size: 35px;
+			 	text-align: center;
+			 	line-height: 100px;
+			 }
+			 .juli{
+			 	width: 100%;
+			 	height: 100px;
+			 	background-color: darkcyan;
+			 	font-size: 25px;
+			 	text-align: center;
+			 	line-height: 100px;
+			 	color: blue;
+			 }
+			 .shijian{
+			 	width: 100%;
+			 	height: 150px;
+			 	font-size: 20px;
+			 	text-align: center;
+			 	line-height: 150px;
+			 }
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<h1 class="title">建军节倒计时</h1>
+			<div class="content">
+				<h3 class="juli">距离建军节还有：</h3>
+				<p class="shijian"></p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		function myclock(){
+			var shijian = document.getElementsByClassName("shijian")[0];
+			var myTime = new Date();
+			var day =30- myTime.getDate();
+			var h =23- myTime.getHours();
+			var m =59- myTime.getMinutes();
+			var s =59- myTime.getSeconds();
+			
+			if(day<10){
+				day="0"+day;
+			}
+			if(h<10){
+				h="0"+h;
+			}
+			if(m<10){
+				m="0"+m;
+			}
+			if(s<10){
+				s="0"+s;
+			}
+			var str = day+"天"+h+"时"+m+"分"+s+"秒";
+			shijian.innerText = str;
+			
+		}
+		
+		myclock();
+		
+		setInterval(myclock,1000);
+		
+	</script>
+
+</html>

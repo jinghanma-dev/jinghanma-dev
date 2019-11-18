@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 500px;
+				height: 350px;
+				background-color: #BC8F8F;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+	   var box = document.getElementsByClassName("box")[0];
+		var Mytime = new Date();
+		var Y = Mytime.getFullYear();
+		var month = Mytime.getMonth()+1;
+		var D = Mytime.getDate();
+		var H = Mytime.getHours();
+		var M = Mytime.getMinutes();
+		var S = Mytime.getSeconds();
+		
+		var str = Y+"年"+month+"月"+D+"日"+H+"时"+M+"分"+S+"秒";
+		box.innerText=str;
+	</script>
+</html>

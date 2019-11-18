@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.fengche{
+				width: 400px;
+				height: 400px;
+				/*background-color: #00FFFF;*/
+				margin: 0 auto;
+				position: relative;
+				animation:  xuanzhuan 1s infinite linear;
+				
+			}
+			.shanye{
+				width: 200px;
+				height: 100px;
+				/*background-color: #006400;*/
+				border-radius: 100px 100px 0 0;
+				position: absolute;
+			}
+			.shanye1{
+				background-color: red;
+				top: 50px;
+				left: 150px;
+				transform: rotate(90deg);
+			}
+			.shanye2{
+				background-color: yellow;
+				top: 200px;
+				left: 200px;
+				transform: rotate(180deg);
+			}
+			.shanye3{
+				background-color: blue;
+				top: 250px;
+				left: 50px;
+				transform: rotate(270deg);
+			}
+			.shanye4{
+				background-color: green;
+				top: 100px;
+				left: 0px;
+				transform: rotate(360deg);
+			}
+			.gungun{
+				width: 5px;
+				height: 500px;
+				background-color: saddlebrown;
+				position: absolute;
+				top: 204px;
+				left: 670px;
+				z-index: -1;
+			}
+			@keyframes xuanzhuan{
+				from{transform:  rotate(0deg);}
+				to{transform:  rotate(360deg)}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="fengche">
+			<div class="shanye shanye1">
+				
+			</div>
+			<div class="shanye shanye2">
+				
+			</div>
+			<div class="shanye shanye3">
+				
+			</div>
+			<div class="shanye shanye4">
+				
+			</div>
+		</div>
+		<div class="gungun">
+			
+		</div>
+	</body>
+</html>

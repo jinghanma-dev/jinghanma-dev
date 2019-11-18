@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.content {
+				width: 1100px;
+				height: 360px;
+				background-color: darkcyan;
+				margin: 30px auto;
+			}
+			
+			.conleft {
+				width: 220px;
+				height: 360px;
+				background-color: #845F3F;
+				float: left;
+			}
+			
+			.conright {
+				width: 880px;
+				height: 360px;
+				background-color: darksalmon;
+				float: right;
+			}
+			
+			.conbiao {
+				width: 200px;
+				height: 37px;
+				/*background-color: darkgoldenrod;*/
+				text-align: center;
+				/*margin-top: 3px;*/
+				padding: 1px 8px;
+				font-size: 14px;
+				line-height: 37px;
+				list-style: none;
+				color: white;
+			}
+			
+			.conbiao:hover {
+				background-color: #684b34;
+				cursor: pointer;
+			}
+			
+			.conbiao span {
+				width: 56px;
+				height: 16px;
+				color: #f1ede9;
+			}
+			
+			.conbiao span:hover {
+				color: #e4af82;
+				cursor: pointer;
+			}
+			
+			.conbiao:hover .connav {
+				display: block;
+			}
+			
+			.connav {
+				width: 880px;
+				height: 360px;
+				overflow: auto;
+				/*overflow: hidden;*/
+				border: 1px solid #eee;
+				margin-top: -39px;
+				margin-left: 211px;
+				/*z-index: 3;*/
+				display: none;
+				background-color: white;
+			}
+			
+			.contu {
+				width: 880px;
+				height: 360px;
+				background-image: url(img/1.jpg);
+			}
+			
+			.itembiao {
+				width: 780px;
+				height: 20px;
+				font-size: 14px;
+				color: #333;
+				/*background-color: aquamarine;*/
+				margin-top: 20px;
+				/*float: left;*/
+				margin-left: -350px;
+			}
+			
+			.itemnei {
+				width: 780px;
+				height: 210px;
+				background-color: white;
+			}
+			
+			.ink {
+				width: 195px;
+				height: 40px;
+				/*background-color: chartreuse;*/
+				margin-top: 25px;
+				float: left;
+			}
+			
+			.inktu img {
+				width: 40px;
+				height: 40px;
+				/*background-color: whitesmoke;*/
+				/*background-image: url(img/y1.png);*/
+				background-size: 100%;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.inkzi {
+				width: 150px;
+				height: 40px;
+				font-size: 14px;
+				color: #333;
+				text-align: left;
+				line-height: 40px;
+				float: right;
+				cursor: pointer;
+			}
+			
+			.itemnei1 {
+				width: 780px;
+				height: 320px;
+				background-color: white;
+			}
+			.fix{
+				width: 1100px;
+				height: 160px;
+				border-bottom: 1px solid gainsboro;
+				background-color: white;
+				margin: -20px auto;
+			}
+			.fix1{
+				width: 130px;
+				height: 145px;
+				/*background-color: #008B8B;*/
+				float: left;
+			}
+			.fix1-1{
+				width: 130px;
+				height: 145px;
+				/*background-color: #008B8B;*/
+				float: left;
+				margin-left:110px;
+			}
+			.fix1-2{
+				width: 130px;
+				height: 145px;
+				/*background-color: #008B8B;*/
+				float: left;
+				margin-left:110px;
+			}
+			.fixtu1{
+				width: 80px;
+				height: 80px;
+				margin:20px auto;
+				background-image: url(img/f1.png);
+				background-size: 100%;
+			}
+			.fixtu2{
+				width: 80px;
+				height: 80px;
+				margin:20px auto;
+				background-image: url(img/f2.png);
+				background-size: 100%;
+			}
+			.fixtu3{
+				width: 80px;
+				height: 80px;
+				margin:20px auto;
+				background-image: url(img/f3.png);
+				background-size: 100%;
+			}
+			.fixtu4{
+				width: 80px;
+				height: 80px;
+				margin:20px auto;
+				background-image: url(img/f4.png);
+				background-size: 100%;
+			}
+			.fixtu5{
+				width: 80px;
+				height: 80px;
+				margin:20px auto;
+				background-image: url(img/f5.png);
+				background-size: 100%;
+			}
+			.fixzi{
+				width: 70px;
+				height:17px;
+				/*background-color: #E4AF82;*/
+				text-align: center;
+				font-size: 14px;
+				color: #333;
+				margin: 25px auto;
+			}
+			.zhong{
+				width: 1100px;
+				height: 305px;
+				/*background-color: #E9967A;*/
+				margin: 50px auto;
+			}
+			.zhongtitle{
+				width: 1100px;
+				height: 40px;
+				/*background-color: blueviolet;*/
+			}
+			.z1{
+				width: 130px;
+				height: 40px;
+				font-size: 28px;
+				color: #333333;
+				text-align: center;
+				line-height: 40px;
+			}
+			.z2{
+				width: 130px;
+				height: 20px;
+				font-size: 14px;
+				color: #999999;
+				float: left;
+				margin-top: -20px;
+				margin-left:125px;
+			}
+			.zcontent{
+				width: 535px;
+				height: 210px;
+				background-color: #f9f3e9;
+			}
+			.zhongcontent{
+				width: 1100px;
+				height: 305px;
+				background-color: palegreen;
+				margin:0 auto;
+			}
+			.zctu1{
+				width: 210px;
+				height: 210px;
+				/*background-color: #008B8B;*/
+				background-image:url(img/z1.png);
+				float: right;
+				background-size: 100%;
+				border-bottom: 3px solid gainsboro;
+			}
+			.zhongtext{
+				width: 300px;
+				height: 210px;
+				/*background-color: chartreuse;*/
+				float: left;
+			}
+			.zhongtext1{
+				width: 266px;
+				height: 210px;
+				background-color: white;
+				margin-top: -240px;
+				float: left;
+			}
+			.ztext1{
+				width: 300px;
+				height: 25px;
+				font-size: 20px;
+				line-height: 25px;
+				margin-left: 15px;
+				margin-top:20px ;
+				cursor: pointer;
+			}
+			.ztext2{
+				width: 300px;
+				height: 25px;
+				font-size: 16px;
+				line-height: 25px;
+				margin-left: 15px;
+				margin-top: 5px;
+				cursor: pointer;
+			}
+			.ztext3{
+				width: 300px;
+				height: 40px;
+				font-size: 16px;
+				line-height: 40px;
+				margin-left: 15px;
+				margin-top: 5px;
+				cursor: pointer;
+			}
+			.ztext1-1{
+				font-size: 14px;
+				color: #a92112;
+			}
+			.ztext2-2{
+				font-size: 24px;
+				color: #a92112;
+			}
+			.zctutiao{
+				width: 325px;
+				height: 3px;
+				/*background-color: plum;*/
+				background-image: url(img/z2.jpg);
+				background-size: 100%;
+				margin-top: 90px;
+			}
+			.zcren{
+				width: 525px;
+				height: 30px;
+				/*background-color: brown;*/
+			}
+			.zcr1{
+				width: 70px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				font-size: 20px;
+				color: #a92112;
+				/*margin-left:15px;*/
+				float: left;
+			}
+			.zcr2{
+				width: 70px;
+				height: 30px;
+				line-height: 30px;
+				font-size: 14px;
+				color: #999;
+				float: left;
+				margin-left: -15px;
+			}
+			.zcr3{
+				width: 70px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				font-size: 20px;
+				color: #a92112;
+				margin-right:-190px;
+				float: right;
+			}
+			.zcr4{
+				width: 70px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				font-size: 14px;
+				color: #a92112;
+				margin-right:-210px;
+				float: right;
+			}
+			.zer{
+				width: 266px;
+				height: 210px;
+				/*background-color: palevioletred;*/
+				margin-left: 545px;
+				margin-top: -285px;
+				
+			}
+			.zertu{
+				width: 130px;
+				height: 130px;
+				/*background-color: deeppink;*/
+				background-image: url(img/z3.png);
+				background-size: 100%;
+				margin-left: 100px;
+				margin-top: -25px;
+				float: left;
+			}
+			.zctutiao1{
+				width: 266px;
+				height: 3px;
+				/*background-color: plum;*/
+				background-image: url(img/z2.jpg);
+				background-size: 100%;
+				margin-top: 209px;
+			}
+			.ztext1-z{
+				width: 300px;
+				height: 25px;
+				font-size: 20px;
+				line-height: 25px;
+				margin-left: 15px;
+				margin-top:15px ;
+				cursor: pointer;
+				float: left;
+			}
+			.ztext3-x{
+				width: 300px;
+				height: 40px;
+				font-size: 16px;
+				line-height: 40px;
+				margin-left: 15px;
+				margin-top: 0px;
+				cursor: pointer;
+				float: left;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="conleft">
+				<ul>
+					<li class="conbiao">
+						<span>有品推荐</span> /
+						<span>家用电器</span>
+						<div class="connav">
+						<div class="itembiao">有品推荐</div>
+						<div class="itemnei">
+							<div class="ink">
+								<div class="inktu"><img src="img/y1.png" /></div>
+								<div class="inkzi">销量榜单</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/y2.png" /></div>
+								<div class="inkzi">米粉热搜</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/y3.png" /></div>
+								<div class="inkzi">清凉季</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/y4.png" /></div>
+								<div class="inkzi">女神最爱</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/y5.png" /></div>
+								<div class="inkzi">男士精选</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/y6.jpg" /></div>
+								<div class="inkzi">婴童精选</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/y7.png" /></div>
+								<div class="inkzi">D.LAB</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/y8.png" /></div>
+								<div class="inkzi">小爱专区</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/y9.png" /></div>
+								<div class="inkzi">品质生活</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/y10.png" /></div>
+								<div class="inkzi">美酒佳酿</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/y11.png" /></div>
+								<div class="inkzi">运动健身</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/y12.png" /></div>
+								<div class="inkzi">健康生活</div>
+							</div>
+						</div>
+						<div class="itembiao">家用电器</div>
+						<div class="itemnei1">
+							<div class="ink">
+								<div class="inktu"><img src="img/j1.jpg" /></div>
+								<div class="inkzi">销量榜单</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/j2.jpg" /></div>
+								<div class="inkzi">米粉热搜</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/j3.jpeg" /></div>
+								<div class="inkzi">清凉季</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/j4.jpeg" /></div>
+								<div class="inkzi">女神最爱</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/j5.jpg" /></div>
+								<div class="inkzi">男士精选</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/j6.jpeg" /></div>
+								<div class="inkzi">婴童精选</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/j7.jpg" /></div>
+								<div class="inkzi">D.LAB</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/j8.jpg" /></div>
+								<div class="inkzi">小爱专区</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/j9.png" /></div>
+								<div class="inkzi">品质生活</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/j10.jpg" /></div>
+								<div class="inkzi">美酒佳酿</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/j11.jpeg" /></div>
+								<div class="inkzi">运动健身</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/j12.jpeg" /></div>
+								<div class="inkzi">健康生活</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/j13.jpeg" /></div>
+								<div class="inkzi">美酒佳酿</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/j14.jpeg" /></div>
+								<div class="inkzi">运动健身</div>
+							</div>
+							<div class="ink">
+								<div class="inktu"><img src="img/j15.png" /></div>
+								<div class="inkzi">健康生活</div>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="conbiao">
+						<span>智能家庭</span> /
+						<span>电视影音</span>
+					</li>
+					<li class="conbiao">
+						<span>家居家装</span> /
+						<span>居家餐厨</span>
+					</li>
+					<li class="conbiao">
+						<span>运动户外</span> /
+						<span>出行车品</span>
+					</li>
+					<li class="conbiao">
+						<span>手机电脑</span> /
+						<span>数码周边</span>
+					</li>
+					<li class="conbiao">
+						<span>服装配饰</span> /
+						<span>鞋靴箱包</span>
+					</li>
+					<li class="conbiao">
+						<span>日用文创</span> /
+						<span>美食酒饮</span>
+					</li>
+					<li class="conbiao">
+						<span>美妆个护</span> /
+						<span>健康保健</span>
+					</li>
+					<li class="conbiao">
+						<span>母婴亲子</span> /
+						<span>宠物生活</span>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="conright">
+				<div class="contu"></div>
+
+			</div>
+		</div>
+		<div class="fix">
+			<div class="fix1">
+			  <div class="fixtu1"></div>
+			  <div class="fixzi">每日新品</div>
+			</div>
+			<div class="fix1-1">
+			  <div class="fixtu2"></div>
+			  <div class="fixzi">小米众筹</div>
+			</div>
+			<div class="fix1-1">
+			  <div class="fixtu3"></div>
+			  <div class="fixzi">限时抢购</div>
+			</div>
+			<div class="fix1-2">
+			  <div class="fixtu4"></div>
+			  <div class="fixzi">热销榜单</div>
+			</div>
+			<div class="fix1-1">
+			  <div class="fixtu5"></div>
+			  <div class="fixzi">随便逛逛</div>
+			</div>
+		</div>
+		<div class="zhong">
+			<div class="zhongcontent">
+			<div class="zhongtitle">
+				<p class="z1">小米众筹</p>
+				<p class="z2">永远好奇&nbsp;&nbsp;永远年轻</p>
+			</div>
+			
+			<div class="zcontent">
+				<div class="zhongtext">
+					<p class="ztext1" title="小米有品智能窗帘电机（Wi-Fi版）">小米有品智能窗帘电机...</p>
+					<p class="ztext2" title="自动开合，定时控制，小爱声控，静音设计，智能联动">自动开合，定时控制，小爱声控，...</p>
+				    <p class="ztext3">
+				    	<span class="ztext1-1">￥</span>
+				    	<span class="ztext2-2">399</span>
+				    	<span class="ztext1-1">起</span>
+				    </p>
+				    <div class="zctutiao"></div>
+				</div>
+				<div class="zctu1"></div>
+			</div>
+			
+			  <div class="zcren">
+					<span class="zcr1">559</span>
+					<span class="zcr2">人支持</span>
+					<span class="zcr3">55</span>
+					<span class="zcr4">%</span>
+			  </div>
+		</div>
+		 <div class="zer">
+		 	<div class="zhongtext1">
+					<p class="ztext1-z" title="谷小酒万里宋境1.5L">谷小酒万里宋境1.5L</p>
+				    <p class="ztext3-x">
+				    	<span class="ztext1-1">￥</span>
+				    	<span class="ztext2-2">799</span>
+				    	<span class="ztext1-1">起</span>
+				    </p>
+				    <div class="zertu"></div>
+				    <div class="zctutiao1"></div>
+				</div>
+		 </div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.circle{
+				width: 200px;
+				height: 50px;
+				background-color: yellowgreen;
+			}
+			.point{
+				list-style: none;
+				width: 20px;
+				height: 20px;
+				background-color: yellow;
+				margin: 10px;
+				float: left;
+				border-radius: 50%;
+			}
+			.point:nth-child(1){
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="circle">
+			<li class="point">1</li>
+			<li class="point">2</li>
+			<li class="point">3</li>
+			<li class="point">4</li>
+		</ul>
+		<input class="next" type="button" value="下一个" />
+		
+	</body>
+	<script type="text/javascript">
+		var point = document.getElementsByClassName("point");
+		var next = document.getElementsByClassName("next")[0];
+		var x=0;
+		
+		next.onclick = function(){
+			for(var i=0;i<4;i++){
+				point[i].style.backgroundColor = "yellow";
+			}
+			x = x+1;
+			if(x>3){
+				x=0;
+			}
+			point[x].style.backgroundColor = "red";
+		}
+	</script>
+</html>

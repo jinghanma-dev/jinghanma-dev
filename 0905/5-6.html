@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+	</body>
+	<script type="text/javascript">
+		function maxr(char) {
+			var maxCount = 0; //存放最大计数值;
+			var maxChar = ""; //存放重复次数最多的字符
+			var str = char[0];
+			var count = 1;
+			for(var i = 1; i < char.length; i++) {
+				if(str == char[i]) {
+					count++;
+				} else {
+					if(maxCount < count) {
+						maxCount = count;
+						maxChar = str;
+					}
+					//更新计数和最长字符
+					count = 1;
+					str = char[i];
+				}
+
+			}
+			for(var j = 1; j <= maxCount; j++) {
+				document.write(maxChar);
+			}
+		}
+		maxr("mmmiiijjjjjkkkkkkssptr");
+	</script>
+
+</html>

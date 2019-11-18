@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var yz = /^([a-zA-Z0-9._-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/;
+		
+		var phone = prompt();
+		
+		var t = yz.test(phone);
+		
+		if(t){
+			alert("输入正确");
+		}else{
+			alert("手机号格式有误");
+		}
+		
+	</script>
+</html>

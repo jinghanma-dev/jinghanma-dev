@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.banner{
+				width: 1000px;
+				height: 500px;
+				border: 1px solid red;
+				margin: 0 auto;
+				margin-top: 30px;
+				position: relative;				 				  
+			}
+			#tu{
+				width: 1000px;
+				height: 500px;
+				
+			}
+			#btn{
+				width: 100px;
+				height: 40px;
+				background-color: cadetblue;
+				margin-left: 100px;
+				position: absolute;
+				
+				
+			}
+			#bt{
+				width: 100px;
+				height: 40px;
+				background-color: cadetblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="banner">
+			<img id="tu" src="img/timg1.jpg" />
+		</div>
+		<button id="btn"> > </button>
+		<button id="btn"> < </button>
+	</body>
+	<script type="text/javascript">
+		
+		var tu=document.getElementById("tu");
+		var x=1;
+		function qiehuan( ){
+			x=x+1;
+			if(x>5){
+				x=1;
+			}
+			tu.src="img/timg"+x+".jpg"; 
+		}
+		setInterval(qiehuan,300);
+			 
+		
+	</script>
+</html>

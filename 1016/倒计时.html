@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.box {
+				width: 260px;
+				height: 43px;
+				background-color: palevioletred;
+				/*margin: 50px auto;*/
+			}
+			
+			.title {
+				line-height: 25px;
+				font-size: 16px;
+				background-color: cornflowerblue;
+				text-align: right;
+				float: left;
+			}
+			
+			.txt {
+				font-size: 14px;
+				text-align: right;
+				line-height: 18px;
+				
+				background-color: lightgoldenrodyellow;
+			}
+			
+			.txt1 {
+				width: 130px;
+				height: 43px;
+				background-color: darkseagreen;
+				text-align: center;
+				line-height: 43px;
+				font-size: 18px;
+				float: right;
+			}
+			.box1{
+				width: 130px;
+				height: 43px;
+				float: left;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="box">
+			<div class="box1">
+				<p class="title">每天10：00上新</p>
+				<p class="txt">据下次更新还有：</p>
+				</div>
+				<div class="txt1">
+
+				</div>			
+		</div>
+	</body>
+	<script type="text/javascript">
+		function daojishi() {
+			var txt1 = document.getElementsByClassName("txt1")[0];
+			var time = new Date();
+
+			var h = 23 - time.getHours();
+			var m = 59 - time.getMinutes();
+			var s = 59 - time.getSeconds();
+			if(s < 10) {
+				s = "0" + s;
+			}
+			if(m < 10) {
+				m = "0" + m;
+			}
+			if(h < 10) {
+				h = "0" + h;
+			}
+
+			var str = +h + "时" + m + "分" + s + "秒";
+
+			txt1.innerText = str;
+		}
+		daojishi();
+		setInterval(daojishi, 1000);
+	</script>
+	<ml>

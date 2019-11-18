@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var score = [99,23,56,68,72,12,69];
+		var maxScore = score[0];
+		var minScore = score[0];
+		var maxIndex = 0;
+		var minIndex = 0;
+		for (var i=1;i<score.length;i++) {
+			if(maxScore<score[i]){
+				maxScore = score[i];
+				maxIndex = i;
+			}
+			if(minScore>score[i]){
+				minScore = score[i];
+				minIndex = i;
+			}
+		}
+		
+		console.log(maxScore,maxIndex)
+		console.log(minScore,minIndex)
+		
+		
+	</script>
+</html>

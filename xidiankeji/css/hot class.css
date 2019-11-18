@@ -1,0 +1,281 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #F5F8FA;
+}
+.weizhi{
+	width: 1200px;
+	height: 100px;
+	/*background-color: darkgoldenrod;*/
+	margin: 20px auto;
+	font-size: 18px;
+	color: #999999;
+	font-family: "微软雅黑";
+	line-height: 100px;
+}
+.remen{
+	width: 1200px;
+	height: 344px;
+	background-color: white;
+	margin: 40px auto;
+}
+.remen_zuo img{
+	width: 546px;
+	height:344px;
+}
+.remen_zuo{
+	width: 546px;
+	height: 344px;
+	float: left;
+}
+.remen_right{
+	width: 654px;
+	height: 344px;
+	/*background-color: yellowgreen;*/
+	float: right;
+}
+.remen_pxb{
+	font-size: 22px;
+	color: #444444;
+	padding-top: 20px;
+	margin-left: 40px;
+}
+.remen_jj{
+	width: 582px;
+	height: 62px;
+	background-color: #F3F6F8;
+	margin-left: 40px;
+	margin-top: 30px;
+	font-size: 12px;
+	color: #666666;
+	line-height: 30px;
+}
+.remen_js{
+	text-indent:40px;
+	font-size: 14px;
+	color: #999999;
+	margin-top: 30px;	
+}
+.didian{
+	margin-top: 10px;	
+}
+button{
+	width: 120px;
+	height:50px;
+	background-color:deeppink;
+   margin-left: 40px;
+   line-height: 50px;
+   margin-top: 20px;
+   color: white;
+   font-size: 16px;
+}
+.remen_zx{
+	background-color:#F4F8FB;
+	color: #666666;
+}
+.remen_kc{
+	width: 1200px;
+	overflow: hidden;
+	/*height: 1200px;*/
+	/*background-color: white;*/
+	margin: 20px auto;
+}
+.remen_zb{
+	width: 850px;
+	/*height: 1200px;*/
+	background-color: white;
+	overflow: hidden;
+	float: left;
+}
+.remen_gs{
+	width: 850px;
+	height: 79px;
+/*	background-color:darkcyan ;*/
+	border-bottom: 1px solid gray;
+	font-size: 24px;
+	color: #666666;
+	text-align: center;
+	line-height: 80px;
+}
+.remen_mb{
+	width: 400px;
+	height: 40px;
+	/*background-color: goldenrod;*/
+	margin-left: 30px;
+	font-size: 24px;
+}
+.remen_mb p{
+	float: left;
+	margin-left: 16px;
+	line-height:40px;
+	color: green;
+	
+}
+.remen_mb img{
+	float: left;
+	margin-top: 7px;
+}
+.remen_mb1{
+	width: 734px;
+	height: 186px;
+/*	background-color: fuchsia;*/
+    margin-left:70px;
+    margin-top: 30px;
+    font-size: 14px;
+	color: #666666;	
+}
+.remen_zb1{
+	width: 850px;
+	height: 288px;
+/*	background-color: greenyellow;*/
+	border-bottom: 1px solid gray;
+    margin-top: 30px;
+}
+.yaoqiu{
+	height: 240px;
+}
+.feiyong{
+	height: 280px;
+}
+.youhui{
+	height:160px;
+}
+.kecheng_you{
+	width: 332px;
+	overflow: hidden;
+	/*background-color: palevioletred;*/
+	float: right;
+}
+.ybanner{
+	width: 308px;
+    height: 282px;
+	background-color: red;
+	position: relative;
+	margin:12px;
+	overflow: hidden;
+}
+.ybanner1{
+	width:616px;
+	height: 282px;
+	background-color: green;
+	position: absolute;	
+	transition: all.5s linear;
+}
+.ybanner img{
+	width: 308px;
+	height: 282px;
+	/*position: absolute;*/
+	float: left;
+}
+
+.circle{
+	width: 80px;
+	height: 10px;
+	/*background-color: yellow;*/
+   /* float: left;*/
+    margin-left: 10px;
+    margin-top: 10px;
+	position: relative;
+	top:241px;
+	right:-109px;
+	float: left;
+}
+.c1 {
+			width: 10px;
+			height: 10px;
+			background-color: black;
+			border-radius: 50%;
+			float: left;
+}
+.c2 {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color:darkgray;
+			float: right;	
+}
+.jiuye{
+	width: 332px;
+	height: 56px;
+	background-color:#57D9A9;
+	font-size: 16px;
+	text-align: center;
+	line-height: 56px;
+	margin-top: 20px;
+}
+.jiuye a:hover{
+	color: red;
+}
+.jiuye a{
+	 color: #444444;
+	 text-decoration: none;
+}
+.liaojie{
+	background-color: #FFE405;
+}
+.pingjia{
+	background-color: #B7F3FB;
+}
+.ganhuo{
+	width: 332px;
+	height:600px;
+	background-color: white;
+	margin-top: 20px;
+}
+.ganhuo1{
+	width: 332px;
+	height: 80px;
+	/*background-color: greenyellow;*/
+}
+.ghfx{
+	width: 100px;
+	height: 80px;
+	/*background-color: green;*/
+	float: left;
+	line-height: 80px;
+	font-size: 16px;
+	
+}
+.gduo{
+	width: 40px;
+	height: 80px;
+	/*background-color: grey;*/
+	float: right;
+	line-height: 80px;
+}
+.gduo a{
+	color: #444444;
+	text-decoration: none;
+	font-size: 14px;
+	color: #999999;
+}
+.ganhuo2{
+	width: 332px;
+	height: 60px;
+	/*background-color: fuchsia;*/
+	border-bottom: 1px solid gainsboro;
+	margin-top: 10px;
+}
+.ganhuo2_tu{
+	float: left;
+	padding-top: 20px;
+	margin-left: 10px;
+}
+.ganhuo2_zi{
+	font-size:14px;
+	float: left;
+	line-height:60px;
+	margin-left: 10px;
+}
+.ganhuo2_zi a{
+	color: #666666;
+	text-decoration: none;
+}
+.ganhuo2_zi a:hover{
+	color: red;
+}
+.fenx{
+	height:260px;
+}

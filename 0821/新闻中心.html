@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			 *{
+            	margin: 0;
+            	padding: 0;
+            }
+			.top{
+				width: 100%;
+				height: 50px;
+				background-color:#302013 ;
+				margin: auto;
+			}
+			.top1{
+				width: 1200px;
+				height: 50px;
+				/*border: 1px solid chartreuse;*/
+				margin: auto;
+			}
+			.toptext{
+				width: 320px;
+				height: 48px;
+				/*background-color: palegoldenrod;*/
+				float: left;
+				font-size: 20px;
+				color: #dda354;
+				text-align: center;
+				line-height: 48px;
+				/*overflow: hidden;*/
+			}
+			.toim1{
+				width: 34px;
+				height: 34px;
+				/*background-color: blueviolet;*/
+				background-size: 100%;
+				float: right;
+				margin-right: 20px;
+				margin-top: 8px;
+			}
+			.daohang{
+				width: 100%;
+				height: 100px;
+				background-color: #38281c;
+				margin: 0 auto;
+				
+			}
+			.dao1{
+				width: 1200px;
+				height: 100px;
+				/*background-color: #7FFF00;*/
+				margin: 0 auto;
+				position: relative;
+			}
+			.daotext1:hover{
+				width: 100px;
+				height: 50px;
+				color: #DDA354;
+				border: 1px solid #dda354;
+                border-radius: 20px;
+			}
+			.daotext2:hover{
+				width: 100px;
+				height: 50px;
+				color: #DDA354;
+				border: 1px solid #dda354;
+                border-radius: 20px;
+                background-color: #554133;
+			}
+			.daotext3:hover{
+				width: 100px;
+				height: 50px;
+				color: #DDA354;
+				border: 1px solid #dda354;
+                border-radius: 20px;
+                background-color: #554133;
+			}
+			.daotext4:hover{
+				width: 100px;
+				height: 50px;
+				color: #DDA354;
+				border: 1px solid #dda354;
+                border-radius: 20px;
+                background-color: #554133;
+			}
+			.daotext5:hover{
+				width: 100px;
+				height: 50px;
+				color: #DDA354;
+				border: 1px solid #dda354;
+                border-radius: 20px;
+                background-color: #554133;
+			}
+			.daotext6:hover{
+				width: 100px;
+				height: 50px;
+				color: #DDA354;
+				border: 1px solid #dda354;
+                border-radius: 20px;
+                background-color: #554133;
+			}
+			.dao2{
+				width: 100px;
+				height: 50px;
+				color: #DDA354;
+				border: 1px solid #dda354;
+                border-radius: 20px;
+                 display: none;
+			}
+			.dao2-2{
+				width: 100px;
+				height: 50px;
+				list-style: none;
+				text-align: center;
+                line-height: 50px;
+                font-size: 18px;
+                border: 1px solid #dda354;
+                
+                  color: #DDA354;
+                cursor: pointer;
+                border-radius: 20px;
+                /*display: none;*/
+			}
+			.daotext2:hover .dao2{
+				display: block;
+			}
+			.dao2-2:hover {
+				background-color: white;
+			}
+			.daotext3:hover .dao2{
+				display: block;
+			}
+			.daotext4:hover .dao2{
+				display: block;
+			}
+			.daotext6:hover .dao2{
+				display: block;
+			}
+			.daotext1{
+				width: 100px;
+				height: 50px;
+				background-color: #554133;
+				list-style: none;
+				float: left;
+				text-align: center;
+                line-height: 50px;
+                /*margin-left: 100px;*/
+               margin-top: 25px;
+               font-size: 18px;
+               border: 1px solid #dda354;
+               border-radius: 20px;
+               color: #DDA354;
+               cursor: pointer;
+			}
+			.daotext2{
+				width: 100px;
+				height: 50px;
+				/*background-color: #8A2BE2;*/
+				list-style: none;
+				float: left;
+				text-align: center;
+                line-height: 50px;
+                margin-left: 65px;
+               margin-top: 25px;
+               font-size: 18px;
+               color: white;
+               cursor: pointer;
+			}
+			.daotext3{
+				width: 100px;
+				height: 50px;
+				/*background-color: #8A2BE2;*/
+				list-style: none;
+				float: left;
+				text-align: center;
+                line-height: 50px;
+                margin-left: 65px;
+               margin-top: 25px;
+               font-size: 18px;
+               color: white;
+               cursor: pointer;
+			}
+			.daotext4{
+				width: 100px;
+				height: 50px;
+				/*background-color: #8A2BE2;*/
+				list-style: none;
+				float: left;
+				text-align: center;
+                line-height: 50px;
+                margin-left: 60px;
+               margin-top: 25px;
+               font-size: 18px;
+               color: white;
+               cursor: pointer;
+			}
+			.daotext5{
+				width: 100px;
+				height: 50px;
+				/*background-color: #8A2BE2;*/
+				list-style: none;
+				float: left;
+				text-align: center;
+                line-height: 50px;
+                margin-left: 65px;
+               margin-top: 25px;
+               font-size: 18px;
+               color: white;
+               cursor: pointer;
+			}
+			.daotext6{
+				width: 100px;
+				height: 50px;
+				/*background-color: #8A2BE2;*/
+				list-style: none;
+				float: left;
+				text-align: center;
+                line-height: 50px;
+                margin-left: 65px;
+               margin-top: 25px;
+               font-size: 18px;
+               color: white;
+               cursor: pointer;
+			}
+			.daotu2{
+				width: 200px;
+				height: 252px;
+				list-style: none;
+				float: left;
+				margin-left: 45px;
+				margin-top: -50px;
+			}
+			.banner{
+				width: 1348px;
+				height: 490px;
+				margin: 0 auto;
+				/*border: 1px solid red;*/
+				background-image:url(img/banner_o9gx.png);
+				background-size: cover;
+			}
+			.bannernav{
+				width: 620px;
+				height: 250px;
+				/*border: 1px solid red;*/
+				float: right;
+				margin-right: 50px;
+				margin-top:75px ;
+				background-image: url(img/bannernav.png);
+				background-size: 100%;
+			}
+			.lianjie{
+				font-size: 18px;
+				color: white;
+				text-decoration: none;
+			}
+			.content{
+				width: 100%;
+				/*height: 2000px;*/
+				overflow: hidden;
+				/*background-color: palegoldenrod;*/
+			}
+			.content1{
+				width: 1100px;
+				height: 100px;
+				/*background-color: palegreen;*/
+				margin: 30px auto;
+			}
+			.content1img{
+				width: 350px;
+				height: 80px;
+				/*border: 1px solid red;*/
+				margin: auto;
+				background-image: url(img/news_03.png);
+				background-size: 100%;
+				
+			}
+			.contentnav{
+				width: 810px;
+				height: 50px;
+				/*background-color:palevioletred ;*/
+				margin: 30px auto;
+				
+			}
+			.contentnav1{
+				width: 165px;
+				height: 50px;
+				font-size: 16px;
+				text-align: center;
+				line-height: 50px;
+				background-color: #38281C;
+				color: white;
+				float: left;
+				margin-left: 30px;
+			}
+			.contentnav2{
+				width: 165px;
+				height: 50px;
+				font-size: 16px;
+				text-align: center;
+				line-height: 50px;
+				background-color: #684733;
+				color: white;
+				float: left;
+				margin-left: 30px;
+			}
+			.contentnav3{
+				width: 165px;
+				height: 50px;
+				font-size: 16px;
+				text-align: center;
+				line-height: 50px;
+				background-color: #684733;
+				color: white;
+				float: left;
+				margin-left: 30px;
+			}
+			.daosanjiao1{
+				font-size: 10px;
+				color: black;
+			}
+			.daosanjiao2{
+				font-size: 10px;
+				color: black;
+				/*display: none;*/
+			}
+			.daosanjiao3{
+				font-size: 10px;
+				color: black;
+				/*display: none;*/
+			}
+			.contentnav2:hover{
+				background-color:#38281C ;
+			}
+			.content2{
+				width: 1100px;
+				/*height:1200px;*/
+				overflow: hidden;
+				/*background-color: palegreen;*/
+				margin: auto;
+				margin-top: 120px;
+			}
+			.content2text{
+				width: 1100px;
+				height: 95px;
+				/*background-color: goldenrod;*/
+				margin: auto;
+				margin-top: 20px;
+			}
+			.content2text-1{
+				width: 1100px;
+				height: 30px;
+				font-size: 16px;
+				line-height: 30px;
+				text-align: left;
+				margin-left: 20px;
+			}
+			.content2text-2{
+				width: 950px;
+				height: 30px;
+				font-size: 12px;
+				color: gray;
+				margin-left: 20px;
+				line-height: 20px;
+				text-align: left;
+			}
+			.content2text-3{
+				width: 950px;
+				height: 40px;
+				font-size: 12px;
+				color: gray;
+				margin-left: 20px;
+				line-height: 5px;
+				text-align: left;
+				
+			}
+			.footer{
+				width: 100%;
+				height: 190px;
+				background-color: #271A11;
+				margin: auto;
+				margin-top: 60px;
+			}
+			.footernav1{
+				width: 1100px;
+				height: 120px;
+				/*border: 1px solid red;*/
+				margin: auto;
+			}
+			.footernav1left{
+				width: 765px;
+				height: 120px;
+				border-left: 1px solid #332419;
+				/*background-color: palegoldenrod;*/
+				float: left;
+			}
+			.footertext1{
+				font-size: 20px;
+				color: white;
+				text-align: left;
+				line-height: 30px;
+				margin-top: 20px;
+				margin-left: 10px;
+			}
+			.footertext2{
+				font-size: 14px;
+				color: #684c38;
+				line-height: 20px;
+				margin-top: 20px;
+				margin-left: 10px;
+			}
+			.footernav1right{
+				width: 330px;
+				height: 120px;
+				border-left: 1px solid #332419;
+				/*background-color: paleturquoise;*/
+				float: right;
+			}
+			.footertext3{
+				width: 200px;
+				height: 20px;
+				font-size: 18px;
+				color: white;
+				line-height: 20px;
+				margin: 20px 20px;
+			}
+			.footertext4{
+				width: 300px;
+				height: 70px;
+				font-size: 26px;
+				color: white;
+				margin: 20px 20px;
+			}
+			.footernav{
+				width: 100%;
+				height: 120px;
+				border-bottom: 1px solid #332419;
+			}
+			.footernav2{
+				width: 1100px;
+				height: 65px;
+				font-size: 16px;
+				color: #4e4736;
+				text-align: center;
+				line-height: 25px;
+				margin:10px auto;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<!--顶部-->
+		<div class="top">
+			<div class="top1">
+			  <div class="toptext">欢迎来到DASHIJIE手表官方网站！</div>
+			  <div class="topimg">
+			  	<p class="toim1"><img src="img/ico01.png"/></p>
+			  	<p class="toim1"><img src="img/ico02.png"/></p>
+			  	<p class="toim1"><img src="img/ico03.png"/></p>
+			  </div>
+			</div>
+		</div>
+		<!--导航-->
+		<div class="daohang">
+			
+				<ul class="dao1">
+					<p>
+					<a class="lianjie" href="手表官网首页.html">
+					<li class="daotext1">网站首页</li>
+					</a>
+					</p>
+					<p>
+					<a  class="lianjie" href="关于我们.html">
+					<li class="daotext2">
+						关于我们
+						<ul class="dao2">
+							<li class="dao2-2">网站首页</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+						</ul>
+					</li>
+					</a>
+					</p>
+					<p>
+					<a class="lianjie" href="index.html">
+					<li class="daotext3">
+						臻品展示
+					    <ul class="dao2">
+							<li class="dao2-2">网站首页</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+						</ul>
+					</li>
+					</a>
+				   </p>
+					<li class="daotu2"><img src="img/LOGO.png"/></li>
+					<p>
+					<a class="lianjie" href="新闻中心.html">
+					<li class="daotext4">
+						新闻中心
+						<ul class="dao2">
+							<li class="dao2-2">网站首页</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+						</ul>
+					</li>
+					</a>
+				   </p>
+					<li class="daotext5">找商加盟</li>
+					<li class="daotext6">
+						联系我们
+						<ul class="dao2">
+							<li class="dao2-2">网站首页</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+						</ul>
+					</li>
+				</ul>
+		</div>
+		<!--轮播图-->
+		<div class="banner">
+			<div class="bannernav"></div>
+		</div>
+		<!--内容-->
+		<div class="content">
+				<!--第一部分-->
+			<div class="content1">
+				<div class="content1img"></div>
+				<div class="contentnav">
+					<p class="contentnav1">
+						媒体聚焦
+						<span class="daosanjiao1">▼</span>
+					</p>
+					<p class="contentnav2">
+						行业资讯
+						<span class="daosanjiao2">▼</span>
+					</p>
+					<p class="contentnav2">
+						公司新闻
+						<span class="daosanjiao3">▼</span>
+					</p>
+					<p class="contentnav2">
+						钟表知识
+						<span class="daosanjiao3">▼</span>
+					</p>
+				</div>
+			</div>
+			<!--第二部分-->
+			<div class="content2">
+				<p class="content2text">
+					<span class="content2text-1" title="蓝宝石表玻璃在什么样的情况下容易被磨损">蓝宝石表玻璃在什么样的情况下容易被磨损</span>
+					<span class="content2text-2"><br/>2014-11-14</span>
+					<span class="content2text-2"><br/>过去的手表很少有用蓝宝石做表玻璃的，而现在大多数手表都采用了蓝宝石玻璃。蓝宝石做表玻璃确实有很大好处，不容易被划伤和磨损，因为它的硬度是9级，仅次于金刚石。</span>
+				</p>
+				<p class="content2text">
+					<span class="content2text-1" title="塔钟的结构组成">塔钟的结构组成</span>
+					<span class="content2text-2"><br/>2014-11-14</span>
+					<span class="content2text-2"><br/>电子塔钟是机电一体化产品，由核心控制、子钟和钟面等部分组成。塔钟的核心控制系统，包括母钟，GPS卫星接收器、报时控制、照明控制等组件。</span>
+				</p>
+				<p class="content2text">
+					<span class="content2text-1" title="现代塔钟的演变">现代塔钟的演变</span>
+					<span class="content2text-2"><br/>2014-11-14</span>
+					<span class="content2text-2"><br/>塔钟较早起源于欧洲中世纪的教堂,是完全机械式结构,动力使用重锤,打点钟声完全使用人工撞击铸钟,因此当时一个塔钟工程在建筑和机械结构方面是相当复杂的。</span>
+				</p>
+				<p class="content2text">
+					<span class="content2text-1" title="钟表中的纳米技术">钟表中的纳米技术</span>
+					<span class="content2text-2"><br/>2014-11-14</span>
+					<span class="content2text-2"><br/>纳米是一种长度单位，1纳米是1米的十亿分之一，相当于十个氢原子一个挨一个排起来的长度。20纳米相当于1根头发丝的三千分之一。</span>
+				</p>
+				<p class="content2text">
+					<span class="content2text-1" title="建筑时钟选购指南">建筑时钟选购指南</span>
+					<span class="content2text-2"><br/>2014-11-14</span>
+					<span class="content2text-2"><br/>建筑时钟是指安装在建筑物上的时钟。其特点是1. 户外使用，工作环境恶劣；2. 规格大，钟盘直径小则一米左右，大可至十几米；3. 要求工作可靠性高，否则会造成较大范围的负面影响。</span>
+				</p>
+				<p class="content2text">
+					<span class="content2text-1" title="钟表概述">钟表概述</span>
+					<span class="content2text-2"><br/>2014-11-14</span>
+					<span class="content2text-2"><br/>钟和表的统称。钟和表都是计量和指示时间的精密仪器。</span>
+				</p>
+				<p class="content2text">
+					<span class="content2text-1" title="台湾研发低频系统 钟表也可预警灾害">台湾研发低频系统 钟表也可预警灾害</span>
+					<span class="content2text-2"><br/>2014-11-14</span>
+					<span class="content2text-2"><br/>据中央社26日报道，中华电信投下巨资参与高雄县那玛夏乡高抗灾行动电话基地台共构工程，共构基地台26日启用，启用典礼中展示了这项系统。</span>
+				</p>
+				<p class="content2text">
+					<span class="content2text-1" title="选购钟表时有什么技巧?">选购钟表时有什么技巧?</span>
+					<span class="content2text-2"><br/>2014-11-14</span>
+					<span class="content2text-2"><br/>第一 你要明确你是 要机械表 还是电子表 还是光动能 第二你是要什么牌的手表 什么价位的！</span>
+				</p>
+				<p class="content2text">
+					<span class="content2text-1" title="国内钟表第一展 第21届中国国际钟表展即将开幕">国内钟表第一展 第21届中国国际钟表展即将开幕</span>
+					<span class="content2text-2"><br/>2014-11-14</span>
+					<span class="content2text-3"><br/>享有“中国钟表第一展”盛誉的世界第三大钟表专业展会——“中国(深圳)国际钟表展”，经过二十个春秋的艰苦砥砺，已然奠定了其行业龙头地位。而即将于2010年7月1日—4日召开的“第21届<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国(深圳)国际钟表展览会”将以更加盛大场面热烈开幕。</span>
+				</p>
+				<p class="content2text">
+					<span class="content2text-1" title="钟表市场迈向国际化之路">钟表市场迈向国际化之路</span>
+					<span class="content2text-2"><br/>2014-11-14</span>
+					<span class="content2text-2"><br/> 改革开放３０年来，我国钟表业发展迅猛。根据中国行业研究中心的研究资料显示，目前我国已成为世界钟表生产大国，世界钟表加工基地，产品产量位居世界前列，产品品种也呈现多样化和系列化<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基本上满足了我国不同消费群体的需求。</span>
+				</p>
+			</div>
+			
+		</div>
+		  <!--底部-->
+	   <div class="footer">
+	   	<div class="footernav">
+	   	  <div class="footernav1">
+	   		<div class="footernav1left">
+	   			<p class="footertext1">友情链接</p>
+	   			<p class="footertext2">某某钟表&nbsp;&nbsp;&nbsp;&nbsp;某某钟表行 &nbsp;&nbsp;&nbsp;&nbsp;   某某钟表  &nbsp;&nbsp;&nbsp;&nbsp;   某某钟表行&nbsp;&nbsp;&nbsp;&nbsp;    某某钟表  &nbsp;&nbsp;&nbsp;&nbsp;  某某钟表行   &nbsp;&nbsp;&nbsp;&nbsp; 某某钟表&nbsp;&nbsp;&nbsp;&nbsp;     某某钟表行  &nbsp;&nbsp;&nbsp;&nbsp;   某某钟表    </p>
+	   		</div>
+	   	    <div class="footernav1right">
+	   	    	<p class="footertext3">全国免费咨询热线：</p>
+	   	    	<strong class="footertext4">400-0000-0000</strong>
+	   	    </div>
+	   	  </div>
+	   	  <p class="footernav2">公司地址 中国上海市长宁区外滩路12号MOUMOU大厦5层107室<br/>Copyright © 2009-2011,www.xxxxxx.com,All rights reserved  沪ICP备XXXXXX号 </p>
+	   	 </div>
+	   </div>
+		
+	</body>
+</html>

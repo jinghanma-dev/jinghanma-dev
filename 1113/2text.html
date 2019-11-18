@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		
+	</head>
+	<body>
+		<div id="box">
+			<div v-text="name"></div>
+			<!--<div v-html="name"></div>-->
+		</div>
+		<script type="text/javascript">
+			let vm = new Vue({
+				el:"#box",
+				data:{
+					message:"积分DVD举报VCD就是肯定是未成年",
+					name:"<h1>大家数控机床你不是肯德基洒出 不出家门农村</h1>"
+				}
+			})
+			
+			
+			
+//			
+//			<div id="box">
+//			<div v-text="name"></div>
+//			<div v-html="name"></div>
+//		</div>
+//		<script type="text/javascript">
+//			let vm=new Vue({
+//				el:'#box',
+//				data:{
+//					message:'说的就是个黄金时代',
+//					name:'<h1>首付水电费第三方士大夫</h1>'
+//				}
+//			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0;
+				list-style: none;
+			}
+			
+			.box{
+				width: 800px;
+				margin: 20px auto;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			
+			.head {
+				text-align: center;
+				width: 100%;
+				height:120px;
+				background: #778899;
+				float: left;
+				line-height: 120px;
+			}
+			
+			.text{
+				width: 160px;
+				height: 100px;
+				font-size: 20px;
+				font-weight: 500;
+				color: #000;
+				background: #C0C0C0;
+				float: left;
+				line-height: 100px;
+				/*margin-top: 4px;*/
+				text-align: center;
+				border-bottom: 1px solid saddlebrown;
+			}
+			
+			.content{
+				width: 639px;
+				background: white;
+				height: 100px;
+				float: right;
+				font-size: 15px;
+				/*margin-top: 4px;*/
+				/*border-top: 1px solid rosybrown;*/
+				border-bottom:1px solid rosybrown;
+				border-right: 1px solid rosybrown;
+			}
+			
+			/*.neirong p {
+				vertical-align: middle;
+				
+			}*/
+			.dianhua {
+				margin-left:333px;
+				margin-top:-13px;
+			}
+			.youxiang{
+				position: absolute;
+				left:495px;
+				top: 185px;
+			}
+			.jibenxinxi{
+				width: 160px;
+				height: 120px;
+			}
+			.born{
+				margin-left:333px;
+				margin-top:-95px;
+			}
+			input{
+				border-radius: 2px;
+			}
+			.xueli{
+				margin-top: 20px;
+			}
+			.aihao{
+				padding-top: 10px;
+				margin: 5px;
+			}
+			.yanse{
+				margin: 5px;
+				margin-top: 20px;
+			}
+			.tijiao{
+				width: 800px;
+				height: 30px;
+				line-height: 30px;
+				margin:-20px auto;
+				font-size: 15px;
+				border: 1px solid rosybrown;
+				position: relative;
+			    
+			}
+			.yuedu{
+				left: 540px;
+				top: 0px;
+				position:absolute;
+			}
+			
+			.text:hover{
+				background-color: gray;
+			}
+			.date{
+				font-size: 15px;
+				margin-left: 10px;
+			}
+			.tjrq{
+				margin-left: 290px;
+			}
+			.yonghu{
+				margin-top: 5px;
+			}
+			.mima{
+				margin-top: 5px;
+			}
+			.xingbie{
+				margin-top: 5px;
+			}
+			.tijiji{
+				width: 60px;
+				height: 24px;
+				font-size: 15px;
+				margin-left: 635px;
+				position: absolute;
+				top: 3px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="head">
+				<h1>个人简历</h1>
+			</div>
+			
+				<div class="text">
+					<p class="jibenxinxi">基本信息</p>
+				</div>
+			   <div class="content">
+				  <p>
+				          姓名 ：<input  type="button" value="马静涵" />
+			      </p>
+			     <p class="yonghu">
+				        用户名 ：<input  type="text" />
+			     </p>
+			     <p class="mima">
+				       密码： <input type="password" />
+			    </p>
+			    <p class="xingbie">性别：
+				  <label>男 <input  type="radio" name="sex"  />
+			      </label>
+				  <label> 女 <input type="radio" name="sex"  />  
+				  </label>
+			    </p>
+			    <p class="born">
+			            出生年月：  <input type="date" name="" id="" value="日期" />
+			    </p>
+			    <p class="dianhua">
+			    	<br>
+				    我的电话： <input type="tel" />
+				    </br>
+			    </p>
+			    <p class="youxiang ">
+				我的邮箱： <input type="email" />
+			    </p>
+			</div>
+		      <div class="text">
+					<p class="jiaoyujingli">教育经历</p>
+			  </div>
+			  <div class="content">
+			  	<p class="xueli">
+				学历：
+				<select name="学历">
+					<option>高中</option>
+					<option>专科</option>
+					<option>本科</option>
+					<option>硕士</option>
+					<option>博士</option>
+				</select>
+			</p>
+			  </div>
+			  <div class="text">
+					<p class="gerenaihao">个人爱好</p>
+			  </div>
+			  <div class="content">
+			  	<p class="aihao">
+				爱好： 唱歌 <input type="checkbox" /> 跳舞 <input type="checkbox" />体育<input type="checkbox" /> 画画<input type="checkbox" />
+			   </p>
+			   <p class="yanse">
+				我喜欢的颜色： <input type="color" />
+			   </p>
+			  </div>
+			   <div class="text">
+					<p class="gerenaihao">工作经验</p>
+			  </div>
+			  <div class="content">
+			  	<textarea name="jingyan" rows="6px" cols="88px"></textarea>
+			  </div>
+			  <div class="text">
+					<p class="gerenaihao">自我评价</p>
+			  </div>
+			  <div class="content">
+			  	<textarea name="jianjie" rows="6px" cols="88px"></textarea>
+			  </div>
+		  </div> 
+		  <div class="tijiao">
+		  	<p class="tjrq">
+		        日期:<input class="date" type="date" name="" id="" value="日期" />
+		  	</p>
+		  	<p  class="yuedu">
+		  	<input type="checkbox" name="" id="" value="" />已阅读
+		  	</p>
+		  	<p>
+		  	<input class="tijiji" type="submit" name="submit" value="提交"/>
+		  	</p>
+		  </div>
+	 </body>
+
+</html>

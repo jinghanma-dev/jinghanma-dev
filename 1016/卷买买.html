@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="//cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="//cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.top {
+				width: 100%;
+				height: 30px;
+				background-color: #F6F6F6;
+				margin: auto;
+			}
+			
+			.topleft {
+				width: 1200px;
+				height: 30px;
+				/*border: 1px solid red;*/
+				margin: auto;
+			}
+			
+			.topleft1 {
+				width: 80px;
+				height: 30px;
+				/*background-color: palegoldenrod;*/
+				font-size: 12px;
+				float: left;
+				margin-left: 15px;
+				line-height: 30px;
+				border-right: 1px solid gainsboro;
+			}
+			
+			.topleft2 {
+				width: 85px;
+				height: 30px;
+				/*background-color: palegoldenrod;*/
+				font-size: 12px;
+				float: left;
+				margin-left: 10px;
+				line-height: 30px;
+				border-right: 1px solid gainsboro;
+			}
+			
+			.topleft2tu {
+				width: 15px;
+				height: 25px;
+				background-image: url(img/icon-phone.gif);
+				background-repeat: no-repeat;
+				margin-top: -1px;
+			}
+			
+			.topleft2text {
+				width: 80px;
+				height: 30px;
+				font-size: 12px;
+				float: left;
+				margin-left: 20px;
+				line-height: 30px;
+				margin-top: -25px;
+			}
+			
+			.topright {
+				width: 240px;
+				height: 30px;
+				/*background-color: paleturquoise;*/
+				float: right;
+				margin-right: 82px;
+				margin-top: -31px;
+			}
+			
+			.toprighttext {
+				width: 60px;
+				height: 30px;
+				/*background-color: palevioletred;*/
+				float: left;
+				font-size: 12px;
+				line-height: 30px;
+			}
+			
+			.topkuang {
+				width: 1200px;
+				height: 30px;
+				margin: auto;
+			}
+			
+			.daokuang {
+				width: 100%;
+				height: 120px;
+			}
+			
+			.dao {
+				width: 1200px;
+				height: 120px;
+				/*background-color: paleturquoise;*/
+				margin: auto;
+			}
+			
+			.daoleft {
+				width: 280px;
+				height: 60px;
+				background-image: url(img/tt1.gif);
+				/*border: 1px solid red;*/
+				background-repeat: no-repeat;
+				float: left;
+				background-position-x: 10px;
+				margin-top: 30px;
+			}
+			
+			.sousuo {
+				width: 400px;
+				height: 45px;
+				margin-top: 35px;
+				margin-left: 50px;
+			}
+			
+			.chazhao {
+				width: 75px;
+				height: 45px;
+				background-color: #F01A61;
+				font-size: 14px;
+				color: white;
+				line-height: 45px;
+				text-align: center;
+				float: right;
+				margin-right: 395px;
+				margin-top: 35px;
+			}
+			
+			.daoright {
+				width: 280px;
+				height: 80px;
+				/*border: 1px solid red;*/
+				float: right;
+				margin-top: -60px;
+				background-image: url(img/tt2.png);
+				background-repeat: no-repeat;
+			}
+			
+			.header {
+				width: 100%;
+				height: 40px;
+				background-color: #F00582;
+			}
+			
+			.headerkuang {
+				width: 1200px;
+				height: 40px;
+				margin: auto;
+				/*background-color: paleturquoise;*/
+			}
+			
+			.header li {
+				width: 140px;
+				height: 40px;
+				list-style: none;
+				color: white;
+				/*border: 1px solid red;*/
+				line-height: 40px;
+				font-size: 16px;
+				text-align: center;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.header li:hover {
+				color: #ecfa08;
+				text-decoration: underline;
+			}
+			
+			.banner {
+				width: 1200px;
+				height: 360px;
+				margin: auto;
+				/*background-color: palegreen;*/
+			}
+			
+			.bannerleft {
+				width: 200px;
+				height: 360px;
+				padding-left: 18px;
+				background-color: white;
+				float: left;
+			}
+			
+			.bannerleft1 {
+				width: 90px;
+				height: 45px;
+				/*background-color: lightpink;*/
+				float: left;
+				margin-top: 5px;
+				border-bottom: 1px dashed gainsboro;
+			}
+			
+			.bannerleft1tu1 {
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: 0px;
+				background-position-y: 0px;
+				margin-top: 10px;
+				background-repeat: no-repeat;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.bannerleft1text {
+				width: 55px;
+				height: 35px;
+				/*background-color: papayawhip;*/
+				font-size: 14px;
+				text-align: left;
+				line-height: 48px;
+				cursor: pointer;
+				float: right;
+			}
+			
+			.bannerleft1tu2 {
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -120px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.bannerleft1tu3 {
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -215px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.bannerleft1tu4 {
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -23px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.bannerleft1tu5 {
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -143px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.bannerleft1tu6 {
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -47px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.bannerleft1tu7 {
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -72px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.bannerleft1tu8 {
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -167px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.bannerleft1tu9 {
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -239px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.bannerleft1tu10 {
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -95px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.bannerleft1tu11 {
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -312px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.bannerleft1tu12 {
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -287px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.bannerleft1tu13 {
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -192px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.bannerleft1tu14 {
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -263px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			
+			.bannerleft1text:hover {
+				color: #f8285c;
+				text-decoration: underline;
+			}
+			
+			.bannerleft1tu1:hover {
+				width: 25px;
+				height: 25px;
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			
+			.bannerleft1tu2:hover {
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			
+			.bannerleft1tu3:hover {
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			
+			.bannerleft1tu4:hover {
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			
+			.bannerleft1tu5:hover {
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			
+			.bannerleft1tu6:hover {
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			
+			.bannerleft1tu7:hover {
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			
+			.bannerleft1tu8:hover {
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			
+			.bannerleft1tu9:hover {
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			
+			.bannerleft1tu10:hover {
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			
+			.bannerleft1tu11:hover {
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			
+			.bannerleft1tu12:hover {
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			
+			.bannerleft1tu13:hover {
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			
+			.bannerleft1tu14:hover {
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			
+			#myCarousel {
+				width: 710px;
+				height: 360px;
+				float: left;
+			}
+			
+			.carousel-inner .item {
+				width: 710px;
+				height: 360px;
+			}
+			
+			#myCarousel .carousel-inner .item img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.bannerright {
+				width: 280px;
+				height: 360px;
+				background-color: white;
+				float: right;
+			}
+			
+			.bannerright1 {
+				width: 280px;
+				height: 120px;
+				border-bottom: 1px dashed gainsboro;
+			}
+			
+			.bannerright2 {
+				width: 280px;
+				height: 120px;
+				/*border-bottom: 1px dashed gainsboro;*/
+			}
+			
+			.bannerrighttu1 {
+				width: 95px;
+				height: 95px;
+				background-image: url(img/br1.jpg);
+				background-repeat: no-repeat;
+				background-size: 100%;
+				float: left;
+				margin-top: 10px;
+				cursor: pointer;
+			}
+			
+			.bannerrighttu2 {
+				width: 95px;
+				height: 95px;
+				background-image: url(img/br2.jpg);
+				background-repeat: no-repeat;
+				background-size: 100%;
+				float: left;
+				margin-top: 10px;
+				cursor: pointer;
+			}
+			
+			.bannerrighttu3 {
+				width: 95px;
+				height: 95px;
+				background-image: url(img/br3.jpg);
+				background-repeat: no-repeat;
+				background-size: 100%;
+				float: left;
+				margin-top: 10px;
+				cursor: pointer;
+			}
+			
+			.bannerrighttext1 {
+				width: 175px;
+				height: 23px;
+				overflow: hidden;
+				font-size: 16px;
+				/*line-height: 10px;*/
+				text-overflow: ellipsis;
+				/*background-color: darkslateblue;*/
+				float: right;
+				margin-top: 15px;
+			}
+			
+			.bannerrighttext2 {
+				width: 170px;
+				height: 65px;
+				/*background-color: mediumseagreen;*/
+				float: left;
+				font-size: 12px;
+				margin-left: 10px;
+			}
+			
+			.contentkkuang {
+				width: 100%;
+				overflow: hidden;
+				background-color: #F6F6F6;
+			}
+			
+			.content1 {
+				width: 1200px;
+				height: 100px;
+				margin: auto;
+				/*background-color: palevioletred;*/
+			}
+			
+			.content1left {
+				width: 680px;
+				height: 43px;
+				/*background-color: paleturquoise;*/
+				float: left;
+				margin-top: 30px;
+			}
+			
+			.content1right {
+				width: 480px;
+				height: 43px;
+				/*background-color: plum;*/
+				float: right;
+				margin-top: 30px;
+			}
+			
+			.content1-1 {
+				width: 180px;
+				height: 43px;
+				float: left;
+				/*margin-left: 15px;*/
+				/*border: 1px solid red;*/
+			}
+			
+			.content1-2 {
+				width: 180px;
+				height: 43px;
+				float: left;
+				margin-left: 35px;
+				/*border: 1px solid red;*/
+			}
+			
+			.content1lefttu1 {
+				width: 43px;
+				height: 43px;
+				/*background-color: greenyellow;*/
+				background-image: url(img/header-total.gif);
+				background-position-x: -458px;
+				background-position-y: -102px;
+				background-repeat: no-repeat;
+				float: left;
+			}
+			
+			.content1lefttu2 {
+				width: 43px;
+				height: 43px;
+				/*background-color: greenyellow;*/
+				background-image: url(img/header-total.gif);
+				background-position-x: -458px;
+				background-position-y: -145px;
+				background-repeat: no-repeat;
+				float: left;
+			}
+			
+			.content1lefttu3 {
+				width: 43px;
+				height: 43px;
+				/*background-color: greenyellow;*/
+				background-image: url(img/header-total.gif);
+				background-position-x: -458px;
+				background-position-y: -188px;
+				background-repeat: no-repeat;
+				float: left;
+			}
+			
+			.content1lefttext {
+				width: 120px;
+				height: 43px;
+				/*background-color: brown;*/
+				text-align: center;
+				line-height: 43px;
+				float: right;
+			}
+			
+			.content1right {
+				width: 260px;
+				height: 43px;
+				/*background-color: palevioletred;*/
+				float: right;
+			}
+			
+			.title {
+				width: 130px;
+				/*line-height: 25px;*/
+				font-size: 16px;
+				/*background-color: cornflowerblue;*/
+				text-align: right;
+				float: left;
+			}
+			
+			.txt {
+				width: 130px;
+				float: left;
+				font-size: 14px;
+				text-align: right;
+				margin-top: -10px;
+				/*background-color: lightgoldenrodyellow;*/
+			}
+			
+			.txt1 {
+				width: 130px;
+				height: 43px;
+				/*background-color: darkseagreen;*/
+				text-align: center;
+				line-height: 43px;
+				font-size: 18px;
+				float: right;
+				margin-right: 120px;
+			}
+			
+			.box1 {
+				width: 130px;
+				/*height: 43px;*/
+				float: left;
+				margin-left: -160px;
+			}
+			
+			.nav {
+				width: 200px;
+				height: 360px;
+				/*padding-left: 18px;*/
+				background-color: white;
+				float: left;
+				/*border: 2px solid royalblue;*/
+				overflow: hidden;
+			}
+			
+			.goodsType {
+				width: 50%;
+				list-style: none;
+				background-color: white;
+				line-height: 60px;
+				border-bottom: 2px dotted #DEB887;
+				float: left;
+			}
+			
+			.goodsType:hover {
+				color: red;
+			}
+			
+			.goodsType img {
+				width: 50px;
+				height: 50px;
+				vertical-align: middle;
+				margin-right: 20px;
+			}
+			
+			.goodsList {
+				width: 1200px;
+				/*background-color: bisque;*/
+				margin: 30px auto;
+				/*height: 1000px;*/
+				padding: 10px;
+
+				overflow: hidden;
+			}
+			
+			.goodsList .item {
+				width: 218px;
+				height: 300px;
+				background-color: white;
+				
+				float: left;
+				border: 1px solid #A9A9A9;
+				margin: 5px;
+				padding: 5px;
+			}
+			
+			.goodsList .item img {
+				width: 100%;
+			}
+			
+			.goodsList .item * {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.pagination ul li{
+				margin: auto;
+				margin-top: 30px;
+				float: left;
+			}
+			.fenye{
+				width: 1200px;
+				height: 100px;
+				/*background-color: palegreen;*/
+				margin: auto;
+				text-align: center;
+				line-height: 30px;
+				margin-top: 30px;
+			}
+			.footer{
+				width: 100%;
+				/*overflow: hidden;*/
+				height: 280px;
+				/*margin-top: 20px;*/
+				background-color: white;
+			}
+			.f1{
+				width: 100%;
+				height: 5px;
+				background-color: #F8285C;
+			}
+			.f2{
+				width: 1200px;
+				margin: auto;
+			}
+			.footerleft{
+				width: 160px;
+				height: 160px;
+				float: left;
+				/*border: 1px solid red;*/
+				margin-top: 25px;
+			}
+			.footerleft1{
+				width: 130px;
+				height: 140px;
+				/*margin-top: 25px;*/
+				/*border:1px solid red;*/
+				background-image: url(img/erweima.png);
+				background-repeat: no-repeat;
+				background-size: 100%;
+			}
+			.footerleft2{
+				width: 140px;
+				height: 20px;
+				font-size: 12px;
+				color: #F8285C;
+			}
+			.footerright{
+				width: 850px;
+				height: 150px;
+				margin-top: 25px;
+				float: right;
+				/*border: 1px solid red;*/
+			}
+			.footer-rt{
+				width: 850px;
+				height: 25px;
+				/*float: left;*/
+				
+			}
+			.footer-rt1{
+				width: 165px;
+				height: 25px;
+				text-align: center;
+				list-style: none;
+				float: left;
+			}
+			.footer-rt2{
+				width: 180px;
+				height: 20px;
+				font-size: 12px;
+				text-align: left;
+				list-style: none;
+			}
+			.footer-rt2 li{
+				margin-left: 55px;
+				margin-top: 15px;
+			}
+			.dibu{
+				width: 1200px;
+				height: 30px;
+				font-size: 14px;
+				text-align: center;
+				line-height: 30px;
+				float: left;
+				margin-top: 20px;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="top">
+			<div class="topkuang">
+				<div class="topleft">
+					<div class="topleft1">淘宝优惠卷</div>
+					<div class="topleft2">
+						<div class="topleft2tu"></div>
+						<p class="topleft2text">手机领卷</p>
+					</div>
+				</div>
+				<div class="topright">
+					<div class="toprighttext">登录</div>
+					<div class="toprighttext">用户中心</div>
+					<div class="toprighttext">免费注册</div>
+					<div class="toprighttext">在线客服</div>
+				</div>
+			</div>
+		</div>
+		<div class="daokuang">
+			<div class="dao">
+				<div class="daoleft"></div>
+				<input class="sousuo" type="search" value="输入标题或关键字查找优惠卷" />
+				<div class="chazhao">搜优惠卷</div>
+				<div class="daoright"></div>
+			</div>
+		</div>
+		<div class="header">
+			<ul class="headerkuang">
+				<li>最新淘宝优惠卷</li>
+				<li>优选好卷</li>
+				<li>领卷榜单</li>
+				<li>9.9包邮</li>
+				<li>20元封顶</li>
+				<li>卷买买APP</li>
+				<li>查优惠卷</li>
+			</ul>
+		</div>
+		<div class="contentkkuang">
+			<div class="banner">
+				<div class="nav">
+			   
+		      
+				<div class="bannerleft">
+					<div class="bannerleft1">
+						<div class="bannerleft1tu1"></div>
+						<div class="bannerleft1text">女装</div>
+					</div>
+					<div class="bannerleft1">
+						<div class="bannerleft1tu2"></div>
+						<div class="bannerleft1text">美妆</div>
+					</div>
+					<div class="bannerleft1">
+						<div class="bannerleft1tu3"></div>
+						<div class="bannerleft1text">美食</div>
+					</div>
+					<div class="bannerleft1">
+						<div class="bannerleft1tu4"></div>
+						<div class="bannerleft1text">男装</div>
+					</div>
+					<div class="bannerleft1">
+						<div class="bannerleft1tu5"></div>
+						<div class="bannerleft1text">日用</div>
+					</div>
+					<div class="bannerleft1">
+						<div class="bannerleft1tu6"></div>
+						<div class="bannerleft1text">鞋品</div>
+					</div>
+					<div class="bannerleft1">
+						<div class="bannerleft1tu7"></div>
+						<div class="bannerleft1text">箱包</div>
+					</div>
+					<div class="bannerleft1">
+						<div class="bannerleft1tu8"></div>
+						<div class="bannerleft1text">家装</div>
+					</div>
+					<div class="bannerleft1">
+						<div class="bannerleft1tu9"></div>
+						<div class="bannerleft1text">数码</div>
+					</div>
+					<div class="bannerleft1">
+						<div class="bannerleft1tu10"></div>
+						<div class="bannerleft1text">母婴</div>
+					</div>
+					<div class="bannerleft1">
+						<div class="bannerleft1tu11"></div>
+						<div class="bannerleft1text">配饰</div>
+					</div>
+					<div class="bannerleft1">
+						<div class="bannerleft1tu12"></div>
+						<div class="bannerleft1text">内衣</div>
+					</div>
+					<div class="bannerleft1">
+						<div class="bannerleft1tu13"></div>
+						<div class="bannerleft1text">文体</div>
+					</div>
+					<div class="bannerleft1">
+						<div class="bannerleft1tu14"></div>
+						<div class="bannerleft1text">运动</div>
+					</div>
+				</div>
+				
+				</div>
+				<div id="myCarousel" class="carousel slide">
+					<!-- 轮播（Carousel）指标 -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+
+					</ol>
+					<!-- 轮播（Carousel）项目 -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="https://wumeili.top/userfiles/1/images/img/2019/09/TB1VTxGgED1gK0jSZFGXXbd3FXa-440-180.jpg" alt="First slide">
+						</div>
+						<div class="item">
+							<img src="https://wumeili.top/userfiles/1/images/img/2019/09/banner1.jpg" alt="Second slide">
+						</div>
+						<div class="item">
+							<img src="https://wumeili.top/userfiles/1/images/img/2019/09/banner4.jpg" alt="Third slide">
+						</div>
+					</div>
+					<!-- 轮播（Carousel）导航 -->
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+
+				<div class="bannerright">
+					<div class="bannerright1">
+						<div class="bannerrighttu1" title="造型精美的大容量冰桶，高效锁冷"></div>
+						<div class="bannerrighttext1"><strong>造型精美的大容量冰桶，高效锁冷</strong></div>
+						<div class="bannerrighttext2">Bloomingville法式复古冰桶，淘宝优惠券20元；ALOHA雕花冰块桶，天猫优惠券20元；Sunn......</div>
+					</div>
+					<div class="bannerright1">
+						<div class="bannerrighttu2" title="纯手工打造的无烟蜡烛，独特形态设计，安全环保美观"></div>
+						<div class="bannerrighttext1"><strong>纯手工打造的无烟蜡烛，独特形态设计，安全环保美观</strong></div>
+						<div class="bannerrighttext2">CHIC ROSE 无烟手工蜡烛，淘宝优惠券2元；CHIC ROSE灰粉色蜡烛，淘宝优惠券2元；CHICC ......</div>
+					</div>
+					<div class="bannerright2">
+						<div class="bannerrighttu3" title="味道和口感都特别好的特级菇，个头大而均匀，肉质紧实"></div>
+						<div class="bannerrighttext1"><strong>味道和口感都特别好的特级菇，个头大而均匀，肉质紧实</strong></div>
+						<div class="bannerrighttext2">云妈农家干货 随州干香菇，淘宝优惠券3元；三里岗 1斤装出口特级天白花菇，淘宝优惠券......</div>
+					</div>
+				</div>
+			</div>
+			<div class="content1">
+				<div class="content1left">
+					<div class="content1-1">
+						<div class="content1lefttu1"></div>
+						<div class="content1lefttext">天猫淘宝代金卷</div>
+					</div>
+					<div class="content1-2">
+						<div class="content1lefttu2"></div>
+						<div class="content1lefttext">淘宝优惠购物卷</div>
+					</div>
+					<div class="content1-2">
+						<div class="content1lefttu3"></div>
+						<div class="content1lefttext">特价红包抵用卷</div>
+					</div>
+				</div>
+
+				<div class="content1right">
+					<div class="box1">
+						<p class="title">每天10：00上新</p>
+						<p class="txt">据下次更新还有：</p>
+					</div>
+					<div class="txt1">
+						<p>00时</p>
+						<p>00分</p>
+						<p>00秒</p>
+
+					</div>
+				</div>
+			</div>
+			
+			<div class="goodsList">
+
+			</div>
+			<div class="fenye">
+			<ul class="pagination">
+				<li>
+					<a href="#">&laquo;</a>
+				</li>
+				<li>
+					<a href="#">1</a>
+				</li>
+				<li>
+					<a href="#">2</a>
+				</li>
+				<li>
+					<a href="#">3</a>
+				</li>
+				<li>
+					<a href="#">4</a>
+				</li>
+				<li>
+					<a href="#">5</a>
+				</li>
+				<li>
+					<a href="#">&raquo;</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+		</div>
+		</div>
+        <div class="footer">
+        	<div class="f1"></div>
+        	<div class="f2">
+        	<div class="footerleft">	
+        	<div class="footerleft1"></div>
+        	<div class="footerleft2">下载APP享淘宝购物优惠</div>
+        	</div>
+        	<div class="footerright">
+        		<ul class="footer-rt">
+        			<li class="footer-rt1">
+        				关于券买买
+        				<ul class="footer-rt2">
+        					<li>关于券买买</li>
+        					<li>联系券买买</li>
+        					<li>隐私政策</li>
+        					<li>qq空间</li>
+        				</ul>
+        			</li>
+        			<li class="footer-rt1">
+        				商务合作
+        			    <ul class="footer-rt2">
+        					<li>卖家报名</li>
+        					<li>免责申明</li>
+        					<li>广告合作</li>
+        					<li>淘宝优惠券APP</li>
+        				</ul>
+        			</li>
+        			<li class="footer-rt1">
+        				用户帮助
+        			    <ul class="footer-rt2">
+        					<li>常见问题</li>
+        					<li>抢券小技巧</li>
+        					<li>怎么领取淘宝优惠券</li>
+        					<li>淘宝优惠券怎么用</li>
+        				</ul>
+        			</li>
+        			<li class="footer-rt1">
+        				领卷中心
+        				<ul class="footer-rt2">
+        					<li>天猫超市优惠券</li>
+        					<li>京东优惠券</li>
+        					<li>怎么领取淘宝优惠券</li>
+        					<li>精选淘宝优惠券</li>
+        				</ul>
+        			</li>
+        		</ul>
+        	</div>
+        	<div class="dibu">Copyright©2019　券买买：淘宝天猫（天猫超市）优惠券、代金券、抵用券、购物券、打折券领取  渝ICP备17016163号-4　　</div>
+        	</div>
+        	
+        </div>
+	</body>
+	<script src="//cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$.ajax({
+			type: "get",
+			url: "http://127.0.0.1/w/website/bannerList",
+			async: true,
+			success: function(res) {
+				var imgs = [];
+				var urls = [];
+				console.log(res);
+				$.each(res.data, function(index, item) {
+					imgs.push(item.img);
+					urls.push(item.linkUrl)
+				});
+				//				console.log(imgs)
+				var item_img = $("#myCarousel .carousel-inner .item img");
+				item_img.each(function(i) {
+					$(this)[0].src = imgs[i];
+					$(this).wrap("<a href='" + urls[i] + "'></a>");
+				})
+				console.log(item_img[0])
+			}
+		});
+
+		function daojishi() {
+			var txt1 = document.getElementsByClassName("txt1")[0];
+			var time = new Date();
+
+			var h = 23 - time.getHours();
+			var m = 59 - time.getMinutes();
+			var s = 59 - time.getSeconds();
+			if(s < 10) {
+				s = "0" + s;
+			}
+			if(m < 10) {
+				m = "0" + m;
+			}
+			if(h < 10) {
+				h = "0" + h;
+			}
+
+			var str = +h + "时" + m + "分" + s + "秒";
+
+			txt1.innerText = str;
+		}
+		daojishi();
+		setInterval(daojishi, 1000);
+
+		$.ajax({
+			type: "get",
+			url: "http://127.0.0.1/w/website/findGoodsTypeList",
+			async: true,
+			success: function(res) {
+				//				console.log(res.data);
+				var shuju = res.data;
+				var nav = $(".nav ul");
+				$.each(shuju, function(index, item) {
+					console.log(item.name);
+					var str = `<li class='goodsType'> <img src = '${item.icon}'/>${item.name} </li>`
+					nav.append(str)
+				});
+			}
+		});
+
+		function getGoods(types, num) {
+			$.ajax({
+				type: "get",
+				url: "http://127.0.0.1/w/website/findGoodsList",
+				async: true,
+				data: {
+					"info": types,
+					"pageNo": num
+				},
+				success: function(res) {
+					var shuju = res.data.tbk_dg_material_optional_response.result_list.map_data;
+					console.log(shuju)
+					$.each(shuju, function(index, item) {
+						//						
+						str = `
+								<div class="item">
+									<a href="${item.item_url}">
+										<img src="${item.pict_url}"/>
+										<h4>${item.short_title}</h4>
+									</a>
+									<p>
+										<span>现价:${item.zk_final_price}元</span>
+										<span>月销量:${item.tk_total_sales}</span>
+									</p>
+									<p>
+										<span>卷后:${item.zk_final_price-item.coupon_amount}元</span>	
+										<span>领劵:${item.coupon_amount}元</span>	
+										
+									</p>
+								</div>
+						`;
+						$(".goodsList").append(str);
+					});
+				}
+			});
+		}
+
+		getGoods("女装", 1)
+	</script>
+
+</html>

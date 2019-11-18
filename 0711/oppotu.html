@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.box {
+				width: 400px;
+				height: 311px;
+				/*border: 2px solid red;*/
+				margin: 30px auto;
+				background-image: url(img/t1.jpg);
+				transition: all 0.5s;
+			}
+			
+			.shang {
+				width: 400px;
+				height: 311px;
+				color: white;
+				text-align: center;
+				overflow: hidden;
+				display: none;
+				position: relative;
+				
+			}
+			
+			.box:hover .shang {
+				display: block;
+			}
+			
+			.shang:hover {
+				background-color: rgba(0, 0, 0, 0.4);
+				transition: all 0.3s;
+			}
+			
+			.title {
+				margin-top: 111px;
+				margin-bottom: 15px;
+			}
+			.lt{
+				width: 30px;
+				height: 25px;
+				border-left: 1px solid whitesmoke;
+				border-top: 1px solid whitesmoke;
+				position: absolute;
+				transition: all 0.5s;
+				left: 0;
+				top: 0;
+			}
+			.shang:hover .lt{
+				left: 55px;
+				top: 70px;
+			}
+			.lb{
+				width: 30px;
+				height: 25px;
+				border-left: 1px solid whitesmoke;
+				border-bottom: 1px solid whitesmoke;
+				position: absolute;
+				transition: all 0.5s;
+				left: 0;
+				bottom: 0;
+			}
+			.rt{
+				width: 30px;
+				height: 25px;
+				border-right: 1px solid whitesmoke;
+				border-top: 1px solid whitesmoke;
+				position: absolute;
+				transition: all 0.5s;
+				right: 0;
+				top: 0;
+			}
+			.rb{
+				width: 30px;
+				height: 25px;
+				border-right: 1px solid whitesmoke;
+				border-bottom: 1px solid whitesmoke;
+				position: absolute;
+				transition: all 0.5s;
+				right: 0;
+				bottom: 0;
+			}
+			.shang:hover .rt{
+				right: 55px;
+				top: 70px;
+			}
+			.shang:hover .lb{
+			    left: 55px;
+				bottom: 80px;
+			}
+			.shang:hover .rb{
+			    right: 55px;
+				bottom: 80px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="shang">
+				<h2 class="title">换个角度看世界</h2>
+				<p>
+					84.6万人参与
+				</p>
+				<div class="lt"></div>
+				<div class="lb"></div>
+				<div class="rt"></div>
+				<div class="rb"></div>
+			</div>
+		</div>
+	</body>
+
+</html>

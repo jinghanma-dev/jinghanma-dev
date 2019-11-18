@@ -1,0 +1,532 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.top {
+	width: 1200px;
+	height: 80px;
+	/*background-color: cornflowerblue;*/
+	margin: 0 auto;
+}
+
+.logo {
+	width: 320px;
+	height: 60px;
+	/*background-color: lightgoldenrodyellow;*/
+	margin-top: 10px;
+	float: left;
+}
+
+.logo_txt1 {
+	display: block;
+	width: 130px;
+	/*background-color: darkseagreen;*/
+	font-size: 40px;
+	color: red;
+	line-height: 60px;
+	float: left;
+}
+
+.logo_txt2 {
+	width: 160px;
+	height: 40px;
+	/*background-color:darkseagreen ;*/
+	border-left: 1px solid darkgray;
+	float: left;
+	line-height: 40px;
+	font-size: 18px;
+	color: gray;
+	text-indent: 10px;
+	margin-top: 10px;
+}
+
+.search {
+	width: 320px;
+	height: 40px;
+	background-image: url(../img/sousuo_red.png);
+	background-position-y: 4px;
+	padding-left: 37px;
+	background-repeat: no-repeat;
+	border: 1px solid red;
+	margin-left: 100px;
+	margin-top: 20px;
+	float: left;
+	color: #999999;
+	outline: none;
+}
+
+.search_btn {
+	width: 80px;
+	height: 40px;
+	background-color: red;
+	margin-top: 20px;
+	float: left;
+	font-size: 18px;
+	color: white;
+	outline: none;
+	border: none;
+}
+
+.top_r {
+	width: 224px;
+	height: 60px;
+	background-image: url(../img/headgrup.png);
+	background-size: 224px 60px;
+	/*background-color: darkseagreen;*/
+	background-repeat: no-repeat;
+	float: right;
+	margin-top: 10px;
+}
+
+nav {
+	height: 50px;
+	background-color: #f84e4e;
+}
+
+ul {
+	list-style: none;
+}
+
+.daohang {
+	width: 90px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.daohang:nth-of-type(4) {
+	background-color: #e32f2f;
+}
+
+.daohang a {
+	color: white;
+	text-decoration: none;
+}
+
+.xdh a {
+	text-decoration: none;
+	color: #333333;
+}
+
+.xdh a:hover {
+	color: red;
+}
+
+.shangpin_text1,
+.shangpin_text2 {
+	margin-left: 3px;
+}
+
+.cation-list {
+	overflow: hidden;
+}
+
+.cation-list dt {
+	float: left;
+	width: 64px;
+	font-weight: 700;
+	line-height: 48px;
+	position: relative;
+	color: #333;
+}
+
+:before,
+ :after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.cation-list dt:after {
+	content: "";
+	position: absolute;
+	right: 12px;
+	top: 22px;
+	border: 1px solid #333;
+	border-width: 0 1px 1px 0;
+	width: 4px;
+	height: 4px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.cation-list dd {
+	border-bottom: 1px dotted #e0e0e0;
+	margin-left: 64px;
+	overflow: hidden;
+}
+
+.cation-list dd a {
+	color: #8d8d91;
+	font-size: 14px;
+	line-height: 14px;
+	height: 14px;
+	float: left;
+	border-right: 1px solid #e0e0e0;
+	padding: 0 18px;
+	margin: 17px 0;
+}
+
+.cation-list dd a.on,
+.cation-list a:hover {
+	color: #fc8080;
+}
+
+.cation-list dd a:last-child {
+	border-right: 0 none;
+}
+
+.cation-list:last-of-type dd {
+	border-bottom: 0 none;
+}
+
+.fixed {
+    position: fixed;
+	top: 0;
+	z-index: 99;
+}
+/*商品轮播*/
+
+.nine_logo {
+	width: 310px;
+	height: 60px;
+	/*background-color: cadetblue;*/
+	margin: 0 auto;
+	background-image: url(../img/nine_logo.png);
+	background-size: 310px 60px;
+	margin-top: 20px;
+}
+
+.lb_baoyou {
+	width: 1160px;
+	height: 318px;
+	/*background-color: lightgray;*/
+	margin: 0 auto;
+	margin-top: 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+.lb_baoyou1{
+	list-style: none;
+	width: 50000px;
+	height: 318px;
+	position: absolute;
+}
+
+.lb_baoyou2{
+	width: 226px;
+	height:308px;
+	background-color:white;
+	margin: 5px 0px 0px 5px;
+	float: left;
+	padding: 10px;
+}
+.lb_baoyou2 img{
+	width: 100%;
+	height: 240px;
+}
+.lb_baoyou2 a{
+	color: #333333;
+}
+.title1{
+	width: 100%;
+	line-height: 26px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.jiage{
+	width: 100%;
+	background-color: cadetblue;
+	margin-top: -10px;
+}
+.qhj_txt4,.qhj_txt5{
+	color: red;
+	line-height: 30px;
+	font-size: 24px;
+	float: left;
+}
+.qhj_txt5{
+	font-size: 14px;
+	color: #999999;
+	float: right;
+}
+.big_item {
+	width: 1180px;
+	height: 50px;
+	/*background-color: cadetblue;*/
+	background-image: url(../img/jingpin1.png);
+	background-repeat: no-repeat;
+	border-bottom: 1px dashed darkgray;
+	margin: 0 auto;
+}
+
+.jingpin {
+	line-height: 50px;
+	font-size: 30px;
+	text-indent: 54px;
+	color: red;
+	float: left;
+}
+
+.jingpin1 {
+	line-height: 50px;
+	font-size: 14px;
+	color: #999999;
+	float: right;
+}
+
+.jingpin1:hover {
+	color: red;
+}
+
+.content {
+	width: 1200px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.content_item {
+	width: 280px;
+	overflow: hidden;
+	/*background-color: whitesmoke;*/
+	float: left;
+	margin: 10px;
+	border: 2px solid red;
+	transition: all .5s;
+}
+
+.content_item:hover {
+	box-shadow: 0px 0px 8px gray;
+}
+
+.content_item img {
+	width: 100%;
+	height: 300px;
+}
+
+.title {
+	width: 278px;
+	line-height: 16px;
+	/*background-color: darkseagreen;*/
+	background-image: url(../img/huo.png);
+	background-repeat: no-repeat;
+	text-indent: 18px;
+	color: #333333;
+	margin-top: 5px;
+}
+
+.title:hover {
+	color: red;
+}
+
+.xsl {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	/*background-color: red;*/
+	color: #999;
+	padding: 0 5px;
+}
+
+.xsl_text1 {
+	float: left;
+	text-decoration: line-through;
+}
+
+.xsl_text2 {
+	float: right;
+}
+
+.item2 {
+	width: 100%;
+}
+
+.qhj {
+	width: 154px;
+	/*background-color: green;*/
+	float: left;
+	margin-left: 5px;
+	margin-top: 10px;
+	position: relative;
+}
+
+.qhj_txt1,
+.qhj_txt2 {
+	display: block;
+	width: 42px;
+	background-color: red;
+	color: white;
+	float: left;
+}
+
+.qhj_txt2 {
+	width: 10px;
+	color: red;
+	background-color: white;
+	margin: 5px;
+}
+
+.qhj_txt3 {
+	color: red;
+	font-size: 28px;
+	position: absolute;
+	top: -9px;
+	left: 59px;
+}
+
+.youhui {
+	width: 80px;
+	height: 60px;
+	/*background-color: green;*/
+	float: right;
+	margin-top: -10px;
+}
+
+.youhui a {
+	text-decoration: none;
+}
+
+.youhui_text1,
+.youhui_text2 {
+	width: 100%;
+	line-height: 30px;
+	text-align: center;
+	background-color: mediumvioletred;
+	color: white;
+}
+
+
+/*分页*/
+
+#page {
+	margin: 20px auto;
+	color: #666;
+	display: block;
+	text-align: center;
+}
+
+#page li {
+	display: inline-block;
+	min-width: 30px;
+	height: 28px;
+	cursor: pointer;
+	color: #666;
+	font-size: 13px;
+	line-height: 28px;
+	background-color: white;
+	border: 1px solid lightgray;
+	text-align: center;
+	margin: 0 4px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.xl-nextPage,
+.xl-prevPage {
+	width: 60px;
+	color: #0073A9;
+	height: 28px;
+}
+
+#page li.xl-disabled {
+	opacity: .5;
+	cursor: no-drop;
+}
+
+#page li.xl-disabled:hover {
+	background-color: #f9f9f9 !important;
+	border: 1px solid #dce0e0 !important;
+	color: #666 !important;
+}
+
+#page li.xl-active {
+	background-color: lightblue;
+	border-color: lightblue;
+	color: #FFF
+}
+
+#page li:hover {
+	background-color: lightblue !important;
+	border-color: lightblue;
+	color: #FFF
+}
+
+#page li.xl-jumpText {
+	background-color: rgba(0, 0, 0, 0);
+	border-color: rgba(0, 0, 0, 0);
+	opacity: 1;
+}
+
+#page li.xl-jumpText:hover {
+	background-color: rgba(0, 0, 0, 0) !important;
+	border-color: rgba(0, 0, 0, 0) !important;
+}
+
+#page li.xl-jumpButton {
+	padding: 0 5px;
+}
+
+#xlJumpNum {
+	width: 35px;
+	margin: 0 3px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none !important;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.youhui_text2 {
+	background-color: yellow;
+	margin-top: -10px;
+	color: mediumvioletred;
+}
+
+.footer {
+	width: 1200px;
+	height: 100px;
+	/*background-color: red;*/
+	margin: 0 auto;
+}
+
+.footer_text1 {
+	width: 100%;
+	line-height: 22px;
+	text-align: center;
+	font-size: 14px;
+	color: darkgray;
+}
+
+.footer_text1 a {
+	color: darkgray;
+	text-decoration: none;
+}
+
+.footer_text1 span {
+	margin-left: 10px;
+}
+
+.footer_text1 span:hover {
+	color: white;
+}
+
+.back_top {
+	width: 55px;
+	height: 49px;
+	background-image: url(../img/back.png);
+	background-repeat: no-repeat;
+	position: fixed;
+	right: 30px;
+	bottom: 50px;
+	z-index: 1;
+	display: none;
+}

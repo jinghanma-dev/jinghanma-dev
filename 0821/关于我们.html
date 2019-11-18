@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			 *{
+            	margin: 0;
+            	padding: 0;
+            }
+			.top{
+				width: 100%;
+				height: 50px;
+				background-color:#302013 ;
+				margin: auto;
+			}
+			.top1{
+				width: 1200px;
+				height: 50px;
+				/*border: 1px solid chartreuse;*/
+				margin: auto;
+			}
+			.toptext{
+				width: 320px;
+				height: 48px;
+				/*background-color: palegoldenrod;*/
+				float: left;
+				font-size: 20px;
+				color: #dda354;
+				text-align: center;
+				line-height: 48px;
+				/*overflow: hidden;*/
+			}
+			.toim1{
+				width: 34px;
+				height: 34px;
+				/*background-color: blueviolet;*/
+				background-size: 100%;
+				float: right;
+				margin-right: 20px;
+				margin-top: 8px;
+			}
+			.daohang{
+				width: 100%;
+				height: 100px;
+				background-color: #38281c;
+				margin: 0 auto;
+				
+			}
+			.dao1{
+				width: 1200px;
+				height: 100px;
+				/*background-color: #7FFF00;*/
+				margin: 0 auto;
+				position: relative;
+			}
+			.daotext1:hover{
+				width: 100px;
+				height: 50px;
+				color: #DDA354;
+				border: 1px solid #dda354;
+                border-radius: 20px;
+			}
+			.daotext2:hover{
+				width: 100px;
+				height: 50px;
+				color: #DDA354;
+				border: 1px solid #dda354;
+                border-radius: 20px;
+                background-color: #554133;
+			}
+			.daotext3:hover{
+				width: 100px;
+				height: 50px;
+				color: #DDA354;
+				border: 1px solid #dda354;
+                border-radius: 20px;
+                background-color: #554133;
+			}
+			.daotext4:hover{
+				width: 100px;
+				height: 50px;
+				color: #DDA354;
+				border: 1px solid #dda354;
+                border-radius: 20px;
+                background-color: #554133;
+			}
+			.daotext5:hover{
+				width: 100px;
+				height: 50px;
+				color: #DDA354;
+				border: 1px solid #dda354;
+                border-radius: 20px;
+                background-color: #554133;
+			}
+			.daotext6:hover{
+				width: 100px;
+				height: 50px;
+				color: #DDA354;
+				border: 1px solid #dda354;
+                border-radius: 20px;
+                background-color: #554133;
+			}
+			.dao2{
+				width: 100px;
+				height: 50px;
+				color: #DDA354;
+				border: 1px solid #dda354;
+                border-radius: 20px;
+                 display: none;
+			}
+			.dao2-2{
+				width: 100px;
+				height: 50px;
+				list-style: none;
+				text-align: center;
+                line-height: 50px;
+                font-size: 18px;
+                border: 1px solid #dda354;
+                
+                  color: #DDA354;
+                cursor: pointer;
+                border-radius: 20px;
+                /*display: none;*/
+			}
+			.daotext2:hover .dao2{
+				display: block;
+			}
+			.dao2-2:hover {
+				background-color: white;
+			}
+			.daotext3:hover .dao2{
+				display: block;
+			}
+			.daotext4:hover .dao2{
+				display: block;
+			}
+			.daotext6:hover .dao2{
+				display: block;
+			}
+			.daotext1{
+				width: 100px;
+				height: 50px;
+				background-color: #554133;
+				list-style: none;
+				float: left;
+				text-align: center;
+                line-height: 50px;
+                /*margin-left: 100px;*/
+               margin-top: 25px;
+               font-size: 18px;
+               border: 1px solid #dda354;
+               border-radius: 20px;
+               color: #DDA354;
+               cursor: pointer;
+			}
+			.daotext2{
+				width: 100px;
+				height: 50px;
+				/*background-color: #8A2BE2;*/
+				list-style: none;
+				float: left;
+				text-align: center;
+                line-height: 50px;
+                margin-left: 65px;
+               margin-top: 25px;
+               font-size: 18px;
+               color: white;
+               cursor: pointer;
+			}
+			.daotext3{
+				width: 100px;
+				height: 50px;
+				/*background-color: #8A2BE2;*/
+				list-style: none;
+				float: left;
+				text-align: center;
+                line-height: 50px;
+                margin-left: 65px;
+               margin-top: 25px;
+               font-size: 18px;
+               color: white;
+               cursor: pointer;
+			}
+			.daotext4{
+				width: 100px;
+				height: 50px;
+				/*background-color: #8A2BE2;*/
+				list-style: none;
+				float: left;
+				text-align: center;
+                line-height: 50px;
+                margin-left: 60px;
+               margin-top: 25px;
+               font-size: 18px;
+               color: white;
+               cursor: pointer;
+			}
+			.daotext5{
+				width: 100px;
+				height: 50px;
+				/*background-color: #8A2BE2;*/
+				list-style: none;
+				float: left;
+				text-align: center;
+                line-height: 50px;
+                margin-left: 65px;
+               margin-top: 25px;
+               font-size: 18px;
+               color: white;
+               cursor: pointer;
+			}
+			.daotext6{
+				width: 100px;
+				height: 50px;
+				/*background-color: #8A2BE2;*/
+				list-style: none;
+				float: left;
+				text-align: center;
+                line-height: 50px;
+                margin-left: 65px;
+               margin-top: 25px;
+               font-size: 18px;
+               color: white;
+               cursor: pointer;
+			}
+			.daotu2{
+				width: 200px;
+				height: 252px;
+				list-style: none;
+				float: left;
+				margin-left: 45px;
+				margin-top: -50px;
+			}
+			.banner{
+				width: 1348px;
+				height: 490px;
+				margin: 0 auto;
+				/*border: 1px solid red;*/
+				background-image:url(img/banner_o9gx.png);
+				background-size: cover;
+			}
+			.bannernav{
+				width: 620px;
+				height: 250px;
+				/*border: 1px solid red;*/
+				float: right;
+				margin-right: 50px;
+				margin-top:75px ;
+				background-image: url(img/bannernav.png);
+				background-size: 100%;
+			}
+			.lianjie{
+				font-size: 18px;
+				color: white;
+				text-decoration: none;
+			}
+			.content{
+				width: 100%;
+				/*height: 1500px;*/
+				overflow: hidden;
+				margin: auto;
+				/*background-color: palevioletred;*/
+				
+			}
+			.content1{
+				width: 1100px;
+				height: 350px;
+				margin: auto;
+				/*background-color: palegreen;*/
+				margin-top: 55px;
+			}
+			.content1img{
+				width: 350px;
+				height: 85px;
+				background-image: url(img/about_07.png);
+				background-size: 100%;
+				margin: auto;
+				/*background-color: gold;*/
+			}
+			.content1nav{
+				width: 1100px;
+				/*height: 450px;*/
+				/*background-color: peachpuff;*/
+				margin: auto;
+				margin-top: 30px;
+				overflow: auto;
+			}
+			.content1navtext{
+				width: 1000px;
+				height: 450px;
+				overflow: auto;
+				border: 1px solid gainsboro;
+				/*background-color: greenyellow;*/
+				margin: auto;
+				margin-top: 20px;
+				line-height: 30px;
+			}
+			.content2{
+				width: 1100px;
+				height: 600px;
+				/*background-color: plum;*/
+				margin:  auto;
+				margin-top: 350px;
+			}
+			.content2nav{
+				width: 260px;
+				height: 292px;
+				/*background-color: lightskyblue;*/
+				border: 1px solid gainsboro;
+				margin: 0px 6px 30px 7px;
+				float: left;
+			}
+			.content2navtu img{
+				width: 210px;
+				height: 210px;
+				/*background-color: brown;*/
+				margin: 15px 25px 15px 25px;
+				/*background-image: url(img/zp1.jpg);*/
+				
+				
+			}
+			.content2navtext{
+				width: 260px;
+				height: 40px;
+				font-size: 16px;
+				text-align: center;
+				line-height: 20px;
+				margin-top: -5px;
+			}
+			.footer{
+				width: 100%;
+				height: 190px;
+				background-color: #271A11;
+				margin: auto;
+				margin-top: 60px;
+			}
+			.footernav1{
+				width: 1100px;
+				height: 120px;
+				/*border: 1px solid red;*/
+				margin: auto;
+			}
+			.footernav1left{
+				width: 765px;
+				height: 120px;
+				border-left: 1px solid #332419;
+				/*background-color: palegoldenrod;*/
+				float: left;
+			}
+			.footertext1{
+				font-size: 20px;
+				color: white;
+				text-align: left;
+				line-height: 30px;
+				margin-top: 20px;
+				margin-left: 10px;
+			}
+			.footertext2{
+				font-size: 14px;
+				color: #684c38;
+				line-height: 20px;
+				margin-top: 20px;
+				margin-left: 10px;
+			}
+			.footernav1right{
+				width: 330px;
+				height: 120px;
+				border-left: 1px solid #332419;
+				/*background-color: paleturquoise;*/
+				float: right;
+			}
+			.footertext3{
+				width: 200px;
+				height: 20px;
+				font-size: 18px;
+				color: white;
+				line-height: 20px;
+				margin: 20px 20px;
+			}
+			.footertext4{
+				width: 300px;
+				height: 70px;
+				font-size: 26px;
+				color: white;
+				margin: 20px 20px;
+			}
+			.footernav{
+				width: 100%;
+				height: 120px;
+				border-bottom: 1px solid #332419;
+			}
+			.footernav2{
+				width: 1100px;
+				height: 65px;
+				font-size: 16px;
+				color: #4e4736;
+				text-align: center;
+				line-height: 25px;
+				margin:10px auto;
+				
+			}
+			.lianjie{
+				font-size: 18px;
+				color: white;
+				text-decoration: none;
+			}
+			.content2nav:hover{
+				transform: scale(1.2);
+				transform: translateY(-5px);
+				transition: all 0.5s;
+				box-shadow: 0px 5px 5px darkgrey;
+			}
+
+		</style>
+	</head>
+	<body>
+		<!--顶部-->
+		<div class="top">
+			<div class="top1">
+			  <div class="toptext">欢迎来到DASHIJIE手表官方网站！</div>
+			  <div class="topimg">
+			  	<p class="toim1"><img src="img/ico01.png"/></p>
+			  	<p class="toim1"><img src="img/ico02.png"/></p>
+			  	<p class="toim1"><img src="img/ico03.png"/></p>
+			  </div>
+			</div>
+		</div>
+		<!--导航-->
+		<div class="daohang">
+			
+				<ul class="dao1">
+					<p>
+					<a class="lianjie" href="手表官网首页.html">
+					<li class="daotext1">网站首页</li>
+					</a>
+					</p>
+					<p>
+					<a class="lianjie" href="关于我们.html">
+					<li class="daotext2">
+						关于我们
+						<ul class="dao2">
+							<li class="dao2-2">网站首页</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+						</ul>
+					</li>
+					</a>
+					</p>
+					<p>
+					<a class="lianjie" href="index.html">
+					<li class="daotext3">
+						臻品展示
+					    <ul class="dao2">
+							<li class="dao2-2">网站首页</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+						</ul>
+					</li>
+					</a>
+					</p>
+					<li class="daotu2"><img src="img/LOGO.png"/></li>
+					<p>
+					<a class="lianjie" href="新闻中心.html">
+					<li class="daotext4">
+						新闻中心
+						<ul class="dao2">
+							<li class="dao2-2">网站首页</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+						</ul>
+					</li>
+					</a>
+					</p>
+					<li class="daotext5">找商加盟</li>
+					<li class="daotext6">
+						联系我们
+						<ul class="dao2">
+							<li class="dao2-2">网站首页</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+							<li class="dao2-2">关于我们</li>
+						</ul>
+					</li>
+				</ul>
+		</div>
+		<!--轮播图-->
+		<div class="banner">
+			<div class="bannernav"></div>
+		</div>
+		<!--内容-->
+		<div class="content">
+			<div class="content1">
+				<div class="content1img"></div>
+				<div class="content1nav">
+					<p class="content1navtext"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;某某精品（深圳）有限公司1991年始创于中国深圳，是冠城钟表珠宝集团（HK0256）有限公司旗下集设计、制造和营销精品手表的集团化企业。拥有中国品牌手表“<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;某某”--EBOHR，女装珠宝手表“卡纳”--KANA，男装复杂机械手表“宇飞”--EC等多个腕表品牌。
+
+
+
+
+       某某总公司下设企业技术中心、设计研发中心、精密制造中心、物流保障中心、品牌营销中心、市场销售中心、国际业务中心和行政管理中心八大营运中心，下辖32个覆盖中国大陆的全资分支机构，近3000个销售终端和设立于省会城市的售后服务网络。公司还拥有深圳市帕玛精品制造有限公司、深圳市某某精品在线电子商务有限公司、瑞士精密时计有限公司等全资附属企业，正式员工达2400余人。
+
+
+
+
+      <br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 为更好的满足消费者网络购物的需求，某某于2012年成立独立的电子商务子公司—某某精品在线电子商务有限公司。现销售平台已扩展至天猫、唯品会、京东、亚马逊、国美、苏宁、当当、一号店等，在腕表电商界占有重要地位。
+
+
+
+
+       <br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;某某投资兴建的帕玛精品制造有限公司，拥有贵金属制造人才，配备进口专用加工设备，采用成熟的加工工艺，设计、生产铂金、纯金、K金材质的腕表配件、手机壳体、金笔壳体、饰品等贵金属精品，工艺精湛。以三大技术优势——彩金技术、铂金的加硬增白技术和足金加硬技术，为某某腕表质量提供了强有力的技术支持，也是全球众多品牌的合作伙伴。
+
+
+
+
+       <br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;某某精品（深圳）有限公司是国家认证的深圳市企业技术中心，在自主创新、品牌美誉度、市场占有率、经营效益、信息化建设和履行企业公民义务等方面处于中国钟表行业的重要地位。
+
+
+
+
+       <br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;某某始终坚持“做好表”的理念，以“传承精品文化，打造精品腕表，推崇精致生活”为己任，将人文情感和成熟技艺注入腕表制作的整个流程，源源不断地为每一位顾客奉献品质精良、有价值、可信赖和珍藏的腕表作品，让时间在腕间温柔流转，让精致生活散发优雅光芒。
+					</p>
+				</div>
+			</div>
+			<div class="content2">
+				<div class="content2nav">
+					<div class="content2navtu"><img src="img/zp1.jpg"/></div>
+					<p class="content2navtext">PTAGET机械表-x971<br />PI008</p>
+				</div>
+				<div class="content2nav">
+					<div class="content2navtu"><img src="img/zp2.jpg"/></div>
+					<p class="content2navtext">PTAGET机械表-x971<br />PI008</p>
+				</div>
+				<div class="content2nav">
+					<div class="content2navtu"><img src="img/zp3.jpg"/></div>
+					<p class="content2navtext">PTAGET机械表-x971<br />PI008</p>
+				</div>
+				<div class="content2nav">
+					<div class="content2navtu"><img src="img/zp4.jpg"/></div>
+					<p class="content2navtext">PTAGET机械表-x971<br />PI008</p>
+				</div>
+				<div class="content2nav">
+					<div class="content2navtu"><img src="img/zp5.jpg"/></div>
+					<p class="content2navtext">PTAGET机械表-x971<br />PI008</p>
+				</div>
+				<div class="content2nav">
+					<div class="content2navtu"><img src="img/zp6.jpg"/></div>
+					<p class="content2navtext">PTAGET机械表-x971<br />PI008</p>
+				</div>
+				<div class="content2nav">
+					<div class="content2navtu"><img src="img/zp7.jpg"/></div>
+					<p class="content2navtext">PTAGET机械表-x971<br />PI008</p>
+				</div>
+				<div class="content2nav">
+					<div class="content2navtu"><img src="img/zp8.jpg"/></div>
+					<p class="content2navtext">PTAGET机械表-x971<br />PI008</p>
+				</div>
+			</div>
+		</div>
+		  <!--底部-->
+	   <div class="footer">
+	   	<div class="footernav">
+	   	  <div class="footernav1">
+	   		<div class="footernav1left">
+	   			<p class="footertext1">友情链接</p>
+	   			<p class="footertext2">某某钟表&nbsp;&nbsp;&nbsp;&nbsp;某某钟表行 &nbsp;&nbsp;&nbsp;&nbsp;   某某钟表  &nbsp;&nbsp;&nbsp;&nbsp;   某某钟表行&nbsp;&nbsp;&nbsp;&nbsp;    某某钟表  &nbsp;&nbsp;&nbsp;&nbsp;  某某钟表行   &nbsp;&nbsp;&nbsp;&nbsp; 某某钟表&nbsp;&nbsp;&nbsp;&nbsp;     某某钟表行  &nbsp;&nbsp;&nbsp;&nbsp;   某某钟表    </p>
+	   		</div>
+	   	    <div class="footernav1right">
+	   	    	<p class="footertext3">全国免费咨询热线：</p>
+	   	    	<strong class="footertext4">400-0000-0000</strong>
+	   	    </div>
+	   	  </div>
+	   	  <p class="footernav2">公司地址 中国上海市长宁区外滩路12号MOUMOU大厦5层107室<br/>Copyright © 2009-2011,www.xxxxxx.com,All rights reserved  沪ICP备XXXXXX号 </p>
+	   	 </div>
+	   </div>
+	</body>
+</html>

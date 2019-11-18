@@ -1,0 +1,257 @@
+.bannerleft{
+				width: 200px;
+				height: 360px;
+				padding-left: 18px;
+				background-color: white;
+				float: left;
+			}
+			
+			.bannerleft1{
+				width: 90px;
+				height: 45px;
+				/*background-color: lightpink;*/
+				float: left;
+				margin-top: 5px;
+				border-bottom: 1px dashed gainsboro;
+			}
+			.bannerleft1tu1{
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: 0px;
+				background-position-y: 0px;
+				margin-top: 10px;
+				background-repeat: no-repeat;
+				float: left;
+				cursor: pointer;
+			}
+			.bannerleft1text{
+				width: 55px;
+				height: 35px;
+				/*background-color: papayawhip;*/
+				font-size: 14px;
+				text-align: left;
+				line-height: 48px;
+				cursor: pointer;
+				float: right;
+			}
+			.bannerleft1tu2{
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -120px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			.bannerleft1tu3{
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -215px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			.bannerleft1tu4{
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -23px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			.bannerleft1tu5{
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -143px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			.bannerleft1tu6{
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -47px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			.bannerleft1tu7{
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -72px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			.bannerleft1tu8{
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -167px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			.bannerleft1tu9{
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -239px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			.bannerleft1tu10{
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -95px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			.bannerleft1tu11{
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -312px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			.bannerleft1tu12{
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -287px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			.bannerleft1tu13{
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -192px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			.bannerleft1tu14{
+				width: 25px;
+				height: 25px;
+				/*background-color: peru;*/
+				background-image: url(img/ct_icons.png);
+				background-position-x: -263px;
+				background-position-y: 0px;
+				background-repeat: no-repeat;
+				margin-top: 10px;
+				float: left;
+				cursor: pointer;
+			}
+			.bannerleft1text:hover{
+				color: #f8285c;
+				text-decoration: underline;
+			}
+			.bannerleft1tu1:hover{
+				width: 25px;
+				height: 25px;
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+				
+			}
+			.bannerleft1tu2:hover{
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			.bannerleft1tu3:hover{
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			.bannerleft1tu4:hover{
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			.bannerleft1tu5:hover{
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			.bannerleft1tu6:hover{
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			.bannerleft1tu7:hover{
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			.bannerleft1tu8:hover{
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			.bannerleft1tu9:hover{
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			.bannerleft1tu10:hover{
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			.bannerleft1tu11:hover{
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			.bannerleft1tu12:hover{
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			.bannerleft1tu13:hover{
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}
+			.bannerleft1tu14:hover{
+				background-image: url(img/ct_icons.png);
+				background-position-y: -24px;
+			}

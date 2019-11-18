@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+	</body>
+	<script type="text/javascript">
+		var x = prompt("请输入工作年限，不满一年输入0");
+		var y = prompt("请输入你的月工资");
+		if(x == 0) {
+			if(y <= 8000) {
+				z = y;
+			} else {
+				z = y * 1.2;
+			}
+		} else if(x == 1) {
+			if(y <= 10000) {
+				z = y * 1.5;
+			} else {
+				z = y * 1.7;
+			}
+		} else if(x >= 2) {
+			if(y <= 12000) {
+				z = y * 3;
+			} else {
+				z = y * 3.2;
+			}
+		}
+		alert(z);
+	</script>
+
+</html>

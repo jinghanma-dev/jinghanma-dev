@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.contenttt {
+				width: 1380px;
+				padding: 10px;
+				margin: 30px auto;
+				/*background-color: #00BFFF;*/
+				float: left;
+				margin-left: 20px;
+			}
+			
+			.head {
+				width: 1400px;
+				height: 50px;
+				margin: 20px auto;
+				/*background-color: #006400;*/
+				position: relative;
+			}
+			
+			.head1 {
+				width: 200px;
+				height: 50px;
+				float: left;
+			}
+			
+			.head1 img {
+				width: 131px;
+				height: 35px;
+			}
+			
+			.head2 {
+				width: 500px;
+				height: 35px;
+				border: 1px solid #dfdfdf;
+				border-radius: 30px;
+				background-color: #f3f6f8;
+				float: left;
+				margin-left: 220px;
+			}
+			
+			.head2-1 {
+				width: 65px;
+				height: 35px;
+				float: left;
+				/*background-color: #FF0000;*/
+			}
+			
+			.head2-1-1 {
+				width: 40px;
+				height: 35px;
+				line-height: 35px;
+				text-align: center;
+				float: left;
+				margin-left: 15px;
+			}
+			
+			.head2-1-2 {
+				width: 10px;
+				height: 5px;
+				background-image: url(img/qq4.png);
+				margin-top: 15px;
+				/*background-color: #00008B;*/
+				background-position-x: 0px;
+				background-position-y: 0px;
+				float: right;
+			}
+			
+			.head2-1:hover .head2-1-2 {
+				width: 10px;
+				height: 5px;
+				background-image: url(img/qq4.png);
+				margin-top: 15px;
+				/*background-color: #00008B;*/
+				background-position-x: 0px;
+				background-position-y: -31px;
+				float: right;
+			}
+			
+			.nva {
+				list-style: none;
+				width: 45px;
+				height: 35px;
+				background-color: white;
+				/*border-top: 1px dashed #A9A9A9;*/
+				display: none;
+				color: black;
+				line-height: 35px;
+				text-align: center;
+				color: #A9A9A9;
+			}
+			
+			.head2-1:hover .nva {
+				display: block;
+			}
+			
+			.nva1 {
+				margin-top: 26px;
+				margin-left: 0px;
+				padding: 10px;
+				width: 65px;
+			}
+			
+			.nva:hover {
+				color: black;
+				border-bottom: 5px solid orange;
+			}
+			
+			#head2-3 {
+				width: 230px;
+				height: 32px;
+				background-color: #f3f6f8;
+				margin-top: 1px;
+				border: none;
+				margin-left: 5px;
+				/*outline: none;*/
+			}
+			
+			.head2-4 {
+				width: 150px;
+				height: 36px;
+				border-radius: 30px;
+				background-color: #1479d7;
+				float: right;
+				margin-right: -1px;
+				text-align: center;
+				line-height: 35px;
+				color: white;
+			}
+			
+			.head3 {
+				width: 150px;
+				height: 50px;
+				/*background-color: #A52A2A;*/
+				float: right;
+			}
+			
+			.head3-1 {
+				margin-top: 12px;
+				width: 24px;
+				height: 23px;
+				background-image: url(img/qq3.png);
+				background-position-x: 0px;
+				background-position-y: -99px;
+				float: left;
+			}
+			
+			.head3-1:hover {
+				width: 24px;
+				height: 23px;
+				background-image: url(img/qq3.png);
+				background-position-x: 0px;
+				background-position-y: -149px;
+			}
+			
+			.head3-2 {
+				margin-top: 12px;
+				width: 24px;
+				height: 23px;
+				background-image: url(img/qq3.png);
+				background-position-x: 0px;
+				background-position-y: -195px;
+				float: left;
+				margin-left: 20px;
+			}
+			
+			.head3-2:hover {
+				width: 24px;
+				height: 23px;
+				background-image: url(img/qq3.png);
+				background-position-x: 0px;
+				background-position-y: -245px;
+			}
+			
+			.head3-3 {
+				width: 40px;
+				height: 37px;
+				text-align: center;
+				color: blue;
+				line-height: 37px;
+				background-color: #DEDEDE;
+				border: 1px solid #A9A9A9;
+				float: left;
+				margin-left: 20px;
+				margin-top: 3px;
+			}
+			
+			.content {
+				width: 1400px;
+				height: 50px;
+				margin: 0 auto;
+				background-color: #1479d7;
+				overflow: hidden;
+				border-radius: 5px;
+			}
+			
+			.content li {
+				list-style: none;
+				width: 50px;
+				height: 40px;
+				margin: 5px 15px;
+				/*background-color: #006400;*/
+				color: white;
+				text-align: center;
+				line-height: 40px;
+				float: left;
+			}
+			
+			#concent1 {
+				width: 80px;
+				height: 40px;
+				margin: 5px 15px;
+				background-color: #006400;
+				color: white;
+				text-align: center;
+				line-height: 40px;
+				float: left;
+				position: relative;
+			}
+			
+			.content2 {
+				width: 10px;
+				height: 5px;
+				background-image: url(img/qq2.png);
+				margin-top: 18px;
+				/*background-color: #00008B;*/
+				background-position-x: 0px;
+				background-position-y: 0px;
+				float: right;
+			}
+			
+			.content3:hover {
+				background-color: #00BFFF;
+			}
+			
+			#content1:hover .content2 {
+				width: 10px;
+				height: 5px;
+				background-image: url(img/qq2.png);
+				margin-top: 18px;
+				/*background-color: #00008B;*/
+				background-position-x: 0px;
+				background-position-y: -31px;
+				float: right;
+				/*background-color: blue;*/
+			}
+			
+			.content4 {
+				width: 1400px;
+				height: 100px;
+				/*background-color: #008000;*/
+				margin: 0 auto;
+				/*display: none;*/
+				position: absolute;
+				left: 68px;
+				top: 140px;
+				display: none;
+			}
+			
+			.content4 li.content5 {
+				width: 50px;
+				height: 40px;
+				background-color: white;
+				list-style: none;
+				margin: 5px 15px;
+				color: #2F4F4F;
+				text-align: center;
+				line-height: 40px;
+				float: left;
+				font-size: 16px;
+			}
+			
+			.neirong {
+				width: 300px;
+				height: 300px;
+				margin: 10px;
+				border: 1px solid cadetblue;
+				float: left;
+			}
+			
+			.neirong img {
+				width: 100%;
+				float: left;
+			}
+			
+			h4 {
+				width: 300px;
+				height: 50px;
+				margin-top: 15px;
+			}
+			
+			#content1:hover .content4 {
+				display: block;
+			}
+			
+			.content5:hover {
+				color: #1479D7;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="head">
+			<div class="head1">
+				<img src="img/qq1.png" />
+			</div>
+			<div class="head2">
+				<div class="head2-1">
+					<div class="head2-1-1">
+						网页
+					</div>
+					<div class="head2-1-2"></div>
+					<ul class="nva1">
+						<li class="nva">网页</li>
+						<li class="nva">图片</li>
+						<li class="nva">视频</li>
+						<li class="nva">音乐</li>
+						<li class="nva">地图</li>
+						<li class="nva">问问</li>
+						<li class="nva">百科</li>
+						<li class="nva">新闻</li>
+						<li class="nva">购物</li>
+					</ul>
+				</div>
+				<input type="text" name="head2-3" id="head2-3" class="aabb" value="" />
+				<a href="#">
+					<div class="head2-4">
+						搜狗搜索
+					</div>
+				</a>
+			</div>
+			<div class="head3">
+				<div class="head3-1">
+
+				</div>
+				<div class="head3-2">
+
+				</div>
+				<div class="head3-3">
+					登录
+				</div>
+			</div>
+
+		</div>
+		<nav class="content">
+			<a href="#">
+				<li class="content3">新闻</li>
+			</a>
+			<a href="#">
+				<li class="content3">视频</li>
+			</a>
+			<a href="#">
+				<li class="content3">图片</li>
+			</a>
+			<a href="#">
+				<li class="content3">军事</li>
+			</a>
+			<a href="#">
+				<li class="content3">体育</li>
+			</a>
+			<li class="content3">NBA</li>
+			<li class="content3">娱乐</li>
+			<li class="content3">财经</li>
+			<li class="content3">科技</li>
+			<li class="content3">时尚</li>
+			<li class="content3">汽车</li>
+			<li class="content3">房产</li>
+			<li class="content3">教育</li>
+			<li class="content3">文化</li>
+			<li class="content3">游戏</li>
+			<li class="content3">星座</li>
+			<li id="content1">
+				更多
+				<div class="content2"></div>
+				<ul class="content4">
+					<li class="content5">独家</li>
+					<li class="content5">热剧</li>
+					<li class="content5">谷雨</li>
+					<li class="content5">历史</li>
+					<li class="content5">英超</li>
+					<li class="content5">CBA</li>
+					<li class="content5">明星</li>
+					<li class="content5">理财</li>
+					<li class="content5">数码</li>
+					<li class="content5">健康</li>
+					<li class="content5">车型</li>
+					<li class="content5">家居</li>
+					<li class="content5">课程</li>
+					<li class="content5">大家</li>
+					<li class="content5">动漫</li>
+					<li class="content5">公益</li>
+					<li class="content5">天气</li>
+					<li class="content5">政务</li>
+					<li class="content5">综艺</li>
+					<li class="content5">影展</li>
+					<li class="content5">国际</li>
+					<li class="content5">中超</li>
+					<li class="content5">社区</li>
+					<li class="content5">电影</li>
+					<li class="content5">证券</li>
+					<li class="content5">手机</li>
+					<li class="content5">育儿</li>
+					<li class="content5">旅游</li>
+					<li class="content5">生活</li>
+					<li class="content5">儿童</li>
+					<li class="content5">文学</li>
+					<li class="content5">享看</li>
+					<li class="content5">新国风</li>
+					<li class="content5">全部</li>
+				</ul>
+
+			</li>
+		</nav>
+
+		<!--<nav>
+			<a href="#">头条</a>
+			<a href="#">科技</a>
+			<a href="#">社会</a>
+			<a href="#">娱乐</a>
+		</nav>-->
+		<div class="contenttt">
+
+		</div>
+	</body>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		var news = ["jiekou/top.json", "jiekou/toutiao.json", "jiekou/shehui.json", "jiekou/junshi.json","jiekou/tiyu.json", "jiekou/guoji.json", "jiekou/yule.json", "jiekou/caijing.json"];
+
+		function getNews(x) {
+			$.ajax({
+				url: news[x],
+				success: function(res) {
+					console.log(res)
+					var xinwen = res.result.data;
+					var str = "";
+					for(var i = 0; i < xinwen.length; i++) {
+
+						str += "<div class = 'neirong'><h4>" + xinwen[i].title + "</h4><a href = '" + xinwen[i].url + "'><img src='" + xinwen[i].thumbnail_pic_s + "' /></a></div>";
+
+					}
+
+					$(".contenttt").html(str);
+				}
+
+			});
+
+		}
+		getNews(0)
+		$("nav a").click(function() {
+			var x = $(this).index();
+			getNews(x);
+
+		})
+//		$(".head2-4").click(function() {
+//			var x = $(".aabb")[0].value;
+//			for(var i = 0; i < $(".content3").length; i++) {
+//				if(x == $(".content3")[i].innerText) {
+//					getNews(i);
+//					console.log($(".content3")[i]);
+//					$(".content3").eq(i).css("background-color", "#cbe1ed").siblings().css("background-color", "#1479D7");
+//					$(".content3").eq(i).css("color", "#333").siblings().css("color", "white");
+//
+//				}
+//			}
+//
+//		})
+		
+		$(".head2-4").click(function() {
+				showNews()
+			})
+
+			function showNews() {
+				var sv = $("#head2-3").val();
+				console.log(sv);
+				if (sv == "新闻" || sv == "top" || sv == "xw") {
+					getNews(0)
+				}
+				if (sv == "视频" || sv == "toutiao" || sv == "sp") {
+					getNews(1)
+				}
+				if (sv == "图片" || sv == "shehui" || sv == "tp") {
+					getNews(2)
+				}
+				if (sv == "军事" || sv == "junshi" || sv == "js") {
+					getNews(3)
+				}
+				if (sv == "体育" || sv == "tiyu" || sv == "ty") {
+					getNews(4)
+				}
+			}
+			$("#head2-3").keydown(function(e) {
+				if (e.key == "Enter") {
+					showNews()
+				}
+
+			})
+	</script>
+
+</html>

@@ -1,0 +1,65 @@
+.bannerright{
+				width: 280px;
+				height: 360px;
+				background-color: white;
+				float: right;
+			}
+			.bannerright1{
+				width: 280px;
+				height: 120px;
+				border-bottom: 1px dashed gainsboro;
+			}
+			.bannerright2{
+				width: 280px;
+				height: 120px;
+				/*border-bottom: 1px dashed gainsboro;*/
+			}
+			.bannerrighttu1{
+				width: 95px;
+				height: 95px;
+				background-image: url(img/br1.jpg);
+				background-repeat: no-repeat;
+				background-size: 100%;
+				float: left;
+				margin-top: 10px;
+				cursor: pointer;
+			}
+			.bannerrighttu2{
+				width: 95px;
+				height: 95px;
+				background-image: url(img/br2.jpg);
+				background-repeat: no-repeat;
+				background-size: 100%;
+				float: left;
+				margin-top: 10px;
+				cursor: pointer;
+			}
+			.bannerrighttu3{
+				width: 95px;
+				height: 95px;
+				background-image: url(img/br3.jpg);
+				background-repeat: no-repeat;
+				background-size: 100%;
+				float: left;
+				margin-top: 10px;
+				cursor: pointer;
+			}
+			.bannerrighttext1{
+				width: 175px;
+				height: 23px;
+				overflow: hidden;
+				font-size: 16px;
+				/*line-height: 10px;*/
+				text-overflow: ellipsis;
+				/*background-color: darkslateblue;*/
+				float: right;
+				margin-top: 15px;
+			}
+			.bannerrighttext2{
+				width: 170px;
+				height: 65px;
+				/*background-color: mediumseagreen;*/
+				float: left;
+				font-size: 12px;
+				margin-left: 10px;
+			}

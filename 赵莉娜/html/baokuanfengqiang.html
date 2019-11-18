@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>省钱约</title>
+		<link rel="shortcut icon" type="image/ico" href="../img/ico.jpg">
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/baokuanfengqiang.css" />
+	</head>
+
+	<body>
+		<!--网页顶部-->
+		<div class="container" style="width: 100%;background-color: white;">
+			<div class="top">
+			<a href="index.html">
+				<div class="logo">
+					<b class="logo_txt1">省钱约</b>
+					<p class="logo_txt2">省钱神器 领劵专用</p>
+				</div>
+			</a>
+			<input type="search" name="搜索" class="search" placeholder="搜索你想要的..." />
+			<input type="button" name="搜索按钮" class="search_btn" value="搜索" />
+			<div class="top_r"></div>
+		</div>
+		</div>
+		
+		<!--网页导航-->
+		<nav>
+			<div class="container" style="width: 1200px;padding: 0;">
+				<ul class="navbar-nav">
+					<li class="daohang">
+						<a href="../index.html">网站首页</a>
+					</li>
+					<li class="daohang">
+						<a href="haohuojingxuan.html">好货精选</a>
+					</li>
+					<li class="daohang">
+						<a href="baokuanfengqiang.html">爆款疯抢</a>
+					</li>
+					<li class="daohang">
+						<a href="baoyou.html">9.9包邮</a>
+					</li>
+					<li class="daohang">
+						<a href="dongdongqiang.html">咚咚抢</a>
+					</li>
+					<!--<li class="daohang">
+						<a href="html/app.html">省钱约APP</a>
+					</li>-->
+				</ul>
+			</div>
+		</nav>
+		<!--小导航-->
+		<div class="container" style="width: 1180px;padding: 0;">
+			<div class="xdh" style="width: 1180px;height: 50px;background-color:white;padding-left: 5px;display: none; ">
+			<dl class="cation-list" style="width: 1200px;margin: 0 auto;">
+                    <dt>分类</dt>
+                    <dd>
+                        <li class="all on">全部</li>
+                        <li class="default">女装</li>
+                        <li class="default">男装</li>
+                        <li class="default">美食</li>
+                        <li class="default">美妆</li>
+                        <li class="default">日用</li>
+                        <li class="default">家纺</li>
+                        <li class="default">鞋子</li>
+                        <li class="default">箱包</li>
+                        <li class="default">数码</li>
+                        <li class="default">母婴</li>
+                        <li class="default">配饰</li>
+                        <li class="default">内衣</li>
+                        <li class="default">文体</li>
+                        <li class="default">运动</li> 
+                    </dd>
+               </dl>
+
+		</div>
+		</div>
+		
+		<!--商品轮播-->
+		<div class="container lb">
+			<a href="https://login.taobao.com/">
+				<div class="lb_img">
+				
+				</div>
+			</a>
+			
+		</div>
+		<!--内容部分-->
+		<div class="container " id="content_box " style="width:100%;padding: 0;margin-top: 20px; ">
+			<div class="big_item ">
+				<p class="jingpin ">爆款疯抢</p>
+				<a href="baokuanfengqiang.html">
+					<p class="jingpin1 ">点击了解更多>></p>
+				</a>
+			</div>
+			<div class="content ">
+			</div>
+			<!--分页-->
+			<div id="page" style="margin-bottom: 40px; "></div>
+		</div>
+		<!--底部-->
+		<div class="container footer_box " style="width: 100%;height: 160px;background-color:rgba(0,0,0,.8); ">
+			<div class="footer ">
+				<p class="footer_text1 " style="margin-top: 30px; ">网站导航：
+					<a href="../index.html "><span>网站首页</span></a>
+					<a href="haohuojingxuan.html "><span>好货精选</span></a>
+					<a href="baokuanfengqiang.html"><span>爆款疯抢</span></a>
+					<a href="baoyou.html "><span>9块9包邮</span></a>
+					<a href="dongdongqiang.html "><span>咚咚抢</span></a>
+				</p>
+				<p class="footer_text1 ">省钱约是一家中立的导购网站，网站中的商品信息均来自于互联网。如商品信息不同，可能是商品信息未及时更新，所有商品信息请以天猫/淘宝店铺内为准。</p>
+				<p class="footer_text1 ">Copyright©2019　省钱约：淘宝天猫（天猫超市）优惠券、代金券、抵用券、购物券、打折券领取 晋ICP备17016163号-4　 </p>
+			
+			</div>
+		</div>
+		<!--回到顶部-->
+		<div class="back_top "></div>
+	</body>
+	<script src="../js/jquery-3.4.1.min.js " type="text/javascript " charset="utf-8 "></script>
+	<script src="../bootstrap/js/bootstrap.min.js " type="text/javascript " charset="utf-8 "></script>
+	<script type="text/javascript " src="../js/xlPaging.js "></script>
+	<script src="../js/current.js " type="text/javascript " charset="utf-8 "></script>
+	<script src="../js/jquery.lazyload.js " type="text/javascript " charset="utf-8 "></script>
+	<script type="text/javascript ">
+	
+		//		商品分类查询
+		function chaxun(info,page) {
+			$.ajax({
+			type: "get",
+			url: "http://127.0.0.1/w/website/findGoodsList",
+			data: {
+				"platId": "d0a500ecf8ab41aa9ffe8e18ac6419e1",
+				"info": info,
+				"pageNo" : page
+			},
+				success: function(res) {
+					console.log(res);
+					var data = res.data.tbk_dg_material_optional_response.result_list.map_data;
+					console.log(data);
+					str3 = " ";
+					for(var i = 0; i < data.length; i++) {
+						if(data[i].coupon_info==""){
+							data[i].coupon_info="暂无优惠券";
+							data[i].coupon_share_url="";
+						}
+							str3 += `
+								<div class="content_item ">
+									<a class="item_text " href="${data[i].item_url} ">
+										<div class="shangpin_tu">
+											<img class="lazy " data-original="${data[i].pict_url} "/>
+										</div>
+										<p class="title ">${data[i].title}</p>
+									</a>
+									
+										<p class="qhj ">
+											<span class="qhj_txt2 ">¥</span>
+											<span class="qhj_txt3 ">${data[i].zk_final_price}</span>
+											<span class="xsl_text1 ">¥${data[i].reserve_price}</span>
+											<span class="xsl_text2 ">${data[i].tk_total_sales}人付款</span>
+											
+										</p>
+										<p class="youhui ">
+											<a href="${data[i].coupon_share_url} ">
+												<span class="youhui_text2">${data[i].coupon_info}</span>
+											</a>
+											<span class="youhui_text3">${data[i].provcity}</span>
+										</p>
+								</div>
+							
+							`;
+						
+					}
+				
+					$(".content ").html(str3);
+					$("img.lazy").lazyload({effect: "fadeIn"});
+					$("img.lazy").lazyload({ threshold :180});
+				}
+			});
+
+		}
+		//		点击查询
+		chaxun("疯抢",1);
+		//		搜索
+		function sousuo() {
+			var x = $(".search ")[0].value;
+			x="疯抢"+x;
+			//			console.log(x);
+			chaxun(x, 1);
+			tiaozhuan(x);
+			document.body.scrollTop = document.documentElement.scrollTop = 560;
+			
+		}
+		$(".search_btn ").click(function() {
+			sousuo();
+		})
+		document.onkeydown = function(event) {
+			var e = event || window.event || arguments.callee.caller.arguments[0];
+			if(e && e.keyCode == 13) { // en
+				sousuo();
+				
+			}
+		}
+		//		分页
+		function tiaozhuan(fenlei) {
+			$("#page ").paging({
+				nowPage: 1, // 当前页码
+				pageNum: 499, // 总页码
+				buttonNum: 6, //要展示的页码数量
+				canJump: 1, // 是否能跳转。0=不显示（默认），1=显示
+				showOne: 0, //只有一页时，是否显示。0=不显示,1=显示（默认）
+				callback: function(num) { //回调函数
+					console.log(num);
+					chaxun(fenlei, num);
+			document.body.scrollTop = document.documentElement.scrollTop = 560;
+					
+				}
+			});
+		}
+		tiaozhuan("疯抢");
+		//		回到顶部
+
+		var backtop = document.getElementsByClassName("back_top ")[0];
+		var scrolltop;
+		window.onscroll = function() {
+			scrolltop = document.body.scrollTop || document.documentElement.scrollTop;
+			if(scrolltop > 200) {
+				backtop.style.display = "block ";
+			} else {
+				backtop.style.display = "none ";
+			}
+		}
+
+		backtop.onclick = function() {
+			document.body.scrollTop = document.documentElement.scrollTop = 0;
+		}
+//		小导航点击事件
+		$(".default ").click(function() {
+			var x=$(this).index();
+			var text=$(".default ").eq(x-1).text();
+			text="疯抢"+text;
+//			console.log(text);
+			chaxun(text,1);
+			tiaozhuan(text);
+			$(".default ").eq(x-1).css("color ","#fc8080 ").siblings().css("color ","#8d8d91 ")
+			document.body.scrollTop = document.documentElement.scrollTop = 560;
+			
+		})
+//		小导航出现隐藏
+		 $(window).on("scroll ",function(){
+            //判断向下滑动的距离
+            if($(window).scrollTop()>=300){
+                //将顶部导航栏固定
+                $(".xdh").addClass("fixed");
+                $(".xdh").show();
+            }else{
+                $(".xdh").removeClass("fixed ");
+                $(".xdh").hide();
+            }
+        });
+
+	</script>
+
+</html>

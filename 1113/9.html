@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.bootcss.com/vue-resource/1.5.1/vue-resource.min.js"></script>
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box1{
+        width: 90%;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .item{
+        width: 200px;
+        height: 320px;
+        margin: 20px;
+        box-shadow: 0px 0px 5px #333;
+        border-radius: 10px;
+    }
+    .item img{
+        width: 200px;
+        height: 250px;
+    }
+    .item h3{
+        text-align: center;
+        line-height: 40px;
+    }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <marquee behavior="" direction="left">
+            <h1>
+                <font color="red">{{name}}</font>
+            </h1>
+        </marquee>
+        <input type="button" value="获取数据"@click="getData">
+        <div class="box1">
+            <div class="item" v-for="item in jokelist">
+                <img :src="item.img" alt="">
+                <h3>{{item.title}}</h3>
+            </div>
+        </div>
+    </div>
+    <script>
+       let vm = new Vue({
+           el:"#box",
+           data:{
+               name:"笑话大全",
+               jokelist:[],
+
+           },
+           methods:{
+               getData:function(){
+                   let data = {
+                       showapi_appid:"108237",
+                       page:1,
+                       maxResult:30,
+                       showapi_sign:"fae6ab120c7749e49d62b346955bf1fd"	
+                   }
+                //    this.$get("http://route.showapi.com/341-2",{params:data}).then(function(res){})
+                   this.$http.get("http://route.showapi.com/341-2",{
+                       params:data
+                   }).then((res)=>{
+                       console.log(res);
+                       this.jokelist = res.body.showapi_res_body.contentlist;
+                   })
+               }
+           }
+       })
+    
+    </script>
+</body>
+</html>
+<!-- http://route.showapi.com/341-2?showapi_appid=替换自己的值&page=1&maxResult=20&showapi_sign=替换自己的值 -->
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            name: '笑话大全',
+            jokelist: [],
+        },
+        methods: {
+            getData: function() {
+                let data = {
+                        showapi_appid: '46452',
+                        page: 2,
+                        maxResult: 15,
+                        showapi_sign: 'c3bc2247155b4219bffb60cac4fd315c'
+                    }
+                    // this.$http.get('http://route.showapi.com/341-2',{params:data}).then(function(res){ })
+                this.$http.get('http://route.showapi.com/341-2', {
+                    params: data
+                }).then((res) => {
+                    console.log(res);
+                    this.jokelist = res.body.showapi_res_body.contentlist;
+                })
+            }
+        },
+    })
+</script>

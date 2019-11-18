@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 600px;
+				height: 400px;
+				background-color: rosybrown;
+				margin: 20px auto;
+			    position:relative;	  
+			}
+			#btn{
+				width: 100px;
+				 height: 50px;
+				 background-color: red;
+				 margin: 0 auto;
+				 position: absolute;
+				left: 250px;
+				bottom: 100px;
+			}
+			.mingzi{
+				width: 200px;
+				height: 60px;
+				 background-color:white;
+				 margin:0 auto;
+				 position:absolute;
+				  left: 195px;
+				 bottom: 180px;
+				 text-align: center;
+				 font-size: 22px;
+				 color: green;
+				 line-height: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="mingzi"></div>
+			<button id="btn">点名</button>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var ming = document.getElementsByClassName("mingzi")[0];
+		var botton = document.getElementById("btn")[0];
+		function getmz(x){
+			var mz = Math.floor(Math.random()*x);
+			return mz;
+		}
+		/*console.log(getmz(11))*/
+		btn.onclick = function(){
+			var allname = ["技术","免税店","合适的","霍家","花开","静静","银行","华人街","毒药","史蒂夫","黄金"];
+			var indexmz=getmz(allname.length);
+			ming.innerHTML=allname[indexmz];
+		}
+	</script>
+</html>

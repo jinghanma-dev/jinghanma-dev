@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+	</body>
+	<script type="text/javascript">
+		for(var x = 2; x < 10000; x++) {
+			var y = 0;
+			for(var z = 1; z<= x; z++) {
+				if(x % z == 0) {
+					y++;
+				}
+			}
+			if(y == 2) {
+				console.log(x);
+			}
+		}
+	</script>
+
+</html>

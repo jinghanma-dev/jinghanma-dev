@@ -1,0 +1,21 @@
+/*#box{
+	width: 100px;
+	height: 100px;
+	background-color: black;
+}*/
+
+div{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+}
+
+/*id > class > 标签*/
+.box2{
+	background-color: blue;
+}
+.obox{
+	width: 300px;
+	height: 100px;
+	background-color: green;
+}

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.top {
+				width: 1100px;
+				height: 85px;
+				/*background-color: #5F9EA0;*/
+				margin: 0 auto;
+			}
+			
+			.toptu {
+				width: 260px;
+				height: 30px;
+				/*background-color: burlywood;*/
+				background-image: url(img/logo_9699ecd.png);
+				background-repeat: no-repeat;
+				background-size: 260px 30px;
+				float: left;
+				margin-top: 28px;
+			}
+			
+			.sousuo {
+				width: 250px;
+				height: 35px;
+				float: left;
+				margin-left: 390px;
+				margin-top: -3px;
+				border: 2px solid red;
+				border-radius: 4px;
+				background-image: url(img/icon_search_5c49228.png);
+				background-size: 20px 20px;
+				background-repeat: no-repeat;
+				padding-left: 35px;
+				font-size: 16px;
+				background-position-x: 5px;
+				background-position-y: 5px;
+				color: #757575;
+			}
+			
+			.sou {
+				width: 80px;
+				height: 37px;
+				background-color: red;
+				color: white;
+				font-size: 18px;
+				text-align: center;
+				line-height: 37px;
+				margin-left: 635px;
+				margin-top: -36px;
+				float: left;
+			}
+			
+			.zhuce {
+				width: 120px;
+				height: 40px;
+				margin-left: 830px;
+				margin-top: -40px;
+				font-size: 15px;
+				float: left;
+			}
+			
+			.daohang {
+				width: 100%;
+				height: 40px;
+				margin: 0 auto;
+				background-color: #F84E4E;
+			}
+			
+			.header {
+				width: 1000px;
+				height: 40px;
+				margin: 0 auto;
+			}
+			/*.dao{
+				width: 1200px;
+				height: 40px;
+				margin: 0 auto;
+			}*/
+			
+			.dao1 {
+				width: 1000px;
+				height: 40px;
+				margin: 0 auto;
+				text-align: center;
+				font-size: 16px;
+				line-height: 40px;
+				list-style: none;
+				
+			}
+			/*.ul1{
+				width:120px;
+				height: 300px;
+				background-color: red;
+			}*/
+			
+			.shouye {
+				background-color: #E32F2F;
+			}
+			
+			.dao3 {
+				float: left;
+				display: inline-block;
+				width: 120px;
+				height: 40px;
+				color: white;
+				position: relative;
+				left: -50px;
+				padding-left: 25px;
+				margin: 0 auto;
+			}
+			
+			.dao3:hover {
+				background-color: #E32F2F;
+			}
+			
+			.ul1 {
+				width: 100px;
+				/*background-color: red;*/
+				padding: 0 10px;
+				background-color: white;
+			}
+			
+			.ul1:hover {
+				background-color: #F3F3F3;
+			}
+			
+			.dao2 {
+				width: 100px;
+				height: 40px;
+				display: none;
+				color: black;
+				background-color: white;
+				border-bottom: 1px dashed darkgray;
+			}
+			
+			.dao3:hover .dao2 {
+				display: block;
+			}
+			
+			.dao2:hover {
+				background-color: #F3F3F3;
+			}
+			
+			.neirong {
+				width: 1560px;
+				height: 450px;
+				background-image: url(img/banner.png);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				margin: 0 auto;
+			}
+			
+			.ul2 {
+				width: 100px;
+				padding: 0 10px;
+				background-color: white;
+			}
+			
+			.ul3 {
+				width: 100px;
+				padding: 0 10px;
+				background-color: white;
+			}
+			
+			.nrt1 {
+				width: 360px;
+				height: 100px;
+				/*border: 1px solid rosybrown;*/
+				background-image: url(img/bt1.png);
+				background-repeat: no-repeat;
+				text-align: center;
+				margin-left: 380px;
+				margin-top: 55px;
+				float: left;
+			}
+			
+			.iphone {
+				width: 170px;
+				height: 50px;
+				background-image: url(img/bt2.png);
+				background-size: 100% 100%;
+				margin-left: -355px;
+				margin-top: 185px;
+				float: left;
+			}
+			.iphone:hover{
+				background-image: url(img/bt7.png);
+			}
+			.anzhuo {
+				width: 170px;
+				height: 50px;
+				background-image: url(img/bt3.png);
+				background-size: 100% 100%;
+				margin-left: -170px;
+				margin-top: 185px;
+				float: left;
+			}
+			.anzhuo:hover{
+				background-image: url(img/bt8.png);
+			}
+			.righttu {
+				width: 390px;
+				height: 405px;
+				/*border: 1px solid rosybrown;*/
+				background-image: url(img/bt4.png);
+				background-size: 100% 100%;
+				float: right;
+				margin-right: 305px;
+				margin-top: 43px;
+			}
+			
+			.xiaotu {
+				width: 30px;
+				height: 30px;
+				/*border: 1px solid royalblue;*/
+				background-image: url(img/bt5.png);
+				background-position-x: -77px;
+				background-position-y: -470px;
+				background-repeat: no-repeat;
+				float: left;
+				margin-left: -355px;
+				margin-top: 350px;
+			}
+			
+			.xiaozi {
+				width: 100px;
+				height: 30px;
+				color: white;
+				font-size: 18px;
+				float: left;
+				margin-left: 26px;
+				margin-top: 120px;
+			}
+			
+			.liwushuo {
+				width: 80px;
+				height: 30px;
+				color: white;
+				font-size: 18px;
+				float: left;
+				border-bottom: 1px solid white;
+				margin-top: 115px;
+				margin-left: -15px;
+			}
+			.erweima{
+				width: 77px;
+				height: 77px;
+				position: relative;
+				left: 635px;
+				top: 320px;
+				background-image: url(img/bt6.png);
+			}
+			.nav {
+				width: 1000px;
+				
+				overflow: hidden;
+				/*background-color: darkkhaki;*/
+				margin: 0 auto;
+			}
+			.box{
+				width: 1000px;
+				background-color: seagreen;
+			}
+			.boxx{
+				width: 310px;
+				height: 350px;
+				/*background-color: white;*/
+				margin-top: 20px;
+				border: 1px solid darkgrey;
+				border-radius:7px;
+				margin-left: 10px;
+				float:left;
+				
+			}
+			.boxx:hover{
+				transform: scale(1.2);
+				transform: translateY(-5px);
+				transition: all 0.5s;
+				box-shadow: 0px 5px 5px darkgrey;
+			}
+			.boximg{
+				width: 310px;
+				height: 142px;
+				border-radius:7px 7px 0 0 ;
+			}
+			.box1{
+				
+				width: 300px;
+				height: 60px;
+				font-size: 18px;
+				/*text-align: center;*/
+				margin-left: 5px;
+			}
+			.box2{
+				width: 300px;
+				height: 90px;
+				font-size: 15px;
+				color: grey;
+				margin-left: 5px;
+			}
+			.box3{
+				width: 240px;
+				height: 50px;
+				/*background-color: greenyellow;*/
+				float: left;
+				line-height: 50px;
+				
+			}
+			.box3 img{
+				width: 20px;
+				height: 20px;
+				margin-left: 10px;
+			}
+			
+			.dibu {
+				width: 1000px;
+				height: 80px;
+				border: 1px solid darkgrey;
+				margin: 0 auto;
+				margin-top: 30px;
+			}
+			
+			.dibuzi {
+				width: 120px;
+				height: 30px;
+				color: blue;
+				font-size: 18px;
+				text-align: center;
+				line-height: 30px;
+				/*border: 1px solid red;*/
+				/*margin-left: 440px;
+				margin-top: 26px;*/
+				margin: 26px auto;
+			}
+			
+			.remen {
+				width: 100px;
+				height: 30px;
+				/*background-color: brown;*/
+				text-align: center;
+				font-size: 20px;
+				line-height: 30px;
+				float: left;
+				position: relative;
+				left: 0px;
+				top: 55px;
+				margin: 0 auto;
+			}
+			
+			.resou {
+				width: 1000px;
+				height: 100px;
+				/*background-color: cadetblue;*/
+				margin: 0 auto;
+			}
+			
+			.footer {
+				width: 1000px;
+				height: 110px;
+				/*background-color: rosybrown;*/
+				margin: 0 auto;
+			}
+			
+			.lianjie {
+				width: 1000px;
+				height: 150px;
+				/*background-color: greenyellow;*/
+				margin: 0 auto;
+			}
+			.jietext{
+				width: 250px;
+				height: 40px;
+				/*background-color: saddlebrown;*/
+				float: left;
+			}
+			.zuixia{
+				width: 100%;
+				height: 50px;
+				margin: 0 auto;
+				background-color: #F84E4E;
+				font-size: 13px;
+				color: white;
+				text-align: center;
+				line-height: 20px;
+				padding-top: 15px;
+			}
+			.jingxuan{
+				width: 100px;
+				height: 30px;
+				/*background-color: rosybrown;*/
+				padding-top: 40px;
+			}
+			.tu1{
+				float: left;
+				
+				
+			}
+			.shuzi{
+				float: left;
+				margin-left: 15px;
+			}
+			.backtop{
+				width: 60px;
+				height: 60px;
+				background-color: rosybrown;
+				position: fixed;
+				top: 300px;
+				right: 200px;
+				/*float: left;*/
+				/*margin-left: 1280px;
+				margin-top: -1350px;*/
+				display: none;
+			}
+			.backtop.active{
+				display:block;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="top">
+			<div class="toptu">
+				<input type="search" name="搜索" class="sousuo" value="搜索礼物、攻略" />
+				<input type="button" class="sou" value="搜索" />
+				<input type="button" class="zhuce" value="登录/注册" />
+			</div>
+		</div>
+		<div class="daohang">
+			<div class="header">
+				<ul class="dao1">
+					<li class="dao3 shouye">首页</li>
+					<li class="dao3">
+						赠送对象
+						<ul class="ul1">
+							<li class="dao2">自己</li>
+							<li class="dao2">男票</li>
+							<li class="dao2">女盆友</li>
+							<li class="dao2">闺蜜们</li>
+							<li class="dao2">基友</li>
+							<li class="dao2">爸爸妈妈</li>
+							<li class="dao2">小盆友</li>
+							<li class="dao2">同事 </li>
+						</ul>
+					</li>
+					<li class="dao3">
+						赠送场合
+						<ul class="ul2">
+							<li class="dao2">新年</li>
+							<li class="dao2">生日</li>
+							<li class="dao2">纪念日</li>
+							<li class="dao2">结婚</li>
+							<li class="dao2">感谢</li>
+							<li class="dao2">情人节</li>
+							<li class="dao2">乔迁</li>
+							<li class="dao2">圣诞节</li>
+						</ul>
+					</li>
+					<li class="dao3">
+						ta的个性
+						<ul class="ul3">
+							<li class="dao2">美物</li>
+							<li class="dao2">手工</li>
+							<li class="dao2">吃货</li>
+							<li class="dao2">萌萌哒</li>
+							<li class="dao2">动漫迷</li>
+							<li class="dao2">小清新</li>
+							<li class="dao2">科技范</li>
+						</ul>
+					</li>
+					<li class="dao3">下载手机版</li>
+					<li class="dao3">礼物说企业版</li>
+				</ul>
+			</div>
+		</div>
+		<div class="neirong">
+			<div class="nrt1"></div>
+			<div class="iphone"></div>
+			<div class="anzhuo"></div>
+			<div class="righttu"></div>
+			<div class="xiaotu"></div>
+			<div class="xiaozi">新浪微博:</div>
+			<div class="liwushuo">@礼物说</div>
+			<div class="erweima"></div>
+		</div>
+		<div class="nav">
+			<h3 class="jingxuan">攻略精选</h3>
+			<div class="box">
+				<!--<img class="boximg" src="img/z1.jpg" />
+				<p class="box1">用味道标记他｜ 10款超精致的小众男友香</p>
+				<p class="box2">对于女生而言，干干净净，身上带着淡淡香味的男生是加分的。香水，就是一件隐形的外套，不仅可以让男生展现属于自己风格的...</p>
+			    <div class="box3">
+			    	<p class="tu1">
+			    		<img src="img/icon_favorites_84ea68a.png"/>
+			    		<p class="shuzi">
+			    		593
+			    		</p>
+			    	</p>
+			    	<p class="tu1">
+			    		<img src="img/icon_comments_f4d62e5.png" />
+			    		<p class="shuzi">
+			    		3
+			    		</p>
+			    	</p>
+			    	<p class="tu1">
+			    		<img src="img/icon_share_2bbb537.png" />
+			    		<p class="shuzi">
+			    		22
+			    		</p>
+			    	</p>
+			    </div>-->
+			</div>
+		</div>
+		<div class="dibu">
+			<div class="dibuzi">点击加载更多</div>
+		 </div>
+	    <div class="footer">
+			<div class="resou">
+				<div class="remen">热门搜索</div>
+			</div>
+		</div>
+		<div class="lianjie">
+	    	 	<a class="jietext" href="##">礼物说全球海淘精选</a>
+	    	 	<a class="jietext" href="##">礼物说日本免税店</a>
+	    	 	<a class="jietext" href="##">礼物说全球零食</a>
+	    	 	<a class="jietext" href="##">礼物说情人节礼物</a>
+	    	 	<a class="jietext" href="##">礼物说全球免税店</a>
+	    	 	<a class="jietext" href="##">礼物说日韩美妆</a>
+	    	 	<a class="jietext" href="##">礼物说全球吃货必备</a>
+	    	 	<a class="jietext" href="##">礼物说圣诞节礼物</a>
+	    	 	<a class="jietext" href="##">礼物说韩国免税店</a>
+	    	 	<a class="jietext" href="##">礼物说韩国女装</a>
+	    	 	<a class="jietext" href="##">礼物说值得剁手精选</a>
+	    	 	<a class="jietext" href="##">礼物说礼包</a>	    	 	
+	    	 </div>
+	    <div class="zuixia">
+	    	 	<p class="zuitext">© 2014 - 2019 Liwushuo.com 北京礼物说科技有限公司 电信与信息服务业务经营许可证150653号 京ICP备15031023号-1 </p>
+	    	 	<p class="zuitext"> 首页 | 商务合作 | 关于我们 | windowsphone版下载</p>
+	    	 </div>
+	    	 <div class="backtop" id="backtop"></div>
+	</body>
+	
+<script type="text/javascript">
+		var content = document.getElementsByClassName("box")[0];
+		var content_text =[
+		    {
+            	title:'用味道标记他｜ 10款超精致的小众男友香',
+            	desc:'对于女生而言，干干净净，身上带着淡淡香味的男生是加分的。香水，就是一件隐形的外套，不仅可以让男生展现属于自己风格的...',
+            	numone:'204',
+            	numtwo:'101',
+            	numthree:'30',
+            },
+            {
+            	title:'喜欢看电影的Ta，一定会被这些礼物戳中小心心!',
+            	desc:'看一部电影，就想看一段别人的生活，每个人都有自己的小世界，然而透过银幕，我们可以体验更多不同的世界。电影就像我们看...',
+            	numone:'1327',
+            	numtwo:'101',
+            	numthree:'458',
+            },
+            {
+            	title:'夏日万能礼物，当然是这些高颜值水杯',
+            	desc:'水是生命之源，补充水分对人体来说极为重要。可是，总是有仙女宝宝不爱喝水!美其名曰水不好喝。但小礼君想告诉仙女宝宝们...',
+            	numone:'137',
+            	numtwo:'101',
+            	numthree:'48',
+            },
+            {
+            	title:'来日方长：结婚纪念日，为爱人挑一份暖心礼物!',
+            	desc:'白首齐眉鸳鸯比翼，青阳启瑞桃李同心。人们都说“婚姻是爱情的坟墓”，其实不然。这中间的甜蜜与苦涩，只有经过了爱情长跑...',
+            	numone:'1371',
+            	numtwo:'101',
+            	numthree:'148',
+            },
+            {
+            	title:'白到情敌发慌：平价美白好物集结，夏天白出牛奶肌!',
+            	desc:'想要美白，好像听起来是一件很难的事情。夏天一到，对于追求白皙的女孩子来说，少不了防晒的功课。其实除了防晒，还有一些...',
+            	numone:'701',
+            	numtwo:'14',
+            	numthree:'18',
+            },
+            {
+            	title:'不需要打耳洞，戴对耳夹就能让你在夏天A到爆',
+            	desc:'夏天的衣服多款式简单，比较轻薄，想要让自己的夏季look可以别出心裁，关键还是在于还是要靠好看的配饰！尤其耳环无疑...',
+            	numone:'1701',
+            	numtwo:'174',
+            	numthree:'118',
+            },
+            {
+            	title:'从实用主义到品质生活，这些父亲节礼物一定深得他心!',
+            	desc:'这周末就是父亲节了，大家有没有给爸爸准备一份礼物呢？虽然很多人平时跟爸爸很少交流，或者觉得爸爸总是很严肃，但父亲对...',
+            	numone:'1012',
+            	numtwo:'74',
+            	numthree:'11',
+            },
+            {
+            	title:'打造型男老爸，这些个护好物让他年轻十岁错不了！',
+            	desc:'谁年轻的时候还不是个精致男孩啦？爸爸其实也爱“美”，同样会苦恼该如何选择合适的护肤好物，但他往往...选！择！不！...',
+            	numone:'204',
+            	numtwo:'101',
+            	numthree:'30',
+            },
+             {
+            	title:'送老爸一个新爱好，让他体验多彩人生！',
+            	desc:'印象中，爸爸像一颗大树，保护着我们健康地长大。他忙于事业、照顾家庭，在我们心中是超级英雄般的存在。但我们有没有想过...',
+            	numone:'3204',
+            	numtwo:'1011',
+            	numthree:'630',
+            },
+            {
+            	title:'送什么礼物才够酷？看看这些自带骚气的礼物吧！',
+            	desc:'每年的5月一过，6月的氛围就开始突变，连空气都骚动起来，是时候成为夏天的第一个酷盖了，甩甩头大步走起来，让世界都与...',
+            	numone:'1304',
+            	numtwo:'101',
+            	numthree:'230',
+            },
+            {
+            	title:'父亲节礼物集结——“超级英雄”也需要你的关心与呵护',
+            	desc:'一年一度的父亲节又要到啦~你想好给亲爱的父亲大人送什么礼物了吗？他在我们心中是刀枪不入的英雄，他坚实的臂膀给我们庇...',
+            	numone:'1504',
+            	numtwo:'1013',
+            	numthree:'330',
+            },
+             {
+            	title:'万能送礼指南：学生党必看，百元内这些礼物最受欢迎！',
+            	desc:'每当碰上各种同学的生日、节日送礼的时候，总想为对方送上一份得体的礼物。可身为学生党不免有些经济紧张，毕竟开支有限。...',
+            	numone:'1014',
+            	numtwo:'13',
+            	numthree:'30',
+            },
+		]
+		var str ="";
+		for(i=0;i<content_text.length;i++){
+			str+="<div class='boxx'><img class='boximg' src="+"img/z"+(i+1)+".jpg"+"/>"
+			  +"<p class='box1'>"+content_text[i].title+"</p>"
+			  +"<p class='box2'>"+content_text[i].desc+"</p>"
+			  +"<div class='box3'><div class='tu1'>"
+			      +"<img src='img/icon_favorites_84ea68a.png'/>"
+			      +"<p class='shuzi'>"+content_text[i].numone+"</p>"
+			    +"</div>"
+			    +"<div class='tu1'>"
+			      +"<img src='img/icon_comments_f4d62e5.png'/>"
+			      +"<p class='shuzi'>"+content_text[i].numtwo+"</p>"
+			    +"</div>"
+			    +"<div class='tu1'>"
+			      +"<img src='img/icon_share_2bbb537.png'/>"
+			      +"<p class='shuzi'>"+content_text[i].numthree+"</p>"
+			    +"</div>"
+			  +"</div>"
+			+"</div>";  
+		}
+		content.innerHTML=str;
+		
+		var btop = document.getElementById('backtop');
+		var stop;
+		window.onscroll=function(){
+			stop=document.body.scrollTop || document.documentElement.scrollTop;
+			if(stop>300){
+					
+				btop.className='backtop active';
+			}else{
+				btop.className='backtop';
+			
+			}
+		}
+		  btop.onclick=function(){
+		  	document.body.scrollTop = document.documentElement.scrollTop=0;
+		  }
+</script>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.daohang{
+				width: 100%;
+				height: 50px;
+				background-color: black;
+			}
+			.nav{
+				width: 1000px;
+				height: 50px;
+				background-color: burlywood;
+				margin: 0 auto;
+			}
+			.nav1{
+				width: 110px;
+				height: 50px;
+				border-right: 1px solid white;
+				text-align: center;
+				line-height: 50px;
+				/*background-color: green;*/
+				color: wheat;
+				list-style:none ;
+				float: left;
+			}
+			.last{
+				border: none;
+			}
+			.nav1:hover{
+				background-color: red;
+			}
+			.nav2{
+				list-style: none;
+				background-color: rgba(0,0,0,0.5);
+				width: 110px;
+				height: 50px;
+				border-top: 1px solid darkcyan;
+				display: none;
+			}
+			.nav2:hover{
+				background-color: red;
+			}
+			.nav1:hover  .nav2{
+				display: block;
+			}
+			.banner{
+				width: 100%;
+				height: 500px;
+				background-image: url(img/banner.jpg);
+				background-position-x: center;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="daohang">
+			<ul class="nav">
+				<li class="nav1">
+					
+					首页	
+				</li>
+				<li class="nav1">
+					关于我们	
+				</li>
+				<li class="nav1">
+					合作伙伴
+					<ul>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+
+					</ul>
+					
+				</li>
+				<li class="nav1">
+					关于我们	
+				</li>
+				<li class="nav1">
+					关于我们	
+				</li>
+				<li class="nav1">
+					关于我们	
+				</li>
+				<li class="nav1">
+					关于我们	
+				</li>
+				<li class="nav1">
+					关于我们	
+					<ul>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+
+					</ul>
+
+				</li>
+				<li class="nav1 last">
+					关于我们
+					<ul>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+						<li class="nav2">腾讯大学</li>
+
+					</ul>
+
+				</li>
+			</ul>
+		</div>
+		<div class="banner">
+
+		</div>
+	</body>
+</html>
